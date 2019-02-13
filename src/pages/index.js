@@ -109,7 +109,6 @@ export default class IndexPage extends React.Component {
                 <div className="column is-narrow">
                   <h1>Leading <span className="hrs-blue">People</span>.</h1>
                   <h1>Leading <span className="hrs-blue-light">Business</span>.</h1>
-                  GPG
                 </div>
               </div>
             </div>
