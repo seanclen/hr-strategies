@@ -1,16 +1,222 @@
-@import "~bulma/sass/utilities/initial-variables"
+// @import "~bulma/sass/utilities/initial-variables"
+// Import Fonts
+@import url("https://fonts.googleapis.com/css?family=Catamaran|Crimson+Text|Montserrat:300,400,700")
+@import "~@fortawesome/fontawesome-free/css/all.css"
+@import "~react-toastify/dist/ReactToastify.css"
 
-// Config vars
-// Kalidi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
+// Mixins
+=gradient($start-color: #555, $end-color: #333, $deg: 45deg, $start-percent: 0%, $end-percent: 100%)
+  background-image: -webkit-linear-gradient($deg, $start-color $start-percent, $end-color $end-percent)
+  background-image: -o-linear-gradient($deg, $start-color $start-percent, $end-color $end-percent)
+  background-image: linear-gradient($deg, $start-color $start-percent, $end-color $end-percent)
+  background-repeat: repeat-x
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-$body-color: #333
+=box-shadow($shadow...)
+  -webkit-box-shadow: $shadow
+          box-shadow: $shadow
+
+=transition($transition...)
+  -webkit-transition: $transition
+       -o-transition: $transition
+          transition: $transition
+
+
+// Brand Colors
+$hrs-blue: #5d68a6
+$hrs-blue-light: #9e9fcd
+$hrs-blue-invert: #fff
+
+// Override Bulma defaults
+$blue: $hrs-blue
+$yellow: #FFDB00
+
+$primary: $blue
+$primary-invert: $hrs-blue-invert
+$link: $blue
+
+$grey-darker: #24262E
+$grey-dark: #3A3D48
+$grey-light: #595C6A
+$grey-lighter: #9599A5
+$white-ter: #E4E4E8
+$white-bis: #F9FAFB
+$light: $white-ter
+
+$family-sans-serif: "Catamaran", sans-serif
+$body-color: $grey-darker
+$body-background-color: $grey-dark
+
+$navbar-height: 4rem
+$footer-background-color: $grey-dark
+$notification-radius: 0px
+$radius-rounded: 0px
+$control-radius: 0px
+
+// Override Toastify defaults
+.toasty
+  width: auto
+
+// Global
+body
+  font-family: $family-sans-serif
+
+// Inline
+
+h1
+  font-family: 'Montserrat', sans-serif
+
+hr
+  height: 1px !important
+
+.title
+  font-family: 'Montserrat', sans-serif
+
+.subtitle
+  font-family: 'Montserrat', sans-serif
+  font-weight: 200 !important
+
+
+small
+  color: $grey-lighter
+strong a
+  +transition(0.2s)
+  color: $grey-darker
+  font-family: 'Montserrat', sans-serif
+  font-weight: 800
+  border-bottom: 4px solid $yellow
+  padding-bottom: 0.25rem
+  &:hover
+    border-bottom: 0px solid $yellow
+
+// Navbar
+
+.navbar
+  +transition(0.5s)
+  +box-shadow(rgba(0, 0, 0, 0.15) 0px 0px 5px 0px)
+  &.is-transparent
+    background-color: transparent
+    +box-shadow(transparent 0px 0px 0px 0px)
+    .navbar-item
+      color: #fff
+      &:hover
+        color: #ced0db
+
+.navbar-item
+  +transition(0.5s)
 
 .navbar .navbar-menu
-  box-shadow:none !important
+    .navbar-item
+      font-size: 0.85rem
+      text-transform: uppercase
+
+// Footer
+
+footer
+  color: $white-ter
+  a
+    color: $hrs-blue-light
+    &:hover
+      color: $blue
+  strong
+    color: #fff
+
+// Layout
+
+section.is-white
+  background-color: #fff
+
+section.is-light
+  background-color: $white-bis
+
+section.is-dark
+  background-color: $grey-dark
+
+section.is-primary
+  color: #fff
+  background-color: $hrs-blue
+
+section.is-yellow
+  background-color: $yellow
+  strong a
+    border-color: $grey-darker
+
+.card
+  &.is-primary
+    color: #fff
+    background-color: $blue
+    .title
+      color: #fff
+    small
+      color: $hrs-blue-light
+    strong a
+      color: #fff
+  &.is-warning
+    color: $grey-darker
+    background-color: $yellow
+    .title
+      color: $grey-darker
+    strong a
+      border-color: $hrs-blue
+
+.has-flex-grow-0
+  flex-grow: 0 !important
+
+// LANDING
+#landing-hero h1
+  color: #fff
+  font-size: 5rem
+  font-weight: 800
+  span.hrs-blue
+    color: $hrs-blue !important
+  span.hrs-blue-light
+    color: $hrs-blue-light !important
+
+#landing-news
+  .title
+    font-family: 'Crimson Text', serif
+    font-size: 1.5rem
+    font-weight: 400
+  .card
+    +box-shadow(transparent 0px 0px 0px 0px)
+    .card-footer
+      position: absolute
+      width: 100%
+      bottom: 0
+      border-top: 0
+      .card-footer-item
+        justify-content: flex-end
+
+.notification.landing
+  font-family: $family-sans-serif
+  background-color: #fff !important
+
+.hero.has-video-background:before
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(160,176,225,.20)
+  +gradient(rgba(160,176,225,0), rgba(93,104,166,1), 10deg, 80%, 100%)
+  z-index: 0
+
+.hero.has-video-background .video-viewport
+  position: absolute
+  width: 100%
+  height: 100%
+  background-color: rgba(34,32,35,1)  //76, 84, 104  rgba(58,61,72,1) - rgba(160,176,225,.20)
+  +gradient(rgba(238,239,255,1), rgba(160,176,225,1), 45deg, 0%, 100%)
+  z-index: -1
+  video
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    overflow: hidden
+    object-fit: cover
+    z-index: -1
 
 .content .taglist
   list-style: none
@@ -26,6 +232,16 @@ $body-color: #333
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
+
+.notification
+  padding: 1.25rem 1.5rem 1.25rem 1.5rem !important
+  color: $grey-lighter
+  .title
+    font-family: 'Montserrat', sans-serif
+    font-size: 1.5rem
+    color: $grey-darker !important
+  .button
+    font-family: 'Montserrat', sans-serif
 
 // Helper Classes
 .full-width-image-container
@@ -44,4 +260,21 @@ $body-color: #333
 .margin-top-0
   margin-top: 0 !important
 
-@import "~bulma"
+.margin-bottom-0
+  margin-bottom: 0 !important
+
+.margin-left-50
+  margin-left: 50px !important
+
+.padding-top-50
+  padding-top: 50px !important
+
+.padding-top-100
+  padding-top: 100px !important
+
+.padding-bottom-50
+  padding-bottom: 50px !important
+
+.padding-bottom-100
+  padding-bottom: 100px !important
+@import "~bulma/bulma.sass"
