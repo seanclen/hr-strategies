@@ -6,9 +6,9 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import logo from '../img/logo-short.svg'
 
-// import landingjpg from '../img/landing/Ground-Zero.jpg'
-import landingmp4 from '../img/landing/Ground-Zero.mp4'
-// import landingwebm from '../img/landing/Ground-Zero.webm'
+// import landingjpg from '../img/homepage/Ground-Zero.jpg'
+import landingmp4 from '../img/homepage/Ground-Zero.mp4'
+// import landingwebm from '../img/homepage/Ground-Zero.webm'
 
 function BlogPost(props) {
   return (
@@ -102,7 +102,7 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <ToastContainer className="columns is-mobile is-centered" toastClassName="column is-narrow" position="bottom-center" autoClose={false} closeOnClick={false} draggable />
-        <section id="landing-hero" className="hero is-fullheight has-video-background">
+        <section id="homepage-hero" className="hero is-fullheight has-video-background">
           <div className="hero-body">
             <div className="container">
               <div className="columns is-mobile is-centered">
@@ -116,7 +116,7 @@ export default class IndexPage extends React.Component {
           <div className="video-viewport">
             <video width="1920" height="1280" autoPlay muted loop>
               <source src={landingmp4} type="video/mp4" />
-              <source src="../img/landing/Ground-Zero.webm" type="video/webm" />
+              <source src="../img/homepage/Ground-Zero.webm" type="video/webm" />
             </video>
           </div>
 
@@ -206,7 +206,7 @@ export default class IndexPage extends React.Component {
           </div>
         </section>
 
-        <section id="landing-news" className="section is-light">
+        <section id="homepage-news" className="section is-light">
           <div className="container">
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">Stay Informed</h1>

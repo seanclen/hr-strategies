@@ -15,6 +15,8 @@ This is the first Newsletter post for the brand new website! Filler text to foll
 
 The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
 
+<!-- end -->
+
 * producers
 * roasters
 * importers/exporters
