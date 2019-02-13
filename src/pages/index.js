@@ -119,7 +119,6 @@ export default class IndexPage extends React.Component {
               <source src="../img/homepage/Ground-Zero.webm" type="video/webm" />
             </video>
           </div>
-
         </section>
 
         <section className="is-white padding-top-100 padding-bottom-100">
