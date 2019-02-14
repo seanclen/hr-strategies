@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify'
+import { NewsletterCard } from '../components/Cards'
 
 import logo from '../img/logo-short.svg'
 
@@ -10,7 +11,7 @@ import logo from '../img/logo-short.svg'
 import landingmp4 from '../img/homepage/Ground-Zero.mp4'
 // import landingwebm from '../img/homepage/Ground-Zero.webm'
 
-function BlogPost(props) {
+function BlogPostCard(props) {
   return (
     <article key={props.id} className="tile card is-child has-background-white">
       <div className="card-content">
@@ -32,32 +33,11 @@ function VerticalBlogPosts(props) {
       { props.posts.slice(!props.start ? 0 : props.start,
                           !props.end ? props.posts.length : props.end)
                    .map(({ node: post }) => (
-        <BlogPost
+        <BlogPostCard
                 id={post.id}
                 date={post.frontmatter.date}
                 title={post.frontmatter.title}
                 slug={post.fields.slug} />
-      ))}
-    </div>
-  );
-}
-
-function Newsletter(props) {
-  return (
-    <div className="tile is-parent">
-      { props.newsletter.map(({node: data }) => (
-        <article className="tile is-child card is-primary">
-          <div className="card-content">
-            <small>Newsletter &bull; {data.frontmatter.date}</small>
-            <p className="title">{data.frontmatter.title}</p>
-            <div className="content" dangerouslySetInnerHTML={{__html: data.excerpt}}></div>
-            <strong>
-              <Link className="is-uppercase" to={props.slug}>
-                Read More
-              </Link>
-            </strong>
-          </div>
-        </article>
       ))}
     </div>
   );
@@ -232,7 +212,15 @@ export default class IndexPage extends React.Component {
                   </article>
                 </div>
               </div>
-              <Newsletter newsletter={newsletter} />
+              <div className="tile is-parent">
+                { newsletter.map(({node: data }) => (
+                  <NewsletterCard
+                    date={data.frontmatter.date}
+                    title={data.frontmatter.title}
+                    excerpt={data.excerpt}
+                    slug={data.fields.slug} />
+                ))}
+              </div>
             </div>
           </div>
         </section>

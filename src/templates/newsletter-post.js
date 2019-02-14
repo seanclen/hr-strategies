@@ -1,6 +1,8 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
+
+
+
 
 const NewsletterPost = ({data}) => {
   return (
@@ -9,3 +11,5 @@ const NewsletterPost = ({data}) => {
     </Layout>
   )
 }
+
+export default NewsletterPost
