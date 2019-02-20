@@ -9,4 +9,3 @@ notification:
     tasters, has been revised for the first time this year.
   title: Making sense of the SCAA’s new Flavor Wheel
 ---
-
