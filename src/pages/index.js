@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { ToastContainer, toast } from 'react-toastify'
-import { NewsletterCard } from '../components/Cards'
+import { NewsletterCard, BlogPostCard } from '../components/Cards'
 import Notification from '../components/Notification'
 
 import logo from '../img/logo-short.svg'
@@ -12,22 +12,6 @@ import logo from '../img/logo-short.svg'
 import landingmp4 from '../img/homepage/Ground-Zero.mp4'
 // import landingwebm from '../img/homepage/Ground-Zero.webm'
 
-function BlogPostCard(props) {
-  return (
-    <article key={props.id} className="tile card is-child has-background-white">
-      <div className="card-content">
-        <small>{props.date}</small>
-        <p className="title">{props.title}</p>
-        <strong>
-          <Link className="is-uppercase" to={props.slug}>
-            Read More
-          </Link>
-        </strong>
-      </div>
-    </article>
-  );
-}
-
 function VerticalBlogPosts(props) {
   return (
     <div className="tile is-parent is-vertical">
@@ -35,7 +19,6 @@ function VerticalBlogPosts(props) {
                           !props.end ? props.posts.length : props.end)
                    .map(({ node: post }) => (
         <BlogPostCard
-                id={post.id}
                 date={post.frontmatter.date}
                 title={post.frontmatter.title}
                 slug={post.fields.slug} />
