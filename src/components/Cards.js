@@ -9,7 +9,7 @@ export const NewsletterCard = ({
   slug,
 }) => {
   return (
-    <article className="tile is-child card is-primary">
+    <div className="tile is-child card is-primary">
       <div className="card-content">
         <small>Newsletter &bull; {date}</small>
         <p className="title">{title}</p>
@@ -20,7 +20,7 @@ export const NewsletterCard = ({
           </Link>
         </strong>
       </div>
-    </article>
+    </div>
   )
 }
 
@@ -36,7 +36,7 @@ export const BlogPostCard = ({
   title,
   slug
 }) => (
-  <article className="tile card is-child has-background-white">
+  <div className="tile card is-child has-background-white">
     <div className="card-content">
       <small>{date}</small>
       <p className="title">{title}</p>
@@ -46,7 +46,7 @@ export const BlogPostCard = ({
         </Link>
       </strong>
     </div>
-  </article>
+  </div>
 )
 
 BlogPostCard.propTypes = {
@@ -55,4 +55,26 @@ BlogPostCard.propTypes = {
   slug: PropTypes.string,
 }
 
-// export default NewsletterCard
+export const NotificationCard = ({
+  message,
+  title,
+  link
+}) => (
+  <div className="tile is-child card is-warning">
+    <div className="card-content">
+      <p className="title">{title}</p>
+      <div className="content">
+        <p>{message}</p>
+        {link &&
+          <strong><a href={link} className="is-uppercase">Learn more</a></strong>
+        }
+      </div>
+    </div>
+  </div>
+)
+
+NotificationCard.propTypes = {
+  date: PropTypes.string,
+  title: PropTypes.string,
+  link: PropTypes.string,
+}
