@@ -9,10 +9,10 @@ notification:
   title: Making sense of the SCAA’s new Flavor Wheel
 affiliations:
   - heading: 'Associated Builders and Contractors, Inc.'
-    logo: /img/abc_logo.png
+    image: /img/abc_logo.png
     subheading: Delaware Chapter
   - heading: Office of Minority & Women Business Enterprise
-    logo: /img/omwbe.png
+    image: /img/omwbe.png
     subheading: State of Delaware OMWBE Vendor
 ---
 
