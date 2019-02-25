@@ -6,6 +6,7 @@ import Content, { HTMLContent } from '../components/Content'
 import { ToastContainer, toast } from 'react-toastify'
 import { BlogPostCard, NewsletterCard, NotificationCard } from '../components/Cards'
 import Notification from '../components/Notification'
+import Affiliations from '../components/Affiliations'
 
 // import landingjpg from '../img/homepage/Ground-Zero.jpg'
 // import landingwebm from '../img/homepage/Ground-Zero.webm'
@@ -64,11 +65,13 @@ export const HomePageTemplate = ({
         </div>
       </section>
 
-      <section className="is-white padding-top-100 padding-bottom-100">
+      <Affiliations />
+
+      <section className="section is-white p-t-100 p-b-100">
         <div className="container">
-          <h4 className="subtitle has-text-centered padding-bottom-50 is-size-4">Human Resources support for businesses of any size.</h4>
+          <h4 className="subtitle has-text-centered p-b-50 is-size-4">Human Resources support for businesses of any size.</h4>
           <hr />
-          <div className="columns padding-top-50">
+          <div className="columns p-t-50">
             <div className="column is-half">
               <article className="tile is-child">
                 <div className="card-content">
@@ -88,13 +91,13 @@ export const HomePageTemplate = ({
         </div>
       </section>
 
-      <section className="section is-primary padding-top-100 padding-bottom-100">
+      <section className="section is-primary p-t-100 p-b-100">
         <div className="container">
 
         </div>
       </section>
 
-      <section className="section is-yellow padding-top-50 padding-bottom-50">
+      <section className="section is-yellow p-t-50 p-b-50">
         <div className="container">
           <div className="columns is-mobile is-centered">
             <div className="column is-narrow">
@@ -102,12 +105,12 @@ export const HomePageTemplate = ({
                 <div className="level-left">
                   <div className="level-item">
                     <div className="">
-                      <h1 className="title is-size-1 has-text-white margin-bottom-0">15%</h1>
+                      <h1 className="title is-size-1 has-text-white m-b-0">15%</h1>
                       <h1 className="title is-size-1 has-text-white">OFF</h1>
                     </div>
                   </div>
                 </div>
-                <div className="level-right margin-left-50">
+                <div className="level-right m-l-50">
                   <div className="level-item">
                     <div>
                       <p className="title has-text-white">New Client Discount</p>
@@ -126,12 +129,12 @@ export const HomePageTemplate = ({
         </div>
       </section>
 
-      <section className="section padding-top-100 padding-bottom-100 is-white">
+      <section className="section p-t-100 p-b-100 is-white">
         <div className="container has-text-centered">
           <h1 className="title">Personal. Qualified. Affordable</h1>
           <h5 className="subtitle is-5">Here’s what some of our clients have to say</h5>
         </div>
-        <div className="columns padding-top-50 is-mobile is-vcentered is-centered">
+        <div className="columns p-t-50 is-mobile is-vcentered is-centered">
           <div className="column is-half">
             <div className="quote">
               <p>The biggest benefit in working with HR Strategies is that, unlike the big HR or PEO companies we’ve used in the past, we know the people we’re working with. I know the team by name, and they know  us.</p>

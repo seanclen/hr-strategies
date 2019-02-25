@@ -1,0 +1,22 @@
+.affiliations .logo-bar
+  .column
+    padding: 0
+
+  .thumbnail
+    position: relative
+    padding: 0.75rem
+
+    img:hover
+      cursor: pointer
+
+  .is-active .thumbnail::after
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    left: 50%
+    top: -20px
+    margin-left: -25px
+    border-top: 25px solid #5d68a6
+    border-left: 25px solid transparent
+    border-right: 25px solid transparent

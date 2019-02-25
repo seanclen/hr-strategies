@@ -20,7 +20,7 @@ const Navbar = class extends React.Component {
 
   componentDidMount() {
     // 24 is the number of milliseconds to debounce
-    window.addEventListener('scroll', debounce(this.handleScroll, 24))
+    //window.addEventListener('scroll', debounce(this.handleScroll, 24))
 
     // Get all "navbar-burger" elements
    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -60,7 +60,7 @@ const Navbar = class extends React.Component {
    // it works because scrollPositionY === 0 is falsy
    const isScrolling = !!this.state.scrollPositionY
    return (
-     <nav className={(isScrolling) ? 'navbar is-fixed-top is-light has-background-white' : 'navbar is-fixed-top is-transparent'} role="navigation" aria-label="main-navigation">
+     <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
        <div className="container is-fluid">
          <div className="navbar-brand">
            <Link to="/" className="navbar-item" title="Logo">

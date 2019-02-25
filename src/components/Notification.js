@@ -18,7 +18,7 @@ const Notification = ({
           </div>
         </div>
       </div>
-      <div className="level-right margin-left-50">
+      <div className="level-right m-l-50">
         <div className="level-item">
           <div className="buttons">
             {link &&

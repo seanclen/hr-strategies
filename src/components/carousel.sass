@@ -1,0 +1,53 @@
+$default-width: 100vw
+$default-height: 10rem
+$default-padding: 50px
+
+.carousel .slide
+	background-color: transparent !important
+
+.presentation-mode
+	.custom-slide
+		display: flex
+		align-items: center
+	  	justify-content: center
+	  	text-align: center
+		min-height: $default-height
+		padding: $default-padding
+		line-height: 1.5
+		font-size: 1.5em
+
+		h1, h2, h3, h4, h5, h6, p, ul, ol
+			border: 0
+			margin: 10px auto
+			padding: 0
+			display: inline-block
+			width: 100%
+
+		&.complex
+			text-align: left
+			flex-direction: column
+			justify-content: flex-start
+
+			h1, h2, h3, h4, h5, h6, p, ul, ol
+				margin-bottom: 30px
+
+		ul, ol
+			margin: 10px
+			padding-left: 75px
+
+		ol li
+			list-style: decimal !important
+
+		ul li
+			list-style: disc
+
+		p
+			font-size: 1.2em
+
+		iframe, img
+			width: $default-width
+			height: $default-height
+			margin: - $default-padding
+
+		ul, ol, li
+			text-align: left
