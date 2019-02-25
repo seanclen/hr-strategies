@@ -6,7 +6,7 @@ notification:
   message: >-
     The Coffee Taster’s Flavor Wheel, the official resource used by coffee
     tasters, has been revised for the first time this year.
-  title: Making sense of the SCAA’s new Flavor Wheel
+  title: Making sense of the SCAA’s new Flavor Wheels
 affiliations:
   - heading: 'Associated Builders and Contractors, Inc.'
     image: /img/abc_logo.png
