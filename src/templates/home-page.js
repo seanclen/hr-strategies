@@ -31,14 +31,14 @@ function VerticalBlogPosts(props) {
 export const HomePageTemplate = ({
   blogPosts,
   newsletter,
-  notification,
+  content,
 }) => {
   // Render the notification if the display switch is true
-  if (notification.display) {
+  if (content.notification.display) {
     toast(<Notification
-        title={notification.title}
-        message={notification.message}
-        link={notification.link}
+        title={content.notification.title}
+        message={content.notification.message}
+        link={content.notification.link}
       />,
       {closeButton: false})
   }
@@ -65,7 +65,7 @@ export const HomePageTemplate = ({
         </div>
       </section>
 
-      <Affiliations />
+      <Affiliations items={content.affiliations} />
 
       <section className="section is-white p-t-100 p-b-100">
         <div className="container">
@@ -162,12 +162,12 @@ export const HomePageTemplate = ({
                 <VerticalBlogPosts posts={blogPosts} start={0} end={2} />
                 <VerticalBlogPosts posts={blogPosts} start={2} end={4} />
               </div>
-              {notification.display &&
+              {content.notification.display &&
                 <div className="tile is-parent has-flex-grow-0">
                   <NotificationCard
-                    title={notification.title}
-                    message={notification.message}
-                    link={notification.link} />
+                    title={content.notification.title}
+                    message={content.notification.message}
+                    link={content.notification.link} />
                 </div>
               }
             </div>
@@ -190,11 +190,14 @@ export const HomePageTemplate = ({
 HomePageTemplate.propTypes = {
   blogPosts: PropTypes.array,
   newsletter: PropTypes.array,
-  notification: PropTypes.shape({
-    display: PropTypes.bool,
-    link: PropTypes.string,
-    message: PropTypes.string,
-    title: PropTypes.string,
+  content: PropTypes.shape({
+    notification: PropTypes.shape({
+      display: PropTypes.bool,
+      link: PropTypes.string,
+      message: PropTypes.string,
+      title: PropTypes.string,
+    }),
+    affiliations: PropTypes.array,
   }),
 }
 
@@ -208,7 +211,7 @@ const HomePage = ({ data }) => {
       <HomePageTemplate
         blogPosts={blogPosts}
         newsletter={newsletter}
-        notification={frontmatter.notification}
+        content={frontmatter}
       />
     </Layout>
   )
@@ -281,6 +284,17 @@ export const homePageQuery = graphql`
           link
           message
           title
+        }
+        affiliations {
+          heading
+          subheading
+          image {
+            childImageSharp {
+              fluid(maxWidth: 240, quality: 64) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }

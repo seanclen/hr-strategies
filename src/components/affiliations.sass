@@ -1,22 +1,30 @@
 .affiliations .logo-bar
+  padding-top: 15px
   .column
-    padding: 0
+    padding: 0px 20px
 
-  .thumbnail
+  .thumbnail-wrapper
     position: relative
-    padding: 0.75rem
+    .thumbnail-base
+      overflow: hidden
+      height: 75px
+      .thumbnail
+        position: relative
 
-    img:hover
+    &:hover
       cursor: pointer
 
-  .is-active .thumbnail::after
-    content: ''
-    position: absolute
-    width: 0
-    height: 0
-    left: 50%
-    top: -20px
-    margin-left: -25px
-    border-top: 25px solid #5d68a6
-    border-left: 25px solid transparent
-    border-right: 25px solid transparent
+  .is-active
+    .thumbnail
+      top: -75px
+    .thumbnail-wrapper::after
+      content: ''
+      position: absolute
+      width: 0
+      height: 0
+      left: 50%
+      top: -35px
+      margin-left: -25px
+      border-top: 25px solid #5d68a6
+      border-left: 25px solid transparent
+      border-right: 25px solid transparent
