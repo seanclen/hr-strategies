@@ -60,7 +60,7 @@ export const NotificationCard = ({
   title,
   link
 }) => (
-  <div className="tile is-child card is-warning">
+  <div className="tile is-child card is-tan">
     <div className="card-content">
       <p className="title">{title}</p>
       <div className="content">
