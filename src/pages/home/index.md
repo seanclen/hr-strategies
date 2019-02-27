@@ -7,6 +7,11 @@ notification:
     The Coffee Taster’s Flavor Wheel, the official resource used by coffee
     tasters, has been revised for the first time this year.
   title: Making sense of the SCAA’s new Flavor Wheels
+hero:
+  tagline: >-
+    The leading human resources consulting firm in helping companies recruit,
+    retain, and develop their employees to enable them to successfully grow
+    their businesses.
 affiliations:
   - heading: 'Associated Builders and Contractors, Inc.'
     image: /img/abc_logo.png
