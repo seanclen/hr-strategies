@@ -9,27 +9,21 @@ const Notification = ({
   link,
 }) => (
   <div className="notification landing">
-    <div className="level">
-      <div className="level-left">
-        <div className="level-item">
-          <div>
-            <p className="title">{title}</p>
-            <p className="content">{message}</p>
-          </div>
-        </div>
+    <div className="columns is-centered is-vcentered">
+      <div className="column is-narrow">
+        <p className="title">{title}</p>
+        <p className="content">{message}</p>
       </div>
-      <div className="level-right m-l-50">
-        <div className="level-item">
-          <div className="buttons">
-            {link &&
-              <a href={link} className="button is-warning has-text-weight-bold">Learn more</a>
-            }
-            <a onClick={closeToast} className="button is-light">
-              <span className="icon is-small">
-                <i className="fas fa-times"></i>
-              </span>
-            </a>
-          </div>
+      <div className="column is-narrow">
+        <div className="buttons">
+          {link &&
+            <a href={link} className="button is-primary has-text-weight-bold">Learn more</a>
+          }
+          <a onClick={closeToast} className="button is-light">
+            <span className="icon is-small">
+              <i className="fas fa-times"></i>
+            </span>
+          </a>
         </div>
       </div>
     </div>

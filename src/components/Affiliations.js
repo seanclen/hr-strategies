@@ -55,7 +55,7 @@ export default class Affiliations extends React.Component {
             </div>
           ))}
         </Carousel>
-        <div className="has-background-white-bis has-text-grey-darker p-t-25 p-b-25">
+        <div className="is-hidden-touch has-background-white-bis has-text-grey-darker p-t-25 p-b-25">
           <div className="container">
             <div className="logo-bar columns is-mobile is-centered">
               {this.props.items.map((item, index) => (

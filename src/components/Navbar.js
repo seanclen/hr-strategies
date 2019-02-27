@@ -60,7 +60,7 @@ const Navbar = class extends React.Component {
    // it works because scrollPositionY === 0 is falsy
    const isScrolling = !!this.state.scrollPositionY
    return (
-     <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
+     <nav className="navbar" role="navigation" aria-label="main-navigation">
        <div className="container is-fluid">
          <div className="navbar-brand">
            <Link to="/" className="navbar-item" title="Logo">

@@ -47,6 +47,12 @@ $body-color: $grey-darker
 $body-background-color: $grey-dark
 
 $navbar-height: 4rem
+$navbar-burger-color: #fff
+$navbar-background-color: transparent
+$navbar-item-color: #fff
+$navbar-item-hover-color: $grey-darker
+
+
 $footer-background-color: $grey-dark
 $notification-radius: 0px
 $radius-rounded: 0px
@@ -93,10 +99,10 @@ strong a
   color: $grey-darker
   font-family: 'Montserrat', sans-serif
   font-weight: 800
-  border-bottom: 4px solid $hrs-tan
+  border-bottom: 4px solid $hrs-blue
   padding-bottom: 0.25rem
   &:hover
-    border-bottom: 0px solid $hrs-tan
+    border-bottom: 0px solid $hrs-blue
 
 // Navbar
 
@@ -107,21 +113,17 @@ strong a
   right: 0
   z-index: 30
 
-  &.is-transparent
+  .navbar-burger:hover
     background-color: transparent
-    +box-shadow(transparent 0px 0px 0px 0px)
-    .navbar-item
-      color: #fff
-      &:hover
-        color: #ced0db
-
-.navbar-item
-  +transition(0.5s)
 
 .navbar .navbar-menu
-    .navbar-item
-      font-size: 1rem
-      text-transform: uppercase
+  background-color: transparent
+  .navbar-item
+    +transition(0.5s)
+    font-family: 'Montserrat', sans-serif
+    font-size: 1rem
+    font-weight: 800
+    text-transform: uppercase
 
 // Footer
 
@@ -152,7 +154,7 @@ section.is-primary, .presentation-mode .custom-slide.is-primary
 section.is-tan
   background-color: $hrs-tan
   strong a
-    border-color: $grey-darker
+    border-color: #fff
 
 .card
   &.is-primary
@@ -167,15 +169,16 @@ section.is-tan
       color: $hrs-blue-light
     strong a
       color: #fff
+      border-color: $hrs-tan
   &.is-tan
     color: $grey-darker
     background-color: $hrs-tan
     .title
       color: $grey-darker
-      font-family: 'Montserrat' !important
+      font-family: 'Montserrat', sans-serif !important
       font-weight: 600 !important
     strong a
-      border-color: $hrs-blue
+      border-color: #fff
 
 .has-flex-grow-0
   flex-grow: 0 !important
@@ -184,25 +187,47 @@ section.is-tan
 #main
   background-color: #fff
 
-#homepage-hero h1
-  color: #fff
-  font-size: 5rem
-  font-weight: 800
-  span.hrs-blue
-    color: $hrs-blue !important
-  span.hrs-blue-light
-    color: $hrs-blue-light !important
-
-.hero-news
-  position: absolute
-  right: 20px
-  bottom: 20px
-  padding: 1rem
-  color: #fff
-  background-color: #1b21429c
-  z-index: 3
-  .title
+#homepage-hero
+  h1
     color: #fff
+    font-family: 'Crimson Text', serif
+    font-size: 9vw
+    line-height: 9vw
+    span.hrs-blue
+      color: $hrs-blue !important
+    span.hrs-blue-light
+      color: $hrs-blue-light !important
+
+  hr
+    +box-shadow(inset $hrs-blue-light 100px 0px 0px 0px)
+    height: 4px !important
+    background-color: $hrs-tan
+    border-left: solid 100px $hrs-blue
+
+  .tagline
+    color: $grey-dark
+    width: 70vw
+    background-color: $hrs-tan
+    padding: 1rem
+
+  .hero-news
+    +transition(0.5s)
+    position: absolute
+    right: 20px
+    bottom: 20px
+    padding: 1rem
+    margin-left: 20px
+    background-color: transparentize($hrs-blue, 0.9)
+    z-index: 3
+
+    &:hover
+      right: 40px
+      margin-left: 0px
+      background-color: $hrs-blue
+
+  @media screen and (max-height: 498px)
+    .hero-news
+      display: none !important
 
 #homepage-news
   .title
@@ -230,8 +255,7 @@ section.is-tan
   left: 0
   width: 100%
   height: 100%
-  background-color: rgba(160,176,225,.20)
-  +gradient(rgba(160,176,225,0), #1b21429c, 10deg, 80%, 100%)
+  background-color: transparentize($hrs-blue, 0.9)
   z-index: 1
 
 .hero.has-video-background
@@ -252,6 +276,8 @@ section.is-tan
       overflow: hidden
       object-fit: cover
       z-index: 0
+      filter: blur(4px)
+      -webkit-filter: blur(4px)
 
 .content .taglist
   list-style: none

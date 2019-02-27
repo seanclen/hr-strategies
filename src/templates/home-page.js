@@ -34,37 +34,37 @@ export const HomePageTemplate = ({
   content,
 }) => {
   // Render the notification if the display switch is true
-  // if (content.notification.display) {
-  //   toast(<Notification
-  //       title={content.notification.title}
-  //       message={content.notification.message}
-  //       link={content.notification.link}
-  //     />,
-  //     {closeButton: false})
-  // }
+  if (content.notification.display) {
+    toast(<Notification
+        title={content.notification.title}
+        message={content.notification.message}
+        link={content.notification.link}
+      />,
+      {closeButton: false})
+  }
 
   return (
     <div>
-      <ToastContainer className="columns is-mobile is-centered" toastClassName="column is-narrow" position="bottom-center" autoClose={false} closeOnClick={false} draggable />
+      <ToastContainer className="columns is-centered" toastClassName="column is-narrow" position="bottom-center" autoClose={false} closeOnClick={false} draggable />
       <section id="homepage-hero" className="hero is-fullheight has-video-background">
-        <div className="hero-news tile is-4">
-          {blogPosts.slice(0,1).map(({ node: post }) => (
+        {blogPosts.slice(0,1).map(({ node: post }) => (
+          <Link to={post.fields.slug} className="hero-news tile is-4">
             <div className="content">
-              <h4 className="has-text-white">Recent News</h4>
-              <Link to={post.fields.slug} className="title has-text-info">{post.frontmatter.title}</Link>
-              <p>{post.excerpt}</p>
-              <div className="has-text-right">
-                <Link to={post.fields.slug} className="has-text-info">read more</Link>
-              </div>
+              <h6 className="has-text-white">Recent News</h6>
+              <h4 className="has-text-white">{post.frontmatter.title}</h4>
             </div>
-          ))}
-        </div>
+          </Link>
+        ))}
         <div className="hero-body">
           <div className="container">
             <div className="columns is-mobile is-centered">
               <div className="column is-narrow">
-                <h1>Leading <span className="hrs-blue">People</span><span className="has-text-info">.</span></h1>
-                <h1>Leading <span className="hrs-blue-light">Business</span><span className="has-text-info">.</span></h1>
+                <h1>Leading <span className="hrs-blue">People</span>.</h1>
+                <h1>Leading <span className="hrs-blue-light">Business</span>.</h1>
+                <hr />
+                <div className="tagline is-size-4 is-size-6-touch">
+                  <p>The leading human resources consulting firm in helping companies recruit, retain, and develop their employees to enable them to successfully grow their businesses.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -112,33 +112,19 @@ export const HomePageTemplate = ({
       </section>
 
       <section className="section is-tan p-t-50 p-b-50">
-        <div className="container">
-          <div className="columns is-mobile is-centered">
-            <div className="column is-narrow">
-              <div className="level">
-                <div className="level-left">
-                  <div className="level-item">
-                    <div className="">
-                      <h1 className="title is-size-1 has-text-white m-b-0">15%</h1>
-                      <h1 className="title is-size-1 has-text-white">OFF</h1>
-                    </div>
-                  </div>
-                </div>
-                <div className="level-right m-l-50">
-                  <div className="level-item">
-                    <div>
-                      <p className="title has-text-white">New Client Discount</p>
-                      <p>New clients receive discount if scheduled before December 15, 2018.</p>
-                      <strong>
-                        <a className="is-uppercase">
-                          Explore Our Services
-                        </a>
-                      </strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="columns is-centered is-vcentered">
+          <div className="column is-narrow">
+            <h1 className="title is-size-1 has-text-white m-b-0">15%</h1>
+            <h1 className="title is-size-1 has-text-white">OFF</h1>
+          </div>
+          <div className="column is-narrow">
+            <p className="title has-text-white">New Client Discount</p>
+            <p>New clients receive discount if scheduled before December 15, 2018.</p>
+            <strong>
+              <a className="is-uppercase">
+                Explore Our Services
+              </a>
+            </strong>
           </div>
         </div>
       </section>
