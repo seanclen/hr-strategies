@@ -11,7 +11,7 @@ const Notification = ({
   <div className="notification landing">
     <div className="columns is-centered is-vcentered">
       <div className="column is-narrow">
-        <p className="title">{title}</p>
+        <p className="title m-b-0">{title}</p>
         <p className="content">{message}</p>
       </div>
       <div className="column is-narrow">

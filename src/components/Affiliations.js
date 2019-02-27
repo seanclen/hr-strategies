@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Carousel } from 'react-responsive-carousel'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import './affiliations.sass'
+import './styles/affiliations.sass'
 
 import logo from '../img/logo-short.svg'
 

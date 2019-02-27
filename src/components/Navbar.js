@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/logo-short.svg'
+import logo from '../img/hrs-long-white.svg'
 
 const debounce = (func, wait) => {
   let timeout
@@ -64,8 +64,7 @@ const Navbar = class extends React.Component {
        <div className="container is-fluid">
          <div className="navbar-brand">
            <Link to="/" className="navbar-item" title="Logo">
-             <img src={logo} alt="HR Strategies" />
-             <span style={{ paddingLeft: '0.5rem', textTransform: 'uppercase', fontWeight: '800' }} >Strategies</span>
+             <img src={logo} alt="HR Strategies" width="150px"/>
            </Link>
            {/* Hamburger menu */}
            <div className="navbar-burger burger" data-target="navMenu">

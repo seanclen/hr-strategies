@@ -50,7 +50,7 @@ $navbar-height: 4rem
 $navbar-burger-color: #fff
 $navbar-background-color: transparent
 $navbar-item-color: #fff
-$navbar-item-hover-color: $grey-darker
+$navbar-item-hover-color: $hrs-blue
 
 
 $footer-background-color: $grey-dark
@@ -219,11 +219,17 @@ section.is-tan
     margin-left: 20px
     background-color: transparentize($hrs-blue, 0.9)
     z-index: 3
+    .excerpt
+      +transition(0.5s)
+      overflow: hidden
+      visibility: collapse
+      max-height: 0px
 
     &:hover
-      right: 40px
-      margin-left: 0px
       background-color: $hrs-blue
+      .excerpt
+        visibility: visible
+        max-height: 100px
 
   @media screen and (max-height: 498px)
     .hero-news

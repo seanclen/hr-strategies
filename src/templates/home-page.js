@@ -52,6 +52,7 @@ export const HomePageTemplate = ({
             <div className="content">
               <h6 className="has-text-white">Recent News</h6>
               <h4 className="has-text-white">{post.frontmatter.title}</h4>
+              <p className="has-text-white excerpt">{post.excerpt}</p>
             </div>
           </Link>
         ))}
@@ -63,7 +64,7 @@ export const HomePageTemplate = ({
                 <h1>Leading <span className="hrs-blue-light">Business</span>.</h1>
                 <hr />
                 <div className="tagline is-size-4 is-size-6-touch">
-                  <p>The leading human resources consulting firm in helping companies recruit, retain, and develop their employees to enable them to successfully grow their businesses.</p>
+                  <p>{content.hero.tagline}</p>
                 </div>
               </div>
             </div>
@@ -197,6 +198,9 @@ HomePageTemplate.propTypes = {
       message: PropTypes.string,
       title: PropTypes.string,
     }),
+    hero: PropTypes.shape({
+      tagline: PropTypes.string,
+    }),
     affiliations: PropTypes.array,
   }),
 }
@@ -284,6 +288,9 @@ export const homePageQuery = graphql`
           link
           message
           title
+        }
+        hero {
+          tagline
         }
         affiliations {
           heading
