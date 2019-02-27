@@ -42,6 +42,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
           - {label: Notification, name: notification, widget: object, fields: [{label: Display Notification, name: display, widget: boolean, default: true, hint: Turn the notification on or off.}, {label: Title, name: title, widget: string}, {label: Message, name: message, widget: string}, {label: Link, name: link, widget: string}]}
+          - {label: Hero, name: hero, widget: object, fields: [{label: Tagline, name: tagline, widget: text}]}
           - {label: Affiliations, name: affiliations, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}, {label: Logo, name: image, widget: image}]}
       - file: "src/pages/about/index.md"
         label: "About"
