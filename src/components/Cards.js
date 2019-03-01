@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
+import { v4 } from 'uuid'
 
 export const NewsletterCard = ({
   date,
@@ -9,7 +10,7 @@ export const NewsletterCard = ({
   slug,
 }) => {
   return (
-    <div className="tile is-child card is-primary">
+    <article key={v4()} className="tile is-child card is-primary">
       <div className="card-content">
         <small>Newsletter &bull; {date}</small>
         <p className="title">{title}</p>
@@ -20,7 +21,7 @@ export const NewsletterCard = ({
           </Link>
         </strong>
       </div>
-    </div>
+    </article>
   )
 }
 
@@ -36,17 +37,17 @@ export const BlogPostCard = ({
   title,
   slug
 }) => (
-  <div className="tile card is-child has-background-white">
+  <article key={v4()} className="tile card is-child has-background-white">
     <div className="card-content">
       <small>{date}</small>
-      <p className="title">{title}</p>
+      <h2 className="title">{title}</h2>
       <strong>
         <Link className="is-uppercase" to={slug}>
           Read More
         </Link>
       </strong>
     </div>
-  </div>
+  </article>
 )
 
 BlogPostCard.propTypes = {
@@ -60,7 +61,7 @@ export const NotificationCard = ({
   title,
   link
 }) => (
-  <div className="tile is-child card is-tan">
+  <article key={v4()} className="tile is-child card is-tan">
     <div className="card-content">
       <p className="title">{title}</p>
       <div className="content">
@@ -70,7 +71,7 @@ export const NotificationCard = ({
         }
       </div>
     </div>
-  </div>
+  </article>
 )
 
 NotificationCard.propTypes = {

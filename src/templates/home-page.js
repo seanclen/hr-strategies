@@ -7,6 +7,8 @@ import { ToastContainer, toast } from 'react-toastify'
 import { BlogPostCard, NewsletterCard, NotificationCard } from '../components/Cards'
 import Notification from '../components/Notification'
 import Affiliations from '../components/Affiliations'
+import Testimonials from '../components/Testimonials'
+import { v4 } from 'uuid'
 
 // import landingjpg from '../img/homepage/Ground-Zero.jpg'
 // import landingwebm from '../img/homepage/Ground-Zero.webm'
@@ -49,11 +51,11 @@ export const HomePageTemplate = ({
       <section id="homepage-hero" className="hero is-fullheight has-video-background">
         {blogPosts.slice(0,1).map(({ node: post }) => (
           <Link to={post.fields.slug} className="hero-news tile is-4">
-            <div className="content">
+            <article key={v4()} className="content">
               <h6 className="has-text-white">Recent News</h6>
-              <h4 className="has-text-white">{post.frontmatter.title}</h4>
+              <h3 className="has-text-white m-t-0">{post.frontmatter.title}</h3>
               <p className="has-text-white excerpt">{post.excerpt}</p>
-            </div>
+            </article>
           </Link>
         ))}
         <div className="hero-body">
@@ -82,7 +84,7 @@ export const HomePageTemplate = ({
 
       <section className="section is-white p-t-100 p-b-100">
         <div className="container">
-          <h4 className="subtitle has-text-centered p-b-100 is-size-4">Human Resources support for businesses of any size.</h4>
+          <h4 className="has-text-centered p-b-100 is-size-3">Human Resources support for businesses of any size.</h4>
           <hr />
         </div>
         <div className="container">
@@ -131,25 +133,11 @@ export const HomePageTemplate = ({
       </section>
 
       <section className="section p-t-100 p-b-100 is-white">
-        <div className="container has-text-centered">
-          <h1 className="title">Personal. Qualified. Affordable</h1>
-          <h5 className="subtitle is-5">Here’s what some of our clients have to say</h5>
+        <div className="container m-b-25 has-text-centered">
+          <h2>Personal. Qualified. Affordable.</h2>
+          <h5>Here’s what some of our clients have to say</h5>
         </div>
-        <div className="columns p-t-50 is-mobile is-vcentered is-centered">
-          <div className="column is-half">
-            <div className="quote">
-              <p>The biggest benefit in working with HR Strategies is that, unlike the big HR or PEO companies we’ve used in the past, we know the people we’re working with. I know the team by name, and they know  us.</p>
-              <strong>
-                <a className="is-uppercase">
-                  Explore Our Services
-                </a>
-              </strong>
-            </div>
-          </div>
-          <div className="column is-narrow">
-            <img src={logo} width="100" alt="HR Strategies" />
-          </div>
-        </div>
+        <Testimonials />
       </section>
 
       <section id="homepage-news" className="section is-light">

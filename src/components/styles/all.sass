@@ -4,7 +4,7 @@
 @import "~@fortawesome/fontawesome-free/css/all.css"
 @import "~react-toastify/dist/ReactToastify.css"
 @import "~react-responsive-carousel/lib/styles/carousel.min.css"
-@import "./carousel.sass"
+
 @import "./colors.sass"
 
 // Mixins
@@ -26,22 +26,6 @@
 
 // Override Bulma defaults
 
-$blue: $hrs-blue
-$yellow: #FFDB00
-
-$primary: $blue
-$primary-invert: $hrs-blue-invert
-$link: $blue
-$info: $hrs-tan
-
-$grey-darker: #24262E
-$grey-dark: #3A3D48
-$grey-light: #595C6A
-$grey-lighter: #9599A5
-$white-ter: #E4E4E8
-$white-bis: #F9FAFB
-$light: $white-ter
-
 $family-sans-serif: "Catamaran", sans-serif
 $body-color: $grey-darker
 $body-background-color: $grey-dark
@@ -55,7 +39,6 @@ $navbar-item-hover-color: $hrs-blue
 
 $footer-background-color: $grey-dark
 $notification-radius: 0px
-$radius-rounded: 0px
 $control-radius: 0px
 
 // Override Toastify defaults
@@ -71,14 +54,25 @@ body
 h1
   font-family: 'Montserrat', sans-serif
 
+h2
+  font-family: 'Crimson Text', serif
+  font-size: 3rem
+  color: $grey-dark
+
 h3
   font-family: 'Montserrat', sans-serif
   font-weight: 200
   font-size: 2rem
+  color: $grey-dark
 
 h4
+  font-family: 'Crimson Text', serif
+  font-size: 2rem
+  color: $grey-dark
+
+h5
   font-family: 'Montserrat', sans-serif
-  font-weight: 800
+  font-weight: 200
   font-size: 1.2rem
 
 hr
@@ -330,6 +324,9 @@ section.is-tan
 .m-b-0
   margin-bottom: 0 !important
 
+.m-b-25
+  margin-bottom: 25px !important
+
 .m-l-50
   margin-left: 50px !important
 
@@ -365,6 +362,10 @@ section.is-tan
 
 .width-100
   width: 100% !important
+
+@import "./affiliations.sass"
+@import "./carousel.sass"
+@import "./testimonials.sass"
 
 @import "~bulma/sass/utilities/_all"
 @import "~bulma/sass/base/generic.sass"

@@ -2,18 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Carousel } from 'react-responsive-carousel'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import './styles/affiliations.sass'
 
 import logo from '../img/logo-short.svg'
 
 export default class Affiliations extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       currentSlide: 0,
     }
 
-    this.updateCurrentSlide = this.updateCurrentSlide.bind(this)
+    this.updateCurrentSlide = this.updateCurrentSlide.bind(this);
   }
 
   updateCurrentSlide = (index) => {
@@ -49,8 +48,8 @@ export default class Affiliations extends React.Component {
           {this.props.items.map((item, index) => (
             <div key={index} className="custom-slide is-primary">
               <div className="width-100">
-                <h3 className="is-uppercase">{item.heading}</h3>
-                <h4 className="is-uppercase">{item.subheading}</h4>
+                <h2 className="is-size-3 is-uppercase has-text-white">{item.heading}</h2>
+                <p className="is-size-5 is-uppercase has-text-white">{item.subheading}</p>
               </div>
             </div>
           ))}
