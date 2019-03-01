@@ -29,5 +29,11 @@ testimonials:
       The biggest benefit in working with HR Strategies is that, unlike the big
       HR or PEO companies we’ve used in the past, we know the people we’re
       working with. I know the team by name, and they know  us.
+  - author: 'Raphael Fontes, Vice President of Customer Operations'
+    image: /img/jumbotron.jpg
+    quote: >-
+      Zendesk has been a phenomenal partner and very responsive to our needs.
+      It’s been a fantastic journey—growing together, scaling, and figuring out
+      how to provide the best customer experience
 ---
 
