@@ -22,5 +22,12 @@ affiliations:
   - heading: Society for Human Resource Management
     image: /img/shrm_affiliate.png
     subheading: Affiliate
+testimonials:
+  - author: 'Jonathan Doehammer, CEO at Doehammer Ironworks'
+    image: /img/flavor_wheel.jpg
+    quote: >-
+      The biggest benefit in working with HR Strategies is that, unlike the big
+      HR or PEO companies we’ve used in the past, we know the people we’re
+      working with. I know the team by name, and they know  us.
 ---
 
