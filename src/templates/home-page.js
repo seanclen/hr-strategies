@@ -84,7 +84,7 @@ export const HomePageTemplate = ({
 
       <section className="section is-white p-t-100 p-b-100">
         <div className="container">
-          <h4 className="has-text-centered p-b-100 is-size-3">Human Resources support for businesses of any size.</h4>
+          <h4 className="has-text-centered p-b-100 is-size-3">{content.section1.statement}</h4>
           <hr />
         </div>
         <div className="container">
@@ -92,13 +92,13 @@ export const HomePageTemplate = ({
             <div className="column is-half">
               <article className="tile is-child">
                 <div className="card-content">
-                  <p className="title has-text-weight-bold">Legal compliance with employment and labor laws</p>
+                  <p className="title has-text-weight-bold">{content.section1.heading}</p>
                   <div className="content">
-                    <p>Most small to mid-size organizations cannot afford to staff a qualified HR professional. HR Strategies provides the level of support without the ongoing costs of having additional staff on their payroll.</p>
+                    <p>{content.section1.description}</p>
                     <strong>
-                      <a className="is-uppercase">
-                        Explore Our Services
-                      </a>
+                      <Link to={content.section1.linkUrl} className="is-uppercase">
+                        {content.section1.linkText}
+                      </Link>
                     </strong>
                   </div>
                 </div>
@@ -290,6 +290,13 @@ export const homePageQuery = graphql`
               }
             }
           }
+        }
+        section1 {
+          statement
+          heading
+          description
+          linkText
+          linkUrl
         }
         testimonials {
           quote
