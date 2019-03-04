@@ -106,7 +106,7 @@ export const HomePageTemplate = ({
                 <h1>Leading <span className="hrs-blue">People</span>.</h1>
                 <h1>Leading <span className="hrs-blue-light">Business</span>.</h1>
                 <hr />
-                <div className="tagline is-size-4 is-size-6-touch">
+                <div className="tagline is-size-5 is-size-6-touch">
                   <p>{content.hero.tagline}</p>
                 </div>
               </div>

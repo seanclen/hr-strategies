@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import './styles/all.sass'
 
 const TemplateWrapper = ({ children }) => (
@@ -39,7 +38,15 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         <Navbar />
         <div id="main">{children}</div>
-        <Footer />
+        <footer className="footer">
+          <div className="content has-text-centered">
+            <p>
+              <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+              <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+            </p>
+            <p className="has-text-grey-light">&copy; 2018 HR Strategies, LLC.</p>
+          </div>
+        </footer>
       </div>
     )}
   />
