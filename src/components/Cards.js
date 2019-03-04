@@ -28,7 +28,7 @@ export const NewsletterCard = ({
 NewsletterCard.propTypes = {
   date: PropTypes.string,
   title: PropTypes.string,
-  excerpt: PropTypes.object,
+  excerpt: PropTypes.string,
   slug: PropTypes.string,
 }
 

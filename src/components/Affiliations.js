@@ -2,12 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Carousel } from 'react-responsive-carousel'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import { v4 } from 'uuid'
 
 import logo from '../img/logo-short.svg'
 
 export default class Affiliations extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       currentSlide: 0,
     }
@@ -46,7 +47,7 @@ export default class Affiliations extends React.Component {
           onChange={this.updateCurrentSlide}
           autoPlay infiniteLoop>
           {this.props.items.map((item, index) => (
-            <div key={index} className="custom-slide is-primary">
+            <div key={v4()} className="custom-slide is-primary">
               <div className="width-100">
                 <h2 className="is-size-3 is-uppercase has-text-white">{item.heading}</h2>
                 <p className="is-size-5 is-uppercase has-text-white">{item.subheading}</p>

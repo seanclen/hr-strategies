@@ -4,3 +4,21 @@
     +box-shadow(rgba(0, 0, 0, 0.3) 2px 2px 20px)
     border: 4px solid #fff
     height: 100%
+
+  .quote
+    position: relative
+    font-family: 'Crimson-Text', serif
+    font-style: italic
+    text-align: left
+    margin-bottom: 20px
+    z-index: 0
+    &::before
+      content: '\201C'
+      position: absolute
+      top: -3rem
+      left: -3rem
+      font-family: 'Catamaran'
+      font-style: normal
+      font-size: 8rem
+      color: $white-ter
+      z-index: -1

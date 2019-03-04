@@ -52,7 +52,7 @@ export const HomePageTemplate = ({
         {blogPosts.slice(0,1).map(({ node: post }) => (
           <Link to={post.fields.slug} className="hero-news tile is-4">
             <article key={v4()} className="content">
-              <h6 className="has-text-white">Recent News</h6>
+              <p className="has-text-white">Recent News</p>
               <h3 className="has-text-white m-t-0">{post.frontmatter.title}</h3>
               <p className="has-text-white excerpt">{post.excerpt}</p>
             </article>
@@ -137,7 +137,7 @@ export const HomePageTemplate = ({
           <h2>Personal. Qualified. Affordable.</h2>
           <h5>Here’s what some of our clients have to say</h5>
         </div>
-        <Testimonials />
+        <Testimonials items={content.testimonials} />
       </section>
 
       <section id="homepage-news" className="section is-light">
@@ -286,6 +286,17 @@ export const homePageQuery = graphql`
           image {
             childImageSharp {
               fluid(maxWidth: 240, quality: 64) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        testimonials {
+          quote
+          author
+          image {
+            childImageSharp {
+              fluid(maxWidth: 128, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
