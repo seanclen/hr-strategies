@@ -31,6 +31,24 @@ section1:
   linkText: Explore Our Services
   linkUrl: /
   statement: Human Resources support for businesses of any size.
+statistics:
+  heading: Your Strategic Business Partner
+  statistics:
+    - linkText: Services
+      linkUrl: /
+      statistic: 70+
+      title: YEARS EXPERIENCE
+    - linkText: Recruiting
+      linkUrl: /
+      statistic: 51%
+      title: RECRUITING SAVINGS
+    - linkText: Services
+      linkUrl: /
+      statistic: 6 mo.
+      title: Avg. Positive ROI in
+  subheading: >-
+    We will take care of your people issues so you can focus on your business
+    initiatives.
 testimonials:
   - author: 'Jonathan Doehammer, CEO at Doehammer Ironworks'
     image: /img/flavor_wheel.jpg
