@@ -14,6 +14,9 @@ import { v4 } from 'uuid'
 // import landingwebm from '../img/homepage/Ground-Zero.webm'
 import landingmp4 from '../img/homepage/Ground-Zero.mp4'
 import logo from '../img/logo-short.svg'
+import img1 from '../img/rawpixel-340966-unsplash.jpg'
+import img2 from '../img/rawpixel-703120-unsplash.jpg'
+import img3 from '../img/dmitrij-paskevic-44124-unsplash.png'
 
 function VerticalBlogPosts(props) {
   return (
@@ -82,15 +85,14 @@ export const HomePageTemplate = ({
 
       <Affiliations items={content.affiliations} />
 
-      <section className="section is-white p-t-100 p-b-100">
+      <section className="section is-white p-t-25 p-b-0">
         <div className="container">
-          <h4 className="has-text-centered p-b-100 is-size-3">{content.section1.statement}</h4>
-          <hr />
+          <h4 className="has-text-centered p-t-100 p-b-100 is-size-3">{content.section1.statement}</h4>
         </div>
         <div className="container">
-          <div className="columns p-t-50">
+          <div className="columns is-vcentered p-t-50">
             <div className="column is-half">
-              <article className="tile is-child">
+              <article key={v4()} className="tile is-child">
                 <div className="card-content">
                   <p className="title has-text-weight-bold">{content.section1.heading}</p>
                   <div className="content">
@@ -104,13 +106,38 @@ export const HomePageTemplate = ({
                 </div>
               </article>
             </div>
+            <img src={img3} />
           </div>
         </div>
       </section>
 
-      <section className="section is-primary p-t-100 p-b-100">
-        <div className="container">
-
+      <section className="section is-dark p-t-100 p-b-100">
+        <div className="container has-text-centered">
+          <h2 className="has-text-white m-b-0">Your Strategic Business Partner</h2>
+          <h5>We will take care of your people issues so you can focus on your business initiatives.</h5>
+          <div className="level p-t-100 p-b-50">
+            <div className="level-item has-text-centered">
+              <div>
+                <p className="heading">Years Experience</p>
+                <p className="title has-text-white">70+</p>
+                <a className="button is-primary m-t-10">Services</a>
+              </div>
+            </div>
+            <div className="level-item has-text-centered">
+              <div>
+                <p className="heading">Recruiting Savings</p>
+                <p className="title has-text-white">51%</p>
+                <a className="button is-primary m-t-10">Recruiting</a>
+              </div>
+            </div>
+            <div className="level-item has-text-centered">
+              <div>
+                <p className="heading">avg. positive ROI</p>
+                <p className="title has-text-white">6 mo.</p>
+                <a className="button is-primary m-t-10">Services</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

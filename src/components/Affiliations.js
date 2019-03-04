@@ -47,7 +47,7 @@ export default class Affiliations extends React.Component {
           onChange={this.updateCurrentSlide}
           autoPlay infiniteLoop>
           {this.props.items.map((item, index) => (
-            <div key={v4()} className="custom-slide is-primary">
+            <div key={v4()} className="custom-slide is-dark">
               <div className="width-100">
                 <h2 className="is-size-3 is-uppercase has-text-white">{item.heading}</h2>
                 <p className="is-size-5 is-uppercase has-text-white">{item.subheading}</p>
