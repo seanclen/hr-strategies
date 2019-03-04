@@ -51,6 +51,7 @@ statistics:
     initiatives.
 discount:
   description: 'New clients receive discount if scheduled before December 15, 2018.'
+  display: true
   linkText: Explore Our Services
   linkUrl: /
   percentage: 15%
