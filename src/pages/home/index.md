@@ -49,6 +49,12 @@ statistics:
   subheading: >-
     We will take care of your people issues so you can focus on your business
     initiatives.
+discount:
+  description: 'New clients receive discount if scheduled before December 15, 2018.'
+  linkText: Explore Our Services
+  linkUrl: /
+  percentage: 15%
+  title: New Client Discount
 testimonials:
   - author: 'Jonathan Doehammer, CEO at Doehammer Ironworks'
     image: /img/flavor_wheel.jpg
