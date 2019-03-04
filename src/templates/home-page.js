@@ -50,6 +50,27 @@ function Statistics(props) {
   )
 }
 
+function Discount(props) {
+  if (!props.discount) { return(<span></span>) }
+  return (
+    <section className="section is-tan p-t-50 p-b-50">
+      <div className="columns is-centered is-vcentered">
+        <div className="column is-narrow">
+          <h1 className="title is-size-1 has-text-white m-b-0">{props.discount.percentage}</h1>
+          <h1 className="title is-size-1 has-text-white">OFF</h1>
+        </div>
+        <div className="column is-narrow">
+          <p className="title has-text-white">{props.discount.title}</p>
+          <p>{props.discount.description}</p>
+          <strong>
+            <Link to={props.discount.linkUrl} className="is-uppercase">{props.discount.linkText}</Link>
+          </strong>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export const HomePageTemplate = ({
   blogPosts,
   newsletter,
@@ -64,8 +85,6 @@ export const HomePageTemplate = ({
       />,
       {closeButton: false})
   }
-
-  const stats = Object.values(content.statistics)
 
   return (
     <div>
@@ -138,23 +157,7 @@ export const HomePageTemplate = ({
         </div>
       </section>
 
-      <section className="section is-tan p-t-50 p-b-50">
-        <div className="columns is-centered is-vcentered">
-          <div className="column is-narrow">
-            <h1 className="title is-size-1 has-text-white m-b-0">15%</h1>
-            <h1 className="title is-size-1 has-text-white">OFF</h1>
-          </div>
-          <div className="column is-narrow">
-            <p className="title has-text-white">New Client Discount</p>
-            <p>New clients receive discount if scheduled before December 15, 2018.</p>
-            <strong>
-              <a className="is-uppercase">
-                Explore Our Services
-              </a>
-            </strong>
-          </div>
-        </div>
-      </section>
+      <Discount discount={content.discount} />
 
       <section className="section p-t-100 p-b-100 is-white">
         <div className="container m-b-25 has-text-centered">
@@ -331,6 +334,14 @@ export const homePageQuery = graphql`
             linkText
             linkUrl
           }
+        }
+        discount {
+          display
+          title
+          description
+          percentage
+          linkText
+          linkUrl
         }
         testimonials {
           quote
