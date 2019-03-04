@@ -22,6 +22,15 @@ affiliations:
   - heading: Society for Human Resource Management
     image: /img/shrm_affiliate.png
     subheading: Affiliate
+section1:
+  description: >-
+    Most small to mid-size organizations cannot afford to staff a qualified HR
+    professional. HR Strategies provides the level of support without the
+    ongoing costs of having additional staff on their payroll.
+  heading: Legal compliance with employment and labor laws
+  linkText: Explore Our Services
+  linkUrl: /
+  statement: Human Resources support for businesses of any size.
 testimonials:
   - author: 'Jonathan Doehammer, CEO at Doehammer Ironworks'
     image: /img/flavor_wheel.jpg
