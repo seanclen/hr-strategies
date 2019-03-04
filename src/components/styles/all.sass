@@ -115,7 +115,8 @@ strong a
 
   .navbar-burger:hover
     background-color: transparent
-
+.navbar-brand .navbar-item:hover
+  background-color: inherit !important
 .navbar .navbar-menu
   background-color: transparent
   .navbar-item
@@ -129,12 +130,22 @@ strong a
 
 footer
   color: $white-ter
+  padding: 0 !important
+  .footer-body
+    padding: 3rem 1.5rem
+    background-color: $grey-light
+    input
+      border: none
+      &:hover
+        border: none
+  .footer-bottom
+    color: $white-ter
+    strong
+      color: $white-ter
   a
     color: $hrs-blue-light
     &:hover
       color: $blue
-  strong
-    color: #fff
 
 // Layout
 
@@ -372,6 +383,9 @@ section.is-tan
 
 .p-l-0
   padding-left: 0px !important
+
+.p-l-25
+  padding-left: 25px !important
 
 .width-100
   width: 100% !important

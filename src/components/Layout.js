@@ -1,9 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
+import { Location } from '@reach/router'
 
 import Navbar from '../components/Navbar'
 import './styles/all.sass'
+import logo from '../img/hrs-white.svg'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -36,15 +38,65 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <Navbar />
+
+        <Location>
+          {({ location }) => {
+            console.log(location)
+            return <Navbar location={location.pathname} />
+          }}
+        </Location>
         <div id="main">{children}</div>
         <footer className="footer">
-          <div className="content has-text-centered">
-            <p>
-              <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-              <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-            </p>
-            <p className="has-text-grey-light">&copy; 2018 HR Strategies, LLC.</p>
+          <div className="footer-body">
+            <div className="container">
+              <div className="columns">
+                <div className="column">
+                  <img width="128px" src={logo} />
+                </div>
+                <div className="column">
+                  <h5>Join Our Newsletter</h5>
+                  <div className="field has-addons">
+                    <div className="control is-expanded">
+                      <input className="input is-medium" type="email" placeholder="Email" />
+                    </div>
+                    <div className="control">
+                      <a className="button is-primary is-medium">
+                        Join
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="footer-bottom p-t-25 p-b-25">
+            <div className="container">
+              <div className="level">
+                <div className="level-left">
+                  <div className="level-item">
+                    <p>&copy; 2019 HR Strategies, LLC.</p>
+                    <a className="p-l-25">Terms of Service</a>
+                    <a className="p-l-25">Privacy Policy</a>
+                  </div>
+                </div>
+                <div className="level-right">
+                  <div className="level-item">
+                    <div>
+                      <span className="is-uppercase">Follow Us</span>
+                      <a className="icon is-large">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                      <a className="icon is-large">
+                        <i className="fab fa-twitter"></i>
+                      </a>
+                      <a className="icon is-large">
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </footer>
       </div>

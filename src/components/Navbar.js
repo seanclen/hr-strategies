@@ -1,27 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/hrs-long-white.svg'
-
-const debounce = (func, wait) => {
-  let timeout
-  return (...args) => {
-    clearTimeout(timeout)
-    timeout = setTimeout(() => func.apply(this, args), wait)
-  }
-}
+import logoWhite from '../img/hrs-long-white.svg'
+import logoBlue from '../img/hrs-long-blue.svg'
 
 const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      scrollPositionY: 0,
-    }
-  }
 
   componentDidMount() {
-    // 24 is the number of milliseconds to debounce
-    //window.addEventListener('scroll', debounce(this.handleScroll, 24))
-
     // Get all "navbar-burger" elements
    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
     // Check if there are any navbar burgers
@@ -44,27 +28,15 @@ const Navbar = class extends React.Component {
    }
  }
 
- componentWillUnmount() {
-   return window.removeEventListener('scroll', debounce(this.handleScroll, 32))
- }
-
- handleScroll = () => {
-   // + is unary operator, same as Number(scrollPositionY)
-   const scrollPositionY = +window.scrollY
-   return this.setState({ scrollPositionY })
- }
 
  render() {
-   // !! coerces value to be a Boolean
-   // we want it to be true or false (true if scrollPositionY > 0)
-   // it works because scrollPositionY === 0 is falsy
-   const isScrolling = !!this.state.scrollPositionY
+   const navClass = (this.props.location === '/contact/examples') ? 'navbar is-dark has-background-grey-dark' : 'navbar'
    return (
-     <nav className="navbar" role="navigation" aria-label="main-navigation">
+     <nav className={navClass} role="navigation" aria-label="main-navigation">
        <div className="container is-fluid">
          <div className="navbar-brand">
            <Link to="/" className="navbar-item" title="Logo">
-             <img src={logo} alt="HR Strategies" width="150px"/>
+             <img src={logoWhite} alt="HR Strategies" width="150px"/>
            </Link>
            {/* Hamburger menu */}
            <div className="navbar-burger burger" data-target="navMenu">
