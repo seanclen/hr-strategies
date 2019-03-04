@@ -33,6 +33,23 @@ function VerticalBlogPosts(props) {
   );
 }
 
+function Statistics(props) {
+  const { statistics: stats } = props.statistics
+  return (
+    <div className="level p-t-100 p-b-50">
+      {stats.slice(0, stats.length).map((item) => (
+        <div className="level-item has-text-centered">
+          <div>
+            <p className="heading">{item.title}</p>
+            <p className="title has-text-white">{item.statistic}</p>
+            <Link to={item.linkUrl} className="button is-primary m-t-10">{item.linkText}</Link>
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+
 export const HomePageTemplate = ({
   blogPosts,
   newsletter,
@@ -47,6 +64,8 @@ export const HomePageTemplate = ({
       />,
       {closeButton: false})
   }
+
+  const stats = Object.values(content.statistics)
 
   return (
     <div>
@@ -113,31 +132,9 @@ export const HomePageTemplate = ({
 
       <section className="section is-dark p-t-100 p-b-100">
         <div className="container has-text-centered">
-          <h2 className="has-text-white m-b-0">Your Strategic Business Partner</h2>
-          <h5>We will take care of your people issues so you can focus on your business initiatives.</h5>
-          <div className="level p-t-100 p-b-50">
-            <div className="level-item has-text-centered">
-              <div>
-                <p className="heading">Years Experience</p>
-                <p className="title has-text-white">70+</p>
-                <a className="button is-primary m-t-10">Services</a>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-                <p className="heading">Recruiting Savings</p>
-                <p className="title has-text-white">51%</p>
-                <a className="button is-primary m-t-10">Recruiting</a>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-                <p className="heading">avg. positive ROI</p>
-                <p className="title has-text-white">6 mo.</p>
-                <a className="button is-primary m-t-10">Services</a>
-              </div>
-            </div>
-          </div>
+          <h2 className="has-text-white m-b-0">{content.statistics.heading}</h2>
+          <h5>{content.statistics.subheading}</h5>
+          <Statistics statistics={content.statistics} />
         </div>
       </section>
 
@@ -324,6 +321,16 @@ export const homePageQuery = graphql`
           description
           linkText
           linkUrl
+        }
+        statistics {
+          heading
+          subheading
+          statistics {
+            title
+            statistic
+            linkText
+            linkUrl
+          }
         }
         testimonials {
           quote
