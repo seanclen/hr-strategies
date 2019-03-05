@@ -1,6 +1,5 @@
 ---
 templateKey: home-page
-path: /
 notification:
   display: true
   link: ./blog/2016-12-17-making-sense-of-the-scaas-new-flavor-wheel/

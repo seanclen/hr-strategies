@@ -33,8 +33,9 @@ exports.createPages = ({ actions, graphql }) => {
 
     posts.forEach(edge => {
       const id = edge.node.id
+      const pathName = (edge.node.fields.slug === '/home/') ? '/' : edge.node.fields.slug
       createPage({
-        path: edge.node.fields.slug,
+        path: pathName,
         tags: edge.node.frontmatter.tags,
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
