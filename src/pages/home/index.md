@@ -8,10 +8,7 @@ notification:
     tasters, has been revised for the first time this year.
   title: Making sense of the SCAA’s new Flavor Wheels
 hero:
-  tagline: >-
-    The leading human resources consulting firm in helping companies recruit,
-    retain, and develop their employees to enable them to successfully grow
-    their businesses.
+  tagline: Human Resources support for businesses of any size.
 affiliations:
   - heading: 'Associated Builders and Contractors, Inc.'
     image: /img/abc_logo.png
@@ -30,7 +27,7 @@ section1:
   heading: Legal compliance with employment and labor laws
   linkText: Explore Our Services
   linkUrl: /
-  statement: Human Resources support for businesses of any size.
+  statement: ' '
 statistics:
   heading: Your Strategic Business Partner
   statistics:
