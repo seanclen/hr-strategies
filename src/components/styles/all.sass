@@ -107,12 +107,12 @@ strong a
 // Navbar
 
 .navbar
-  position: absolute !important
   width: 100%
-  top: 0
-  right: 0
-  z-index: 30
-
+  &.is-absolute-top
+    position: absolute !important
+    top: 0
+    right: 0
+    z-index: 30
   .navbar-burger:hover
     background-color: transparent
 .navbar-brand .navbar-item:hover
