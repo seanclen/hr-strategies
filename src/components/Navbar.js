@@ -27,9 +27,9 @@ const Navbar = class extends React.Component {
    }
  }
 
-
  render() {
-   const navClass = (this.props.location === '/') ? 'navbar is-absolute-top' : 'navbar is-dark has-background-grey-dark'
+   const clearNavigationPages = ['/', '/contact']
+   const navClass = clearNavigationPages.includes(this.props.location) ? 'navbar is-absolute-top' : 'navbar is-dark has-background-grey-dark'
    return (
      <nav className={navClass} role="navigation" aria-label="main-navigation">
        <div className="container is-fluid">
@@ -49,14 +49,11 @@ const Navbar = class extends React.Component {
              <Link className="navbar-item" to="/about">
              About
              </Link>
-             <Link className="navbar-item" to="/products">
-             Products
+             <Link className="navbar-item" to="/about">
+             Services
              </Link>
              <Link className="navbar-item" to="/contact">
              Contact
-             </Link>
-             <Link className="navbar-item" to="/contact/examples">
-             Form Examples
              </Link>
            </div>
          </div>
