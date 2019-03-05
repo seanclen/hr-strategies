@@ -32,12 +32,12 @@ function VerticalBlogPosts(props) {
 function Statistics(props) {
   const { statistics: stats } = props.statistics
   return (
-    <div className="level p-t-100 p-b-50">
+    <div className="level p-t-50 p-b-50">
       {stats.slice(0, stats.length).map((item) => (
         <div className="level-item has-text-centered">
           <div>
             <p className="heading">{item.title}</p>
-            <p className="title has-text-white">{item.statistic}</p>
+            <h1 className="has-text-white is-size-0">{item.statistic}</h1>
             <Link to={item.linkUrl} className="button is-primary m-t-10">{item.linkText}</Link>
           </div>
         </div>
@@ -105,7 +105,7 @@ export const HomePageTemplate = ({
                 <h1>Leading <span className="hrs-blue">People</span>.</h1>
                 <h1>Leading <span className="hrs-blue-light">Business</span>.</h1>
                 <hr />
-                <div className="tagline is-size-5 is-size-6-touch">
+                <div className="tagline is-size-3 is-size-6-touch">
                   <p>{content.hero.tagline}</p>
                 </div>
               </div>
@@ -122,12 +122,9 @@ export const HomePageTemplate = ({
 
       <Affiliations items={content.affiliations} />
 
-      <section className="section is-white p-t-25 p-b-0">
+      <section className="section is-white p-t-0 p-b-0">
         <div className="container">
-          <h4 className="has-text-centered p-t-100 p-b-100 is-size-3">{content.section1.statement}</h4>
-        </div>
-        <div className="container">
-          <div className="columns is-vcentered p-t-50">
+          <div className="columns is-vcentered">
             <div className="column is-half">
               <article key={v4()} className="tile is-child">
                 <div className="card-content">
@@ -151,12 +148,52 @@ export const HomePageTemplate = ({
       <section className="section is-dark p-t-100 p-b-100">
         <div className="container has-text-centered">
           <h2 className="has-text-white m-b-0">{content.statistics.heading}</h2>
-          <h5>{content.statistics.subheading}</h5>
+          <h5 className="has-text-white">{content.statistics.subheading}</h5>
           <Statistics statistics={content.statistics} />
         </div>
       </section>
 
       <Discount discount={content.discount} />
+
+      <section className="section is-light p-t-50 p-b-50">
+        <div className="container has-text-centered">
+          <h3>Who We Serve</h3>
+          <div className="level p-t-50 p-b-50">
+            <div className="level-item has-text-centered">
+              <div>
+                <span class="is-size-1 icon has-text-primary">
+                  <i class="fas fa-suitcase"></i>
+                </span>
+                <h5>Corporations</h5>
+              </div>
+            </div>
+            <div className="level-item has-text-centered">
+              <div>
+                <span class="is-size-1 icon has-text-primary">
+                  <i class="fas fa-graduation-cap"></i>
+                </span>
+                <h5>Higher Ed &amp; K-12</h5>
+              </div>
+            </div>
+            <div className="level-item has-text-centered">
+              <div>
+                <span class="is-size-1 icon has-text-primary">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <h5>Non-Profits</h5>
+              </div>
+            </div>
+            <div className="level-item has-text-centered">
+              <div>
+                <span class="is-size-1 icon has-text-primary">
+                  <i class="fas fa-university"></i>
+                </span>
+                <h5>Public Sector</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="section p-t-100 p-b-100 is-white">
         <div className="container m-b-25 has-text-centered">
@@ -318,7 +355,6 @@ export const homePageQuery = graphql`
           }
         }
         section1 {
-          statement
           heading
           description
           linkText
