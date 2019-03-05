@@ -34,7 +34,7 @@ section1:
 statistics:
   heading: Your Strategic Business Partner
   statistics:
-    - linkText: Services
+    - linkText: About Us
       linkUrl: /
       statistic: 70+
       title: YEARS EXPERIENCE
@@ -70,3 +70,4 @@ testimonials:
       It’s been a fantastic journey—growing together, scaling, and figuring out
       how to provide the best customer experience
 ---
+
