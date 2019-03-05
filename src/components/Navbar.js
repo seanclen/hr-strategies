@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logoWhite from '../img/hrs-long-white.svg'
-import logoBlue from '../img/hrs-long-blue.svg'
 
 const Navbar = class extends React.Component {
 
@@ -30,7 +29,7 @@ const Navbar = class extends React.Component {
 
 
  render() {
-   const navClass = (this.props.location === '/contact/examples') ? 'navbar is-dark has-background-grey-dark' : 'navbar'
+   const navClass = (this.props.location === '/') ? 'navbar' : 'navbar is-dark has-background-grey-dark'
    return (
      <nav className={navClass} role="navigation" aria-label="main-navigation">
        <div className="container is-fluid">

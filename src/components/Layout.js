@@ -51,7 +51,7 @@ const TemplateWrapper = ({ children }) => (
             <div className="container">
               <div className="columns">
                 <div className="column">
-                  <img width="128px" src={logo} />
+                  <img width="128px" src={logo} alt="HR Strategies" />
                 </div>
                 <div className="column">
                   <h5>Join Our Newsletter</h5>
@@ -60,9 +60,9 @@ const TemplateWrapper = ({ children }) => (
                       <input className="input is-medium" type="email" placeholder="Email" />
                     </div>
                     <div className="control">
-                      <a className="button is-primary is-medium">
+                      <button className="button is-primary is-medium">
                         Join
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -75,21 +75,21 @@ const TemplateWrapper = ({ children }) => (
                 <div className="level-left">
                   <div className="level-item">
                     <p>&copy; 2019 HR Strategies, LLC.</p>
-                    <a className="p-l-25">Terms of Service</a>
-                    <a className="p-l-25">Privacy Policy</a>
+                    <a href="/" className="p-l-25">Terms of Service</a>
+                    <a href="/" className="p-l-25">Privacy Policy</a>
                   </div>
                 </div>
                 <div className="level-right">
                   <div className="level-item">
                     <div>
                       <span className="is-uppercase">Follow Us</span>
-                      <a className="icon is-large">
+                      <a href="/" className="icon is-large">
                         <i className="fab fa-facebook-f"></i>
                       </a>
-                      <a className="icon is-large">
+                      <a href="/" className="icon is-large">
                         <i className="fab fa-twitter"></i>
                       </a>
-                      <a className="icon is-large">
+                      <a href="/" className="icon is-large">
                         <i className="fab fa-linkedin-in"></i>
                       </a>
                     </div>

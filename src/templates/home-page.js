@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import { Link, graphql } from 'gatsby'
-import Content, { HTMLContent } from '../components/Content'
 import { ToastContainer, toast } from 'react-toastify'
 import { BlogPostCard, NewsletterCard, NotificationCard } from '../components/Cards'
 import Notification from '../components/Notification'
@@ -13,8 +12,6 @@ import { v4 } from 'uuid'
 // import landingjpg from '../img/homepage/Ground-Zero.jpg'
 // import landingwebm from '../img/homepage/Ground-Zero.webm'
 import landingmp4 from '../img/homepage/Ground-Zero.mp4'
-import img1 from '../img/rawpixel-340966-unsplash.jpg'
-import img2 from '../img/rawpixel-703120-unsplash.jpg'
 import img3 from '../img/dmitrij-paskevic-44124-unsplash.png'
 
 function VerticalBlogPosts(props) {
@@ -82,7 +79,10 @@ export const HomePageTemplate = ({
         message={content.notification.message}
         link={content.notification.link}
       />,
-      {closeButton: false})
+      {
+        closeButton: false,
+        toastId: 'home-notification'
+      })
   }
 
   return (
@@ -143,7 +143,7 @@ export const HomePageTemplate = ({
                 </div>
               </article>
             </div>
-            <img src={img3} />
+            <img src={img3} alt="books" />
           </div>
         </div>
       </section>

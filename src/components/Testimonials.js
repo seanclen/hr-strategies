@@ -4,8 +4,6 @@ import { Carousel } from 'react-responsive-carousel'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import { v4 } from 'uuid'
 
-import logo from '../img/logo-short.svg'
-
 const imageStyle = { borderRadius: '10000px', height: '128px', width: '128px' }
 
 const Testimonials = ({items}) => (
@@ -22,7 +20,7 @@ const Testimonials = ({items}) => (
           <div className="columns is-mobile is-vcentered is-centered">
             <div className="column is-half has-text-left">
               <h6 className="quote">{item.quote}</h6>
-              <p>{item.author} &mdash; <a>read story</a></p>
+              <p>{item.author} &mdash; <a href="/">read story</a></p>
             </div>
             <div className="column is-narrow">
               <figure className="image is-128x128">

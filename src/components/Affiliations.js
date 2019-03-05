@@ -4,8 +4,6 @@ import { Carousel } from 'react-responsive-carousel'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import { v4 } from 'uuid'
 
-import logo from '../img/logo-short.svg'
-
 export default class Affiliations extends React.Component {
   constructor(props) {
     super(props);

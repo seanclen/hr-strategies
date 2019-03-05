@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ToastContainer, toast } from 'react-toastify'
 
 const Notification = ({
   closeToast,
@@ -19,11 +18,11 @@ const Notification = ({
           {link &&
             <a href={link} className="button is-primary has-text-weight-bold">Learn more</a>
           }
-          <a onClick={closeToast} className="button is-light">
+          <button onClick={closeToast} className="button is-light">
             <span className="icon is-small">
               <i className="fas fa-times"></i>
             </span>
-          </a>
+          </button>
         </div>
       </div>
     </div>
