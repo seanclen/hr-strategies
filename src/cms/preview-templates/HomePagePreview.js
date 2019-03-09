@@ -46,7 +46,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
     },
     testimonials: testimonials,
   }
-  
+
   return (
     <HomePageTemplate
       blogPosts={blogPosts}
@@ -54,6 +54,12 @@ const HomePagePreview = ({ entry, getAsset }) => {
       content={frontmatter}
     />
   )
+}
+
+HomePagePreview.propTypes = {
+  entry: PropTypes.shape({
+    getIn: PropTypes.func,
+  })
 }
 
 export default HomePagePreview

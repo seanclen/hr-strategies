@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import logo from '../img/hrs-white.svg'
 
-const Footer = ({}) => (
+const Footer = () => (
   <footer className="footer">
     <div className="footer-body">
       <div className="container">

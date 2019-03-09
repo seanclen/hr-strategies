@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 
 const Notification = ({
   closeToast,
@@ -16,7 +17,7 @@ const Notification = ({
       <div className="column is-narrow">
         <div className="buttons">
           {link &&
-            <a href={link} className="button is-primary has-text-weight-bold">Learn more</a>
+            <Link to={link} className="button is-primary has-text-weight-bold">Learn more</Link>
           }
           <button onClick={closeToast} className="button is-light">
             <span className="icon is-small">
