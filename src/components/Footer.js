@@ -48,7 +48,7 @@ const Footer = ({}) => (
         </div>
       </div>
     </div>
-    <div className="footer-bottom p-t-25 p-b-25">
+    <div className="footer-bottom">
       <div className="container">
         <div className="level">
           <div className="level-left">
