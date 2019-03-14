@@ -1,0 +1,80 @@
+$navbar-height: 4rem
+$navbar-burger-color: #fff
+$navbar-background-color: transparent
+$navbar-item-color: #fff
+$navbar-item-hover-color: $grey-dark
+$navbar-item-active-color: $grey-dark
+$navbar-item-active-background-color: #fff
+$navbar-dropdown-background-color: $grey-dark
+$navbar-dropdown-border-top: 4px solid $grey-light
+$navbar-dropdown-radius: 0px
+$navbar-dropdown-boxed-radius: 0px
+$navbar-dropdown-boxed-shadow: 0 0px 0px transparent
+$navbar-dropdown-item-hover-color: $grey-dark
+$navbar-dropdown-item-hover-background-color: #fff
+
+// Animation Mixins
+=timing-function
+  animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+
+.navbar
+  width: 100%
+  .navbar-menu
+    background-color: transparent
+    .navbar-item
+      +transition(0.5s)
+      font-family: 'Montserrat', sans-serif
+      font-size: 1rem
+      font-weight: 800
+      text-transform: uppercase
+      &.is-active
+        .navbar-link
+          background-color: $navbar-item-active-background-color !important
+          color: $navbar-item-active-color !important
+    .navbar-dropdown .navbar-item
+        font-weight: 400
+        text-transform: none
+  .navbar-burger
+    span
+      height: 2px
+    &:hover
+      background-color: transparent
+  .navbar-brand .navbar-item:hover
+    background-color: inherit !important
+  &.is-absolute-top
+    position: absolute !important
+    top: 0
+    right: 0
+    z-index: 30
+
+@media screen and (max-width: 1087px)
+  .navbar-menu
+    +transition(0.5s)
+    +box-shadow(0 8px 16px rgba(10, 10, 10, 0.1))
+    background-color: $navbar-dropdown-background-color !important
+    color: #fff
+    display: block !important
+    height: 100vh
+    right: -267px
+    padding-top: $navbar-height !important
+    position: fixed
+    top: 0
+    width: 267px
+    z-index: -1
+
+    .navbar-dropdown
+      height: 0px
+      overflow: hidden
+      padding: 0
+
+    &.is-active
+      display: block
+      right: 0px
+    .navbar-item.has-dropdown.is-active
+      .navbar-dropdown
+        background-color: $grey-light !important
+        height: auto
+      .navbar-link
+        background-color: $grey-light !important
+        border-bottom: 1px solid $grey-dark
+        color: #fff !important

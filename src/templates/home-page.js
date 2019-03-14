@@ -9,9 +9,8 @@ import Affiliations from '../components/Affiliations'
 import Testimonials from '../components/Testimonials'
 import { v4 } from 'uuid'
 
-// import landingjpg from '../img/homepage/Ground-Zero.jpg'
-// import landingwebm from '../img/homepage/Ground-Zero.webm'
-import landingmp4 from '../img/homepage/Ground-Zero.mp4'
+import landingjpg from '../img/homepage/Ground-Zero-Blur.jpg'
+import landingmp4 from '../img/homepage/Ground-Zero-Blur.mp4'
 import img3 from '../img/dmitrij-paskevic-44124-unsplash.png'
 
 function VerticalBlogPosts(props) {
@@ -115,8 +114,8 @@ export const HomePageTemplate = ({
         <div className="video-viewport">
           <video width="1920" height="1280" autoPlay muted loop>
             <source src={landingmp4} type="video/mp4" />
-            <source src="../img/homepage/Ground-Zero.webm" type="video/webm" />
           </video>
+          <img src={landingjpg} />
         </div>
       </section>
 

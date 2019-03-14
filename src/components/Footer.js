@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import logo from '../img/hrs-white.svg'
 
 const Footer = () => (
@@ -26,7 +27,7 @@ const Footer = () => (
                   <a href="/">Services</a><br />
                   <a href="/">Training</a><br />
                   <a href="/">About Us</a><br />
-                  <a href="/">Contact Us</a>
+                  <Link to="/contact">Contact Us</Link>
                 </p>
               </div>
             </div>
