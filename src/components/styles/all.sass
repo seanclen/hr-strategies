@@ -225,10 +225,6 @@ section.is-tan
       .card-footer-item
         justify-content: flex-end
 
-.notification.landing
-  background-color: #fff !important
-  font-family: $family-sans-serif
-
 .hero.has-video-background:before
   +gradient($hrs-blue-light, $hrs-blue, 0deg)
   background-color: transparentize($hrs-blue, 0.9)
@@ -280,9 +276,30 @@ section.is-tan
     margin-top: 0
     padding: 0 2rem 1rem 0
 
+.Toastify__toast
+  cursor: default !important
+  padding: 0 !important
+
 .notification
   color: $grey-lighter
   padding: 1.25rem 1.5rem 1.25rem 1.5rem !important
+  &.landing
+    background-color: #fff !important
+    font-family: $family-sans-serif
+    .title
+      color: $grey-dark
+  &.cookies
+    background-color: #fff !important
+    font-family: $family-sans-serif
+
+.cookies-notification
+  background-color: $grey-dark !important
+  position: fixed !important
+  bottom: 0 !important
+  margin-bottom: 0 !important
+  .body
+    width: 100vw !important
+    padding: 0 1rem !important
   .title
     color: $grey-darker !important
     font-family: 'Montserrat', sans-serif

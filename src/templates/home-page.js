@@ -2,12 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import { Link, graphql } from 'gatsby'
-import { ToastContainer, toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 import { BlogPostCard, NewsletterCard, NotificationCard } from '../components/Cards'
 import Notification from '../components/Notification'
 import Affiliations from '../components/Affiliations'
 import Testimonials from '../components/Testimonials'
 import { v4 } from 'uuid'
+import Cookies from 'universal-cookie'
 
 import landingjpg from '../img/homepage/Ground-Zero-Blur.jpg'
 import landingmp4 from '../img/homepage/Ground-Zero-Blur.mp4'
@@ -71,22 +72,34 @@ export const HomePageTemplate = ({
   newsletter,
   content,
 }) => {
-  // Render the notification if the display switch is true
-  if (content.notification.display) {
+  const cookies = new Cookies();
+  // Render the notification if the display switch is true and if client
+  // has visited the site before and has not viewed the current notification.
+  //
+  // NOTE: - The previously_viewed_notification stores the Notification title.
+  //         This is very elementary but lightweight and functional.
+  //       - Notification is considered "previously_viewed" if the modal has
+  //         been dismissed by the user.
+  if (content.notification.display
+    && cookies.get('hrs_viewed_cookies') === 'true'
+    && cookies.get('hrs_has_visited') === 'true'
+    && cookies.get('hrs_previously_viewed_notification') !== content.notification.title) {
     toast(<Notification
         title={content.notification.title}
         message={content.notification.message}
         link={content.notification.link}
       />,
-      {
-        closeButton: false,
-        toastId: 'home-notification'
-      })
+      { closeButton: false, toastId: 'home-notification',
+        onClose: () => cookies.set('hrs_previously_viewed_notification', content.notification.title, { path: '/' })})
   }
+
+  if (!cookies.get('hrs_has_visited')) {
+    cookies.set('hrs_has_visited', 'true', { path: '/' });
+  }
+
 
   return (
     <div>
-      <ToastContainer className="columns is-centered" toastClassName="column is-narrow" position="bottom-center" autoClose={false} closeOnClick={false} draggable />
       <section id="homepage-hero" className="hero is-fullheight has-video-background has-blue-gradient-background">
         {blogPosts.slice(0,1).map(({ node: post }) => (
           <Link to={post.fields.slug} className="hero-news tile is-4">
@@ -108,7 +121,7 @@ export const HomePageTemplate = ({
                   <p>{content.hero.tagline}</p>
                 </div>
                 <div className="has-text-centered m-t-25">
-                  <button className="button is-primary is-large">Request a Consultation<span class="m-l-10 icon"><i class="fas fa-chevron-right"></i></span></button>
+                  <Link to="/contact" className="button is-primary is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
                 </div>
               </div>
             </div>
@@ -163,32 +176,32 @@ export const HomePageTemplate = ({
           <div className="level p-t-50 p-b-50">
             <div className="level-item has-text-centered">
               <div>
-                <span class="is-size-1 icon has-text-primary">
-                  <i class="fas fa-suitcase"></i>
+                <span className="is-size-1 icon has-text-primary">
+                  <i className="fas fa-suitcase"></i>
                 </span>
                 <h5>Corporations</h5>
               </div>
             </div>
             <div className="level-item has-text-centered">
               <div>
-                <span class="is-size-1 icon has-text-primary">
-                  <i class="fas fa-graduation-cap"></i>
+                <span className="is-size-1 icon has-text-primary">
+                  <i className="fas fa-graduation-cap"></i>
                 </span>
                 <h5>Higher Ed &amp; K-12</h5>
               </div>
             </div>
             <div className="level-item has-text-centered">
               <div>
-                <span class="is-size-1 icon has-text-primary">
-                  <i class="fas fa-heart"></i>
+                <span className="is-size-1 icon has-text-primary">
+                  <i className="fas fa-heart"></i>
                 </span>
                 <h5>Non-Profits</h5>
               </div>
             </div>
             <div className="level-item has-text-centered">
               <div>
-                <span class="is-size-1 icon has-text-primary">
-                  <i class="fas fa-university"></i>
+                <span className="is-size-1 icon has-text-primary">
+                  <i className="fas fa-university"></i>
                 </span>
                 <h5>Public Sector</h5>
               </div>

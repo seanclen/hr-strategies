@@ -154,7 +154,7 @@ const Navbar = class extends React.Component {
                  <Link className="navbar-item" to="/about">
                    Wellness Intervention
                  </Link>
-                 <hr class="navbar-divider" />
+                 <hr className="navbar-divider" />
                  <Link className="navbar-item has-text-info" to="/about">
                    Training Evaluation
                  </Link>
