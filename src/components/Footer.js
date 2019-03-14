@@ -55,7 +55,7 @@ const Footer = () => (
             <div className="level-item">
               <p>&copy; 2019 HR Strategies, LLC.</p>
               <a href="/" className="p-l-25">Terms of Service</a>
-              <a href="/" className="p-l-25">Privacy Policy</a>
+              <Link to="/privacy" className="p-l-25">Privacy Policy</Link>
             </div>
           </div>
           <div className="level-right">
