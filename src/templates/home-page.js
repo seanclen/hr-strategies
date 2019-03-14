@@ -107,6 +107,9 @@ export const HomePageTemplate = ({
                 <div className="is-size-3 is-size-6-touch has-text-white">
                   <p>{content.hero.tagline}</p>
                 </div>
+                <div className="has-text-centered m-t-25">
+                  <button className="button is-primary is-large">Request a Consultation<span class="m-l-10 icon"><i class="fas fa-chevron-right"></i></span></button>
+                </div>
               </div>
             </div>
           </div>
