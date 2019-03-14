@@ -87,7 +87,7 @@ export const HomePageTemplate = ({
   return (
     <div>
       <ToastContainer className="columns is-centered" toastClassName="column is-narrow" position="bottom-center" autoClose={false} closeOnClick={false} draggable />
-      <section id="homepage-hero" className="hero is-fullheight has-video-background">
+      <section id="homepage-hero" className="hero is-fullheight has-video-background has-blue-gradient-background">
         {blogPosts.slice(0,1).map(({ node: post }) => (
           <Link to={post.fields.slug} className="hero-news tile is-4">
             <article key={v4()} className="content">
@@ -101,10 +101,10 @@ export const HomePageTemplate = ({
           <div className="container">
             <div className="columns is-mobile is-centered">
               <div className="column is-narrow">
-                <h1>Leading <span className="hrs-blue">People</span>.</h1>
-                <h1>Leading <span className="hrs-blue-light">Business</span>.</h1>
+                <h1>Leading People.</h1>
+                <h1>Leading Business.</h1>
                 <hr />
-                <div className="tagline is-size-3 is-size-6-touch">
+                <div className="is-size-3 is-size-6-touch has-text-white">
                   <p>{content.hero.tagline}</p>
                 </div>
               </div>

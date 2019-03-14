@@ -25,14 +25,14 @@ $navbar-dropdown-item-hover-background-color: #fff
       +transition(0.5s)
       font-family: 'Montserrat', sans-serif
       font-size: 1rem
-      font-weight: 800
       text-transform: uppercase
+      font-weight: 800
       &.is-active
         .navbar-link
           background-color: $navbar-item-active-background-color !important
           color: $navbar-item-active-color !important
     .navbar-dropdown .navbar-item
-        font-weight: 400
+        font-weight: 200
         text-transform: none
   .navbar-burger
     span
@@ -43,8 +43,8 @@ $navbar-dropdown-item-hover-background-color: #fff
     background-color: inherit !important
   &.is-absolute-top
     position: absolute !important
-    top: 0
     right: 0
+    top: 0
     z-index: 30
 
 @media screen and (max-width: 1087px)
@@ -55,9 +55,9 @@ $navbar-dropdown-item-hover-background-color: #fff
     color: #fff
     display: block !important
     height: 100vh
-    right: -267px
     padding-top: $navbar-height !important
     position: fixed
+    right: -267px
     top: 0
     width: 267px
     z-index: -1

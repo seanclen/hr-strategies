@@ -7,25 +7,25 @@ $default-padding: 50px
 
 .presentation-mode
 	.custom-slide
-		display: flex
 		align-items: center
+		display: flex
   	justify-content: center
-  	text-align: center
+		line-height: 1.5
 		min-height: $default-height
 		padding: $default-padding
-		line-height: 1.5
+		text-align: center
 
 		h1, h2, h3, h4, h5, h6, p, ul, ol
 			border: 0
+			display: inline-block
 			margin: 10px auto
 			padding: 0
-			display: inline-block
 			width: 100%
 
 		&.complex
-			text-align: left
 			flex-direction: column
 			justify-content: flex-start
+			text-align: left
 
 			h1, h2, h3, h4, h5, h6, p, ul, ol
 				margin-bottom: 30px
@@ -41,9 +41,9 @@ $default-padding: 50px
 			list-style: disc
 
 		iframe, img
-			width: $default-width
 			height: $default-height
 			margin: - $default-padding
+			width: $default-width
 
 		ul, ol, li
 			text-align: left

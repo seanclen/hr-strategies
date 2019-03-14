@@ -23,13 +23,6 @@ $white-ter: #E4E4E8
 $white-bis: #F9FAFB
 $light: $white-ter
 
-// Mixins
-=gradient($start-color: #555, $end-color: #333, $deg: 45deg, $start-percent: 0%, $end-percent: 100%)
-  background-image: -webkit-linear-gradient($deg, $start-color $start-percent, $end-color $end-percent)
-  background-image: -o-linear-gradient($deg, $start-color $start-percent, $end-color $end-percent)
-  background-image: linear-gradient($deg, $start-color $start-percent, $end-color $end-percent)
-  background-repeat: repeat-x
-
 .has-blue-gradient-background
   +gradient($hrs-blue-light, $hrs-blue, 0deg)
 
