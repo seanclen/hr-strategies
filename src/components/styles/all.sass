@@ -291,21 +291,28 @@ section.is-tan
   &.cookies
     background-color: #fff !important
     font-family: $family-sans-serif
-
-.cookies-notification
-  background-color: $grey-dark !important
-  position: fixed !important
-  bottom: 0 !important
-  margin-bottom: 0 !important
-  .body
-    width: 100vw !important
-    padding: 0 1rem !important
   .title
     color: $grey-darker !important
     font-family: 'Montserrat', sans-serif
     font-size: 1.5rem
   .button
     font-family: 'Montserrat', sans-serif
+
+#cookies-notification
+  +transition(0.5s)
+  background-color: $grey-dark !important
+  bottom: 0px
+  margin-bottom: 0 !important
+  padding: 1rem !important
+  position: fixed !important
+  width: 100vw !important
+  z-index: 10
+  button
+    border-radius: 0px !important
+
+  &.hide
+    bottom: -200px
+
 
 // Helper Classes
 .full-width-image-container

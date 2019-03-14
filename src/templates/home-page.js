@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import { Link, graphql } from 'gatsby'
-import { toast } from 'react-toastify'
+import { ToastContainer, toast } from 'react-toastify'
 import { BlogPostCard, NewsletterCard, NotificationCard } from '../components/Cards'
 import Notification from '../components/Notification'
 import Affiliations from '../components/Affiliations'
@@ -100,6 +100,7 @@ export const HomePageTemplate = ({
 
   return (
     <div>
+      <ToastContainer className="columns is-centered" toastClassName="column is-narrow" position="bottom-center" autoClose={false} closeOnClick={false} draggable={false} />
       <section id="homepage-hero" className="hero is-fullheight has-video-background has-blue-gradient-background">
         {blogPosts.slice(0,1).map(({ node: post }) => (
           <Link to={post.fields.slug} className="hero-news tile is-4">

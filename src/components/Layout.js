@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from "gatsby"
 import { Location } from '@reach/router'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Slide, ToastContainer, toast } from 'react-toastify'
 import './styles/all.sass'
 import Cookies from 'universal-cookie'
 import { CookiesNotification } from './Notification'
@@ -12,13 +11,7 @@ import { CookiesNotification } from './Notification'
 const TemplateWrapper = ({ children }) => {
   const cookies = new Cookies();
   if (cookies.get('hrs_viewed_cookies') !== 'true') {
-    toast(<CookiesNotification />,
-      { closeButton: false, toastId: 'cookies-notification',
-        className: 'cookies-notification',
-        bodyClassName: 'body',
-        transition: Slide,
-        onClose: () => cookies.set('hrs_viewed_cookies', 'true')
-      })
+
   }
   return (
     <StaticQuery
@@ -58,7 +51,9 @@ const TemplateWrapper = ({ children }) => {
               return <Navbar location={location.pathname} />
             }}
           </Location>
-          <ToastContainer className="columns is-centered" toastClassName="column is-narrow" position="bottom-center" autoClose={false} closeOnClick={false} draggable={false} />
+          {cookies.get('hrs_viewed_cookies') !== 'true' &&
+            <CookiesNotification />
+          }
           <div id="main">{children}</div>
           <Footer />
         </div>
