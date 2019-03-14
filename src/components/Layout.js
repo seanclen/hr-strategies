@@ -7,27 +7,7 @@ import Footer from '../components/Footer'
 import { Slide, ToastContainer, toast } from 'react-toastify'
 import './styles/all.sass'
 import Cookies from 'universal-cookie'
-
-// props.closeToast
-const CookiesNotification = ({
-  closeToast,
-}) => (
-  <div>
-    <div className="columns is-centered is-vcentered">
-      <div className="column">
-        <p className="is-size-7 has-text-light">HRStrategies.org uses cookies. By continuing to browse our site, you are agreeing to our use of cookies. For more details about cookies and how to manage them, please see our <a href="#" className="has-text-info">cookie policy</a>.</p>
-      </div>
-      <div className="column is-narrow">
-        <button onClick={closeToast} className="button is-small is-dark">
-          <span className="icon is-small">
-            <i className="fas fa-times"></i>
-          </span>
-        </button>
-      </div>
-    </div>
-
-  </div>
-)
+import { CookiesNotification } from './Notification'
 
 const TemplateWrapper = ({ children }) => {
   const cookies = new Cookies();
