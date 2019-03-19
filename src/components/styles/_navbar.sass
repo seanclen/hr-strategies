@@ -3,6 +3,7 @@ $navbar-burger-color: #fff
 $navbar-background-color: transparent
 $navbar-item-color: #fff
 $navbar-item-hover-color: $grey-dark
+$navbar-item-hover-background-color: #fff
 $navbar-item-active-color: $grey-dark
 $navbar-item-active-background-color: #fff
 $navbar-dropdown-background-color: $grey-dark
@@ -28,10 +29,12 @@ $navbar-divider-background-color: $grey-light
       font-size: 1rem
       text-transform: uppercase
       font-weight: 800
-      &.is-active
+      outline: none
+      &.is-active, &:focus
         .navbar-link
           background-color: $navbar-item-active-background-color !important
           color: $navbar-item-active-color !important
+
     .navbar-dropdown .navbar-item
         font-weight: 200
         text-transform: none
@@ -40,6 +43,10 @@ $navbar-divider-background-color: $grey-light
       height: 2px
     &:hover
       background-color: transparent
+    &.is-active
+      position: fixed
+      right: 0
+      top: 0
   .navbar-brand .navbar-item:hover
     background-color: inherit !important
   &.is-absolute-top
@@ -47,6 +54,17 @@ $navbar-divider-background-color: $grey-light
     right: 0
     top: 0
     z-index: 30
+
+#navigation-shadow
+  +transition(0.5s)
+  background-color: transparent
+  height: 100%
+  position: fixed
+  width: 100%
+  z-index: 0
+  &.is-active
+    background-color: transparentize($hrs-blue, 0.5)
+    z-index: 4 !important
 
 @media screen and (max-width: 1087px)
   .navbar-menu

@@ -47,13 +47,13 @@ const TemplateWrapper = ({ children }) => {
 
           <Location>
             {({ location }) => {
-              console.log(location)
               return <Navbar location={location.pathname} />
             }}
           </Location>
           {cookies.get('hrs_viewed_cookies') !== 'true' &&
             <CookiesNotification />
           }
+          <div id="navigation-shadow"></div>
           <div id="main">{children}</div>
           <Footer />
         </div>
