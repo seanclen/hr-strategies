@@ -10,9 +10,9 @@ import Testimonials from '../components/Testimonials'
 import { v4 } from 'uuid'
 import Cookies from 'universal-cookie'
 
-import landingjpg from '../img/homepage/Ground-Zero-Blur.jpg'
-import landingmp4 from '../img/homepage/Ground-Zero-Blur.mp4'
-import img3 from '../img/dmitrij-paskevic-44124-unsplash.png'
+import landingjpg from '../assets/img/homepage/Ground-Zero-Blur.jpg'
+import landingmp4 from '../assets/img/homepage/Ground-Zero-Blur.mp4'
+import img3 from '../assets/img/dmitrij-paskevic-44124-unsplash.png'
 
 function VerticalBlogPosts(props) {
   return (
@@ -278,7 +278,7 @@ const HomePage = ({ data }) => {
   const { frontmatter } = data.content
 
   return (
-    <Layout>
+    <Layout hasClearNavbar={true}>
       <HomePageTemplate
         blogPosts={blogPosts}
         newsletter={newsletter}

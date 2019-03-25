@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/hrs-white.svg'
+import logo from '../assets/img/hrs-white.svg'
 
 const Footer = () => (
   <footer className="footer">

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import { Link } from 'gatsby'
-import logoWhite from '../img/hrs-long-white.svg'
+import logoWhite from '../assets/img/hrs-long-white.svg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -64,7 +64,6 @@ const Navbar = class extends React.Component {
   }
 
   updateDimensions() {
-    console.log(window.innerWidth);
     if(window.innerWidth <= 1087) {
       this.setState({ isOpen: this.state.isOpen, isSmall: true });
     } else {
@@ -109,8 +108,8 @@ const Navbar = class extends React.Component {
   }
 
   render() {
-    const clearNavigationPages = ['/', '/contact']
-    const navClass = clearNavigationPages.includes(this.props.location) ? 'navbar is-absolute-top' : 'navbar is-dark has-background-grey-dark'
+    const navClass = this.props.isClear ? 'navbar is-absolute-top' : 'navbar is-dark has-background-grey-dark'
+
     return (
       <nav className={navClass} role="navigation" aria-label="main-navigation">
         <div className="container is-fluid">

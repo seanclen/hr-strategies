@@ -35,7 +35,7 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <Layout>
+      <Layout hasClearNavbar={true}>
         <section className="contact-landing hero is-fullheight has-blue-gradient-background">
           <div className="container">
             <div class="columns is-mobile is-centered">
