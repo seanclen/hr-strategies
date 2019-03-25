@@ -6,12 +6,12 @@ import { BlogPostCard, NewsletterCard, NotificationCard } from '../components/Ca
 import Notification from '../components/Notification'
 import Affiliations from '../components/Affiliations'
 import Testimonials from '../components/Testimonials'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import { v4 } from 'uuid'
 import Cookies from 'universal-cookie'
 
 import landingjpg from '../assets/img/homepage/Ground-Zero-Blur.jpg'
 import landingmp4 from '../assets/img/homepage/Ground-Zero-Blur.mp4'
-import img3 from '../assets/img/dmitrij-paskevic-44124-unsplash.png'
 
 function VerticalBlogPosts(props) {
   return (
@@ -137,10 +137,11 @@ export const HomePageTemplate = ({
 
       <Affiliations items={content.affiliations} />
 
-      <section className="section is-white p-t-0 p-b-0">
-        <div className="container">
-          <div className="columns is-vcentered">
-            <div className="column is-half">
+      <section className="section is-white p-0">
+        <div className="columns is-vcentered">
+          <div className="column"></div>
+          <div className="column is-one-third">
+            <div className="content">
               <article key={v4()} className="tile is-child">
                 <div className="card-content">
                   <p className="title has-text-weight-bold">{content.section1.heading}</p>
@@ -155,7 +156,9 @@ export const HomePageTemplate = ({
                 </div>
               </article>
             </div>
-            <img src={img3} alt="books" />
+          </div>
+          <div className="column is-half">
+            <PreviewCompatibleImage imageInfo={content.section1} imgStyle={{ borderRadius: '0px', width: '100%' }} />
           </div>
         </div>
       </section>
@@ -376,7 +379,7 @@ export const homePageQuery = graphql`
           linkUrl
           image {
             childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
+              fluid(quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }
