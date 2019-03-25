@@ -376,7 +376,7 @@ export const homePageQuery = graphql`
           linkUrl
           image {
             childImageSharp {
-              fluid(quality: 64) {
+              fluid(maxWidth: 240, quality: 64) {
                 ...GatsbyImageSharpFluid
               }
             }
