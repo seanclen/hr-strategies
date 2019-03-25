@@ -25,9 +25,9 @@ section1:
     professional. HR Strategies provides the level of support without the
     ongoing costs of having additional staff on their payroll.
   heading: Legal compliance with employment and labor laws
+  image: /img/dmitrij-paskevic-44124-unsplash.png
   linkText: Explore Our Services
   linkUrl: /
-  statement: ' '
 statistics:
   heading: Your Strategic Business Partner
   statistics:
