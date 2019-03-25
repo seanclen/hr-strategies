@@ -2,7 +2,6 @@
 @import "~bulma/sass/base/minireset.sass"
 @import url("https://fonts.googleapis.com/css?family=Catamaran|Crimson+Text|Montserrat:300,400,700")
 @import "~@fortawesome/fontawesome-free/css/all.css"
-@import "~react-toastify/dist/ReactToastify.css"
 @import "~react-responsive-carousel/lib/styles/carousel.min.css"
 
 @import "./mixins.sass"
@@ -297,6 +296,16 @@ section.is-tan
     font-size: 1.5rem
   .button
     font-family: 'Montserrat', sans-serif
+
+#homepage-notification
+  +transition(0.5s)
+  bottom: 20px
+  position: fixed
+  width: 100%
+  z-index: 4
+
+  &.hide
+    bottom: -400px
 
 #cookies-notification
   +transition(0.5s)

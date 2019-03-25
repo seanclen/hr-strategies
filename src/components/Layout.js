@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { StaticQuery, useStaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import '../assets/sass/all.sass'

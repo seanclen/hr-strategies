@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import { Link, graphql } from 'gatsby'
-import { ToastContainer, toast } from 'react-toastify'
 import { BlogPostCard, NewsletterCard, NotificationCard } from '../components/Cards'
 import Notification from '../components/Notification'
 import Affiliations from '../components/Affiliations'
@@ -72,6 +71,7 @@ export const HomePageTemplate = ({
   newsletter,
   content,
 }) => {
+  let showNotification;
   const cookies = new Cookies();
   // Render the notification if the display switch is true and if client
   // has visited the site before and has not viewed the current notification.
@@ -84,23 +84,22 @@ export const HomePageTemplate = ({
     && cookies.get('hrs_viewed_cookies') === 'true'
     && cookies.get('hrs_has_visited') === 'true'
     && cookies.get('hrs_previously_viewed_notification') !== content.notification.title) {
-    toast(<Notification
-        title={content.notification.title}
-        message={content.notification.message}
-        link={content.notification.link}
-      />,
-      { closeButton: false, toastId: 'home-notification',
-        onClose: () => cookies.set('hrs_previously_viewed_notification', content.notification.title, { path: '/' })})
+      showNotification = true
   }
 
   if (!cookies.get('hrs_has_visited')) {
     cookies.set('hrs_has_visited', 'true', { path: '/' });
   }
 
-
   return (
     <div>
-      <ToastContainer className="columns is-centered" toastClassName="column is-narrow" position="bottom-center" autoClose={false} closeOnClick={false} draggable={false} />
+      {showNotification &&
+        <Notification
+          title={content.notification.title}
+          message={content.notification.message}
+          link={content.notification.link}
+        />
+      }
       <section id="homepage-hero" className="hero is-fullheight has-video-background has-blue-gradient-background">
         {blogPosts.slice(0,1).map(({ node: post }) => (
           <Link to={post.fields.slug} className="hero-news tile is-4">
@@ -375,6 +374,13 @@ export const homePageQuery = graphql`
           description
           linkText
           linkUrl
+          image {
+            childImageSharp {
+              fluid(quality: 64) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         statistics {
           heading
