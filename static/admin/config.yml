@@ -166,3 +166,48 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "policy-development"}
           - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
           - {label: "Body", name: "body", widget: "markdown"}
+  - name: "training"
+    label: "Training"
+    files:
+      - file: "src/pages/training/index.md"
+        label: "Index"
+        name: "index"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "training-page"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/training/training-development.md"
+        label: "Training & Development"
+        name: "training-development"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "training-development"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/training/onboarding-programs.md"
+        label: "Onbboarding Programs"
+        name: "onboarding-programs"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "onboarding-programs"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/training/career-planning.md"
+        label: "Career Planning"
+        name: "career-planning"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "career-planning"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/training/coaching-counseling.md"
+        label: "Coaching & Counseling"
+        name: "coaching-counseling"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "coaching-counseling"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/training/wellness-intervention.md"
+        label: "Wellness Intervention"
+        name: "wellness-intervention"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "wellness-intervention"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}

@@ -210,23 +210,23 @@ const Navbar = class extends React.Component {
                   Training
                 </div>
                 <div className="navbar-dropdown">
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/training/training-development">
                     Training &amp; Development
                   </Link>
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/training/onboarding-programs">
                     Onboarding Programs
                   </Link>
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/training/career-planning">
                     Career Planning
                   </Link>
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/training/coaching-counseling">
                     Coaching &amp; Counseling
                   </Link>
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/training/wellness-intervention">
                     Wellness Intervention
                   </Link>
                   <hr className="navbar-divider" />
-                  <Link className="navbar-item has-text-info has-text-weight-normal" to="/about">
+                  <Link className="navbar-item has-text-info has-text-weight-normal" to="/training/evaluations">
                     Training Evaluation
                   </Link>
                   <hr className="navbar-divider" />
