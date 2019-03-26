@@ -55,10 +55,76 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+  - name: "services"
+    label: "Services"
+    files:
       - file: "src/pages/services/index.md"
-        label: "Services"
-        name: "services"
+        label: "Index"
+        name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/recruiting-staffing.md"
+        label: "Recruiting & Staffing"
+        name: "recruiting-staffing"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "recruiting-staffing"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/investigations.md"
+        label: "Investigations"
+        name: "investigations"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "investigations"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/compensation-benefits.md"
+        label: "Compensation & Benefits"
+        name: "compensation-benefits"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "compensation-benefits"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/performance-management.md"
+        label: "Performance Management"
+        name: "performance-management"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "performance-management"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/organized-labor.md"
+        label: "Organized Labor"
+        name: "organized-labor"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "organized-labor"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/handbooks-job-descriptions.md"
+        label: "Employee Handbooks & Job Descriptions"
+        name: "handbooks-job-descriptions"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "handbooks-job-descriptions"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/change-management.md"
+        label: "Change Management"
+        name: "change-management"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "change-management"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/retainer-retention.md"
+        label: "Retainer & Retention Programs"
+        name: "retainer-retention"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "retainer-retention"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/services/reference-checks.md"
+        label: "Reference Checks"
+        name: "reference-checks"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "reference-checks"}
           - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
           - {label: "Body", name: "body", widget: "markdown"}
