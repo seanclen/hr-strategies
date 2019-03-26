@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import Layout from '../../components/Layout'
+import Content, { HTMLContent } from '../../components/Content'
 
-export const PricingTemplate = ({ hero, content, contentComponent }) => {
+export const MandatedTrainingPageTemplate = ({ hero, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -17,12 +17,12 @@ export const PricingTemplate = ({ hero, content, contentComponent }) => {
   )
 }
 
-const PricingPage = ({ data }) => {
+const MandatedTrainingPage = ({ data }) => {
   const { markdownRemark: query } = data
 
   return (
     <Layout>
-      <PricingTemplate
+      <MandatedTrainingPageTemplate
         contentComponent={HTMLContent}
         hero={query.frontmatter.hero}
         content={query.html}
@@ -31,10 +31,10 @@ const PricingPage = ({ data }) => {
   )
 }
 
-export default PricingPage
+export default MandatedTrainingPage
 
-export const pricingPageQuery = graphql`
-  query PricingPage($id: String!) {
+export const mandatedTrainingPageQuery = graphql`
+  query MandatedTrainingPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

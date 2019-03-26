@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import Content, { HTMLContent } from '../../components/Content'
 
-export const WellnessInterventionPageTemplate = ({ hero, content, contentComponent }) => {
+export const EmployeeTrainingPageTemplate = ({ hero, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -17,12 +17,12 @@ export const WellnessInterventionPageTemplate = ({ hero, content, contentCompone
   )
 }
 
-const WellnessInterventionPage = ({ data }) => {
+const EmployeeTrainingPage = ({ data }) => {
   const { markdownRemark: query } = data
 
   return (
     <Layout>
-      <WellnessInterventionPageTemplate
+      <EmployeeTrainingPageTemplate
         contentComponent={HTMLContent}
         hero={query.frontmatter.hero}
         content={query.html}
@@ -31,10 +31,10 @@ const WellnessInterventionPage = ({ data }) => {
   )
 }
 
-export default WellnessInterventionPage
+export default EmployeeTrainingPage
 
-export const wellnessInterventionPageQuery = graphql`
-  query WellnessInterventionPage($id: String!) {
+export const employeeTrainingPageQuery = graphql`
+  query EmployeeTrainingPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

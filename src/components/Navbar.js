@@ -127,6 +127,25 @@ const Navbar = class extends React.Component {
             <div className="navbar-end">
               <div tabindex="1" className="navbar-item has-dropdown" onKeyDown={this.onKeyPressed}>
                 <div className="navbar-link is-arrowless">
+                  Why HR Strategies
+                </div>
+                <div className="navbar-dropdown">
+                  <Link className="navbar-item" to="/about">
+                    Our Approach
+                  </Link>
+                  <Link className="navbar-item" to="/about">
+                    Case Studies
+                  </Link>
+                  <Link className="navbar-item" to="/about">
+                    Testimonials &amp; Awards
+                  </Link>
+                  <Link className="navbar-item" to="/about">
+                    About Us
+                  </Link>
+                </div>
+              </div>
+              <div tabindex="2" className="navbar-item has-dropdown">
+                <div className="navbar-link is-arrowless">
                   Services
                 </div>
                 <div className="navbar-dropdown">
@@ -163,25 +182,6 @@ const Navbar = class extends React.Component {
                   </Link>
                 </div>
               </div>
-              <div tabindex="2" className="navbar-item has-dropdown">
-                <div className="navbar-link is-arrowless">
-                  Why HR Strategies
-                </div>
-                <div className="navbar-dropdown">
-                  <Link className="navbar-item" to="/about">
-                    Our Approach
-                  </Link>
-                  <Link className="navbar-item" to="/about">
-                    Case Studies
-                  </Link>
-                  <Link className="navbar-item" to="/about">
-                    Testimonials &amp; Awards
-                  </Link>
-                  <Link className="navbar-item" to="/about">
-                    About Us
-                  </Link>
-                </div>
-              </div>
               <div tabindex="3" className="navbar-item has-dropdown">
                 <div className="navbar-link is-arrowless">
                   Compliance
@@ -210,24 +210,15 @@ const Navbar = class extends React.Component {
                   Training
                 </div>
                 <div className="navbar-dropdown">
-                  <Link className="navbar-item" to="/training/training-development">
-                    Training &amp; Development
+                  <Link className="navbar-item" to="/training/mandated-training">
+                    Mandated Training
                   </Link>
-                  <Link className="navbar-item" to="/training/onboarding-programs">
-                    Onboarding Programs
-                  </Link>
-                  <Link className="navbar-item" to="/training/career-planning">
-                    Career Planning
-                  </Link>
-                  <Link className="navbar-item" to="/training/coaching-counseling">
-                    Coaching &amp; Counseling
-                  </Link>
-                  <Link className="navbar-item" to="/training/wellness-intervention">
-                    Wellness Intervention
+                  <Link className="navbar-item" to="/training/employee-training">
+                    Employee Training
                   </Link>
                   <hr className="navbar-divider" />
-                  <Link className="navbar-item has-text-info has-text-weight-normal" to="/training/evaluations">
-                    Training Evaluation
+                  <Link className="navbar-item has-text-info has-text-weight-normal" to="/training/online-training">
+                    Online Training
                   </Link>
                   <hr className="navbar-divider" />
                   <Link className="navbar-item" to="/training">
@@ -235,10 +226,7 @@ const Navbar = class extends React.Component {
                   </Link>
                 </div>
               </div>
-              <Link tabindex="5" className="navbar-item" to="/pricing">
-                Pricing
-              </Link>
-              <Link tabindex="6" className="navbar-item" to="/contact">
+              <Link tabindex="5" className="navbar-item" to="/contact">
                 Contact
               </Link>
             </div>

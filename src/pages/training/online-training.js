@@ -7,7 +7,7 @@ const EvaluationsPage = ({ data }) => {
     <Layout>
       <section className="section is-light">
         <div className="container">
-          <h1 className="has-text-centered">Training Evaluation</h1>
+          <h1 className="has-text-centered">Online Training</h1>
           <h3 className="has-text-centered">Subheading</h3>
           <p>Placeholder for training program follow up forms.</p>
         </div>
