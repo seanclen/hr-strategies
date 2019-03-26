@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../../components/Layout'
-import Content, { HTMLContent } from '../../components/Content'
+import Layout from '../components/Layout'
+import Content, { HTMLContent } from '../components/Content'
 
 export const ServicesPageTemplate = ({ hero, content, contentComponent }) => {
   const PageContent = contentComponent || Content
