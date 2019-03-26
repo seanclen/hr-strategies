@@ -2,10 +2,6 @@ import React from 'react'
 import Layout from '../../components/Layout'
 
 const PrivacyPage = class extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Layout>
@@ -15,8 +11,8 @@ const PrivacyPage = class extends React.Component {
             <div className="box m-t-50">
               <div className="tabs is-centered">
                 <ul>
-                  <li className="is-active is-size-3"><a>Privacy Policy</a></li>
-                  <li className="is-size-3"><a>Cookie Policy</a></li>
+                  <li className="is-active is-size-3"><a href="/">Privacy Policy</a></li>
+                  <li className="is-size-3"><a href="/">Cookie Policy</a></li>
                 </ul>
               </div>
               <div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
 import { Link } from 'gatsby'
 import logoWhite from '../assets/img/hrs-long-white.svg'
 

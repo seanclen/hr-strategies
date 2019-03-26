@@ -131,7 +131,7 @@ export const HomePageTemplate = ({
           <video width="1920" height="1280" autoPlay muted loop>
             <source src={landingmp4} type="video/mp4" />
           </video>
-          <img src={landingjpg} />
+          <img src={landingjpg} alt="People walking" />
         </div>
       </section>
 

@@ -1,8 +1,9 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import Content, { HTMLContent } from '../../components/Content'
 
-export const ServicesPageTemplate = ({ hero, contentComponent }) => {
+export const ServicesPageTemplate = ({ hero, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -10,6 +11,7 @@ export const ServicesPageTemplate = ({ hero, contentComponent }) => {
       <div className="container">
         <h1 className="has-text-centered">{hero.heading}</h1>
         <h3 className="has-text-centered">{hero.subheading}</h3>
+        <PageContent className="content" content={content} />
       </div>
     </section>
   )
@@ -20,8 +22,9 @@ const ServicesPage = ({ data }) => {
   return(
     <Layout>
       <ServicesPageTemplate
+        contentComponent={HTMLContent}
         hero={query.frontmatter.hero}
-        contentComponent={HTMLContent} />
+        content={query.html} />
     </Layout>
   )
 }
@@ -37,7 +40,6 @@ export const servicesPageQuery = graphql`
           heading
           subheading
         }
-        body
       }
     }
   }

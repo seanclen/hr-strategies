@@ -2,10 +2,6 @@ import React from 'react'
 import Layout from '../../components/Layout'
 
 const CompliancePage = class extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Layout>
