@@ -33,7 +33,7 @@ const InvestigationsPage = ({ data }) => {
 
 export default InvestigationsPage
 
-export const InvestigationsPageQuery = graphql`
+export const investigationsPageQuery = graphql`
   query InvestigationsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html

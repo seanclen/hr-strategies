@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import Content, { HTMLContent } from '../../components/Content'
 
-export const ChangeManagementPageTemplate = ({ hero, content, contentComponent }) => {
+export const EmployeeHandbooksPageTemplate = ({ hero, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -17,12 +17,12 @@ export const ChangeManagementPageTemplate = ({ hero, content, contentComponent }
   )
 }
 
-const ChangeManagementPage = ({ data }) => {
+const EmployeeHandbooksPage = ({ data }) => {
   const { markdownRemark: query } = data
 
   return (
     <Layout>
-      <ChangeManagementPageTemplate
+      <EmployeeHandbooksPageTemplate
         contentComponent={HTMLContent}
         hero={query.frontmatter.hero}
         content={query.html}
@@ -31,10 +31,10 @@ const ChangeManagementPage = ({ data }) => {
   )
 }
 
-export default ChangeManagementPage
+export default EmployeeHandbooksPage
 
-export const ChangeManagementPageQuery = graphql`
-  query ChangeManagementPage($id: String!) {
+export const employeeHandbooksPageQuery = graphql`
+  query EmployeeHandbooksPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

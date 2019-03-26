@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import Content, { HTMLContent } from '../../components/Content'
 
-export const RetainerRetentionPageTemplate = ({ hero, content, contentComponent }) => {
+export const JobDescriptionsPageTemplate = ({ hero, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -17,12 +17,12 @@ export const RetainerRetentionPageTemplate = ({ hero, content, contentComponent 
   )
 }
 
-const RetainerRetentionPage = ({ data }) => {
+const JobDescriptionsPage = ({ data }) => {
   const { markdownRemark: query } = data
 
   return (
     <Layout>
-      <RetainerRetentionPageTemplate
+      <JobDescriptionsPageTemplate
         contentComponent={HTMLContent}
         hero={query.frontmatter.hero}
         content={query.html}
@@ -31,10 +31,10 @@ const RetainerRetentionPage = ({ data }) => {
   )
 }
 
-export default RetainerRetentionPage
+export default JobDescriptionsPage
 
-export const RetainerRetentionPageQuery = graphql`
-  query RetainerRetentionPage($id: String!) {
+export const jobDescriptionsPageQuery = graphql`
+  query JobDescriptionsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

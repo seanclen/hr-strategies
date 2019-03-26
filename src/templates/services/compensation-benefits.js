@@ -33,7 +33,7 @@ const CompensationBenefitsPage = ({ data }) => {
 
 export default CompensationBenefitsPage
 
-export const CompensationBenefitsPageQuery = graphql`
+export const compensationBenefitsPageQuery = graphql`
   query CompensationBenefitsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html

@@ -131,16 +131,16 @@ const Navbar = class extends React.Component {
                 </div>
                 <div className="navbar-dropdown">
                   <Link className="navbar-item" to="/about">
-                    Our Approach
+                    About Us
                   </Link>
                   <Link className="navbar-item" to="/about">
                     Case Studies
                   </Link>
                   <Link className="navbar-item" to="/about">
-                    Testimonials &amp; Awards
+                    Our Approach
                   </Link>
                   <Link className="navbar-item" to="/about">
-                    About Us
+                    Testimonials &amp; Awards
                   </Link>
                 </div>
               </div>
@@ -149,32 +149,23 @@ const Navbar = class extends React.Component {
                   Services
                 </div>
                 <div className="navbar-dropdown">
-                  <Link className="navbar-item" to="/services/recruiting-staffing">
-                    Recruiting &amp; Staffing
-                  </Link>
-                  <Link className="navbar-item" to="/services/investigations">
-                    Investigations
+                  <Link className="navbar-item" to="/services/employee-relations">
+                    Employee Relations
                   </Link>
                   <Link className="navbar-item" to="/services/compensation-benefits">
                     Compensation &amp; Benefits
                   </Link>
-                  <Link className="navbar-item" to="/services/performance-management">
-                    Performance Management
+                  <Link className="navbar-item" to="/services/employee-handbooks">
+                    Employee Handbooks
                   </Link>
-                  <Link className="navbar-item" to="/services/organized-labor">
-                    Organized Labor
+                  <Link className="navbar-item" to="/services/job-descriptions">
+                    Job Descriptions
                   </Link>
-                  <Link className="navbar-item" to="/services/handbooks-job-descriptions">
-                    Employee Handbooks &amp; Job Descriptions
+                  <Link className="navbar-item" to="/services/investigations">
+                    Investigations
                   </Link>
-                  <Link className="navbar-item" to="/services/change-management">
-                    Change Management
-                  </Link>
-                  <Link className="navbar-item" to="/services/retainer-retention">
-                    Retainer &amp; Retention Programs
-                  </Link>
-                  <Link className="navbar-item" to="/services/reference-checks">
-                    Reference Checks
+                  <Link className="navbar-item" to="/services/recruiting-staffing">
+                    Recruiting & Staffing
                   </Link>
                   <hr className="navbar-divider" />
                   <Link className="navbar-item" to="/services">
