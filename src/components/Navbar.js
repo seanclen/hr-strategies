@@ -235,7 +235,7 @@ const Navbar = class extends React.Component {
                   </Link>
                 </div>
               </div>
-              <Link tabindex="5" className="navbar-item" to="/contact">
+              <Link tabindex="5" className="navbar-item" to="/pricing">
                 Pricing
               </Link>
               <Link tabindex="6" className="navbar-item" to="/contact">
