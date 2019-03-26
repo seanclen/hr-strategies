@@ -24,9 +24,9 @@ const Footer = () => (
               <div className="column">
                 <h5 className="m-b-10">Quick Links</h5>
                 <p>
-                  <a href="/">Services</a><br />
-                  <a href="/">Training</a><br />
-                  <a href="/">About Us</a><br />
+                  <Link to="/services">Services</Link><br />
+                  <Link to="/training">Training</Link><br />
+                  <Link to="/about">About Us</Link><br />
                   <Link to="/contact">Contact Us</Link>
                 </p>
               </div>

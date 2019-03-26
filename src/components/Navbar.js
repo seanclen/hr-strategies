@@ -159,7 +159,7 @@ const Navbar = class extends React.Component {
                     Reference Checks
                   </Link>
                   <hr className="navbar-divider" />
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/services">
                     <small>More About Services <span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></small>
                   </Link>
                 </div>
@@ -201,7 +201,7 @@ const Navbar = class extends React.Component {
                     Policy Development
                   </Link>
                   <hr className="navbar-divider" />
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/compliance">
                     <small>More About Compliance <span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></small>
                   </Link>
                 </div>
@@ -231,7 +231,7 @@ const Navbar = class extends React.Component {
                     Training Evaluation
                   </Link>
                   <hr className="navbar-divider" />
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/training">
                     <small>More About Training <span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></small>
                   </Link>
                 </div>

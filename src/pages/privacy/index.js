@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 
-// const Navbar = class extends React.Component {
 const PrivacyPage = class extends React.Component {
   constructor(props) {
     super(props);
