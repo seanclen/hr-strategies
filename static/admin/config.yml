@@ -60,5 +60,5 @@ collections:
         name: "services"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
           - {label: "Body", name: "body", widget: "markdown"}
