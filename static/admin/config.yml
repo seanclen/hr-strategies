@@ -128,3 +128,41 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "reference-checks"}
           - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
           - {label: "Body", name: "body", widget: "markdown"}
+  - name: "compliance"
+    label: "Compliance"
+    files:
+      - file: "src/pages/compliance/index.md"
+        label: "Index"
+        name: "index"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "compliance-page"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/compliance/assessments-audits.md"
+        label: "HR Assessments & Audits"
+        name: "assessments-audits"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "assessments-audits"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/compliance/affirmative-action.md"
+        label: "Affirmative Action Plans"
+        name: "affirmative-action"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "affirmative-action"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/compliance/diversity-programs.md"
+        label: "Diversity Programs"
+        name: "diversity-programs"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "diversity-programs"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/compliance/policy-development.md"
+        label: "Policy Development"
+        name: "policy-development"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "policy-development"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: "Body", name: "body", widget: "markdown"}

@@ -187,16 +187,16 @@ const Navbar = class extends React.Component {
                   Compliance
                 </div>
                 <div className="navbar-dropdown">
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/compliance/assessments-audits">
                     HR Assessments / Audits
                   </Link>
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/compliance/affirmative-action">
                     Affirmative Action Plans
                   </Link>
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/compliance/diversity-programs">
                     Diversity Programs
                   </Link>
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/compliance/policy-development">
                     Policy Development
                   </Link>
                   <hr className="navbar-divider" />
