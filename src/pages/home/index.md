@@ -37,10 +37,10 @@ statistics:
       title: YEARS EXPERIENCE
     - linkText: Recruiting
       linkUrl: /
-      statistic: 51%
+      statistic: 57%
       title: RECRUITING SAVINGS
-    - linkText: Services
-      linkUrl: /
+    - linkText: Employee Handbooks
+      linkUrl: /services/employee-handbooks
       statistic: 6 mo.
       title: Avg. Positive ROI in
   subheading: >-
