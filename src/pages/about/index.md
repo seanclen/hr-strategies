@@ -13,6 +13,7 @@ about:
     mission. We take pride in providing cost-effective consulting services to
     companies with or without an HR department to enable them to successfully
     grow their businesses.
+  subtitle: Your People are Our Business
   title: About HR Strategies
 story:
   body: Story Body
