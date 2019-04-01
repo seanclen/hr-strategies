@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import { v4 } from 'uuid'
 
 import landingjpg from '../assets/img/video/Diagonal.jpg'
 import landingmp4 from '../assets/img/video/Diagonal.mp4'
@@ -37,7 +38,7 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
             <div className="tile is-parent is-8">
               <div className="tile card is-child">
                 <div className="card-content">
-                  <h4 className="has-text-primary-light">Your People are Our Business</h4>
+                  <h4 className="has-text-primary-light">{about.subtitle}</h4>
                   <p className="is-size-5">
                     {about.body}
                   </p>
@@ -67,6 +68,7 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
       <section className="section is-medium">
         <div className="container">
           <h1 className="has-text-centered">Our Story</h1>
+          <p>{story.body}</p>
         </div>
       </section>
       <section className="section is-light is-medium">
@@ -77,38 +79,21 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
               <article className="tile card is-child has-background-white">
                 <div className="card-content">
                   <p>
-                    <span className="title">Tricia Clendening</span> <span className="is-size-5 has-text-grey-lighter">SHRM-SCP, GPHR, SPHR</span>
+                    <span className="title">{team.founder.name}</span> <span className="is-size-5 has-text-grey-lighter">{team.founder.certifications}</span>
                   </p>
-                  <p className="subtitle">President</p>
+                  <p className="subtitle">{team.founder.title}</p>
                   <div className="content">
-                    <p>
-                      Tricia, SHRM-SCP, GPHR, SPHR is the President of HR Strategies, LLC.
-                      She is the first and only person in Delaware to achieve
-                      all three of these certifications. She has over thirty
-                      years of progressive human resources experience with fortune
-                      100 companies, international organizations and small to midsize
-                      companies. She has been recognized in her profession with the
-                      HR Consultant of the Year Award, ABC Associate Supplier Award,
-                      SHRM Innovation Award, Ron Shane HR Lifetime Achievement Award
-                      and most recently a finalist for the HR Person of the Year Award.
-                      Tricia has been singled out by her clients for her ability to
-                      identify and analyze the developmental needs of the leaders she
-                      coaches while understanding the impact of their business issues.
-                      She works effectively and collaboratively with her clients to
-                      diagnose issues, offer potential solutions, and support chosen
-                      recommendations. During times of change, transition and growth,
-                      Tricia maintains a results-oriented focus.
-                    </p>
+                    <p>{team.founder.description}</p>
                   </div>
                   <nav className="level is-mobile">
                     <div className="level-left">
-                      <a className="level-item">
+                      <a href={team.founder.facebook} className="level-item">
                         <span className="icon is-small"><i className="fab fa-facebook-f"></i></span>
                       </a>
-                      <a className="level-item">
+                      <a href={team.founder.twitter} className="level-item">
                         <span className="icon is-small"><i className="fab fa-twitter"></i></span>
                       </a>
-                      <a className="level-item">
+                      <a href={team.founder.linkedin} className="level-item">
                         <span className="icon is-small"><i className="fab fa-linkedin-in"></i></span>
                       </a>
                     </div>
@@ -118,57 +103,21 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
             </div>
           </div>
           <div className="tile is-ancestor">
-            <div className="tile is-parent">
-              <article className="tile card is-child has-background-white">
-                <div className="card-content">
-                  <p>
-                    <span className="title">Dave Clendening</span> <span className="is-size-5 has-text-grey-lighter">SHRM-SCP</span>
-                  </p>
-                  <p className="subtitle">Vice President of HR Operations</p>
-                  <div className="content">
+            {team.other.map((member) => (
+              <div className="tile is-parent">
+                <article key={v4()} className="tile card is-child has-background-white">
+                  <div className="card-content">
                     <p>
-                      Dave is leading the Training and Development, and the Talent
-                      Acquisition divisions of the business. He continuously
-                      develops creative and interactive training programs to
-                      ensure engagement and learning objectives are met. His
-                      ability to find the right talent, the first time, for
-                      diverse organizations has reduced their expenses and
-                      helped grow client’s bottom line. He brings thirty plus
-                      years of leadership, training, coaching and development
-                      as well as recruitment to our organization. Dave is a
-                      SHRM-CP and attends 20 to 30 training programs annually
-                      to keep apprised of compliance requirements, benchmarking
-                      and best practice trends so that he can develop solutions
-                      for our client’s needs.
+                      <span className="title">{member.name}</span> <span className="is-size-5 has-text-grey-lighter">{member.certifications}</span>
                     </p>
+                    <p className="subtitle">{member.title}</p>
+                    <div className="content">
+                      <p>{member.description}</p>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </div>
-            <div className="tile is-parent">
-              <article className="tile card is-child has-background-white">
-                <div className="card-content">
-                  <p>
-                    <span className="title">Chris Clendening</span> <span className="is-size-5 has-text-grey-lighter">SHRM-SCP</span>
-                  </p>
-                  <p className="subtitle">HR Business Partner</p>
-                  <div className="content">
-                    <p>
-                      Chris is a team player credited with supporting
-                      organizations and honoring commitments that have been
-                      consistently successful. He is a catalyst for a wide range
-                      of innovative initiatives involving talent acquisition and
-                      team building programs that have positively impacted our
-                      clients. Chris has a BS in Organizational and Community
-                      Leadership from the University of Delaware and has
-                      successfully achieved SHRM-CP. He brings seven plus years
-                      of recruiting, multiple years of teambuilding and problem
-                      solving to our organization.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
+                </article>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -183,6 +132,7 @@ AboutPageTemplate.propTypes = {
   }),
   about: PropTypes.shape({
     title: PropTypes.string,
+    subtitle: PropTypes.string,
     body: PropTypes.string,
   }),
   story: PropTypes.shape({
@@ -249,6 +199,7 @@ export const aboutPageQuery = graphql`
         }
         about {
           title
+          subtitle
           body
         }
         story {
