@@ -7,7 +7,7 @@ import Content, { HTMLContent } from '../components/Content'
 import landingjpg from '../assets/img/video/Diagonal.jpg'
 import landingmp4 from '../assets/img/video/Diagonal.mp4'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ mission, about, story, team, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -17,8 +17,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           <div className="container">
             <div className="columns is-mobile is-centered">
               <div className="column is-10 has-text-centered">
-                <h4 class="has-text-white">Our Mission:</h4>
-                <h1 class="has-text-white has-text-weight-bold">Build lasting relationships with people and develop strategies that support, protect, and evolve any business model.</h1>
+                <h4 class="has-text-white">{mission.title}</h4>
+                <h1 class="has-text-white has-text-weight-bold">{mission.statement}</h1>
               </div>
             </div>
           </div>
@@ -32,19 +32,14 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
       </section>
       <section className="section is-dark is-medium">
         <div className="container">
-          <h1 className="has-text-centered">About HR Strategies</h1>
+          <h1 className="has-text-centered">{about.title}</h1>
           <div className="tile is-ancestor m-t-25">
             <div className="tile is-parent is-8">
               <div className="tile card is-child">
                 <div className="card-content">
-                  <h4>Your People are Our Business</h4>
+                  <h4 className="has-text-primary-light">Your People are Our Business</h4>
                   <p className="is-size-5">
-                    We believe that running a business should be focused on providing
-                    people a product or service. Chances are, you have employees to
-                    manage that require repetitive administrative tasks, distracting you
-                    from your company’s mission. We take pride in providing
-                    cost-effective consulting services to companies with or without an
-                    HR department to enable them to successfully grow their businesses.
+                    {about.body}
                   </p>
                 </div>
               </div>
@@ -182,27 +177,64 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 }
 
 AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
+  mission: PropTypes.shape({
+    title: PropTypes.string,
+    statement: PropTypes.string,
+  }),
+  about: PropTypes.shape({
+    title: PropTypes.string,
+    body: PropTypes.string,
+  }),
+  story: PropTypes.shape({
+    body: PropTypes.string,
+  }),
+  team: PropTypes.shape({
+    founder: PropTypes.shape({
+      name: PropTypes.string,
+      certifications: PropTypes.string,
+      title: PropTypes.string,
+      description: PropTypes.string,
+      facebook: PropTypes.string,
+      twitter: PropTypes.string,
+      linkedin: PropTypes.string,
+    }),
+    other: PropTypes.arrayOf({
+      name: PropTypes.string,
+      certifications:PropTypes.string,
+      title: PropTypes.string,
+      description :PropTypes.string,
+    }),
+  }),
   contentComponent: PropTypes.func,
 }
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout hasClearNavbar={true}>
       <AboutPageTemplate
         contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
+        mission={frontmatter.mission}
+        about={frontmatter.about}
+        story={frontmatter.story}
+        team={frontmatter.team}
       />
     </Layout>
   )
 }
 
 AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        mission: PropTypes.object.isRequired,
+        about: PropTypes.object.isRequired,
+        story: PropTypes.object.isRequired,
+        team: PropTypes.object.isRequired,
+      }),
+    }),
+  }),
 }
 
 export default AboutPage
@@ -210,9 +242,35 @@ export default AboutPage
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
-        title
+        mission {
+          title
+          statement
+        }
+        about {
+          title
+          body
+        }
+        story {
+          body
+        }
+        team {
+          founder {
+            name
+            certifications
+            title
+            description
+            facebook
+            twitter
+            linkedin
+          }
+          other {
+            name
+            certifications
+            title
+            description
+          }
+        }
       }
     }
   }

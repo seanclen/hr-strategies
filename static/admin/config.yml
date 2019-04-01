@@ -54,7 +54,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Mission Statement", name: "mission", widget: "object", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Statement", name: "statement", widget: "text"}]}
-          - {label: "About Section", name: "about", widget: "object", fields: [{label: "Title", name: "title", widget: "text"}, {label: "Body", name: "body", widget: "markdown"}]}
+          - {label: "About Section", name: "about", widget: "object", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Subtitle", name: "subtitle", widget: "string"}, {label: "Body", name: "body", widget: "markdown"}]}
           - {label: "Story Section", name: "story", widget: "object", fields: [{label: "Body", name: "body", widget: "markdown"}]}
           - {label: "Team Section", name: "team", widget: "object", fields: [{label: "Founder", name: "founder", widget: "object", fields: [{label: "Name", name: "name", widget: "string"}, {label: "Certifications", name: "certifications", widget: "string"}, {label: "Job Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "text"}, {label: "Facebook", name: "facebook", widget: "string"}, {label: "Twitter", name: "twitter", widget: "string"}, {label: "LinkedIn", name: "linkedin", widget: "string"}]}, {label: "Other", name: "other", widget: "list", fields: [{label: "Name", name: "name", widget: "string"}, {label: "Certifications", name: "certifications", widget: "string"}, {label: "Job Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "text"}]}]}
   - name: "services"
