@@ -4,6 +4,7 @@
 @import "~@fortawesome/fontawesome-free/css/all.css"
 @import "~react-responsive-carousel/lib/styles/carousel.min.css"
 
+
 @import "./mixins.sass"
 @import "./colors.sass"
 // Override Bulma defaults
@@ -11,6 +12,7 @@
 $family-sans-serif: "Catamaran", sans-serif
 $body-color: $grey-darker
 $body-background-color: $grey-dark
+$body-size: 18px
 
 $input-border-color: transparent
 $input-hover-border-color: transparent
@@ -18,15 +20,12 @@ $footer-background-color: $grey-dark
 $notification-radius: 0px
 $control-radius: 0px
 
-@import "./navbar.sass"
 @import "./affiliations.sass"
 @import "./carousel.sass"
 @import "./contact.sass"
+@import "./navbar.sass"
 @import "./testimonials.sass"
-
-// Override Toastify defaults
-.toasty
-  width: auto
+@import "./utils.sass"
 
 // Global
 body
@@ -135,7 +134,19 @@ section.is-tan
   strong a
     border-color: #fff
 
+
+// components
+
+.button
+  +transition(0.25s)
+
 .card
+  &.tile
+    +box-shadow(rgba(10,10,10,.05) 0 1.5rem 1.5rem -1.25rem)
+    +transition(0.25s)
+    &.no-shadow
+      +box-shadow(transparent 0 0 0 0)
+
   &.is-primary
     background-color: $blue
     color: #fff
@@ -159,6 +170,10 @@ section.is-tan
       font-weight: 600 !important
     strong a
       border-color: #fff
+a.card.tile:hover
+  +box-shadow(rgba(10,10,10,.1) 0 3rem 3rem -1.25rem)
+  -webkit-transform: translateY(-.5rem)
+  transform: translateY(-.5rem)
 
 .has-flex-grow-0
   flex-grow: 0 !important
@@ -185,11 +200,13 @@ section.is-tan
     height: 4px !important
 
   .hero-news
+    +box-shadow(transparent 0 0 0 0)
     +transition(0.5s)
     background-color: transparentize($hrs-blue, 0.9)
     bottom: 20px
     margin-left: 20px
     padding: 1rem
+    padding-bottom: 0
     position: absolute
     right: 20px
     z-index: 3
@@ -200,7 +217,10 @@ section.is-tan
       visibility: collapse
 
     &:hover
+      +box-shadow(rgba(10,10,10,.3) 0 3rem 3rem -1.25rem)
       background-color: $hrs-blue
+      -webkit-transform: translateY(-1rem)
+      transform: translateY(-1rem)
       .excerpt
         max-height: 100px
         visibility: visible
@@ -215,7 +235,6 @@ section.is-tan
     font-size: 1.5rem
     font-weight: 400
   .card
-    +box-shadow(transparent 0px 0px 0px 0px)
     .card-footer
       bottom: 0
       border-top: 0
@@ -224,17 +243,21 @@ section.is-tan
       .card-footer-item
         justify-content: flex-end
 
-.hero.has-video-background:before
-  +gradient($hrs-blue-light, $hrs-blue, 0deg)
-  background-color: transparentize($hrs-blue, 0.9)
-  content: ""
-  height: 100%
-  left: 0
-  opacity: 0.9
-  position: absolute
-  top: 0
-  width: 100%
-  z-index: 2
+.hero.has-video-background
+  &.is-primary:before, &.is-dark:before
+    content: ""
+    height: 100%
+    left: 0
+    opacity: 0.85
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 2
+  &.is-primary:before
+    +gradient($hrs-blue-light, $hrs-blue, 0deg)
+    background-color: transparentize($hrs-blue, 0.9)
+  &.is-dark:before
+    background-color: rgba(1, 4, 16, 0.4)
 
 .hero.has-video-background
   .hero-body
@@ -259,6 +282,10 @@ section.is-tan
     img
       z-index: 0
 
+.hero-body.is-large
+  h1, h2
+    font-size: 5rem
+
 .content .taglist
   align-items: center
   display: flex
@@ -275,18 +302,9 @@ section.is-tan
     margin-top: 0
     padding: 0 2rem 1rem 0
 
-.Toastify__toast
-  cursor: default !important
-  padding: 0 !important
-
 .notification
   color: $grey-lighter
   padding: 1.25rem 1.5rem 1.25rem 1.5rem !important
-  &.landing
-    background-color: #fff !important
-    font-family: $family-sans-serif
-    .title
-      color: $grey-dark
   &.cookies
     background-color: #fff !important
     font-family: $family-sans-serif
@@ -300,18 +318,31 @@ section.is-tan
 #homepage-notification
   +transition(0.5s)
   bottom: 20px
+  opacity: 1
+  pointer-events: none
   position: fixed
   width: 100%
   z-index: 4
 
   &.hide
     bottom: -400px
+    opacity: 0
+
+  .notification.landing
+    +box-shadow(rgba(10,10,10,.3) 0 3rem 3rem -1.25rem)
+    background-color: #fff !important
+    font-family: $family-sans-serif
+    pointer-events: all
+    .title
+      color: $grey-dark
 
 #cookies-notification
+  +box-shadow(rgba(10,10,10,.3) 0 -1rem 2rem -1rem)
   +transition(0.5s)
   background-color: $grey-dark !important
   bottom: 0px
   margin-bottom: 0 !important
+  opacity: 1
   padding: 1rem !important
   position: fixed !important
   width: 100vw !important
@@ -321,7 +352,7 @@ section.is-tan
 
   &.hide
     bottom: -200px
-
+    opacity: 0
 
 // Helper Classes
 .full-width-image-container
@@ -336,73 +367,6 @@ section.is-tan
   position: relative
   right: 50%
   width: 100vw
-
-
-.m-t-0
-  margin-top: 0 !important
-
-.m-t-10
-  margin-top: 10px !important
-
-.m-t-25
-  margin-top: 25px !important
-
-.m-t-50
-  margin-top: 50px !important
-
-.m-b-0
-  margin-bottom: 0 !important
-
-.m-b-10
-  margin-bottom: 10px !important
-
-.m-b-25
-  margin-bottom: 25px !important
-
-.m-l-10
-  margin-left: 10px !important
-
-.m-l-50
-  margin-left: 50px !important
-
-.p-0
-  padding: 0px !important
-
-.p-t-0
-  padding-top: 0px !important
-
-.p-t-25
-  padding-top: 25px !important
-
-.p-t-50
-  padding-top: 50px !important
-
-.p-t-100
-  padding-top: 100px !important
-
-.p-r-0
-  padding-right: 0px !important
-
-.p-b-0
-  padding-bottom: 0px !important
-
-.p-b-25
-  padding-bottom: 25px !important
-
-.p-b-50
-  padding-bottom: 50px !important
-
-.p-b-100
-  padding-bottom: 100px !important
-
-.p-l-0
-  padding-left: 0px !important
-
-.p-l-25
-  padding-left: 25px !important
-
-.width-100
-  width: 100% !important
 
 @import "~bulma/sass/utilities/_all"
 @import "~bulma/sass/base/generic.sass"

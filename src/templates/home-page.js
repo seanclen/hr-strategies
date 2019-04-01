@@ -10,8 +10,8 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import { v4 } from 'uuid'
 import Cookies from 'universal-cookie'
 
-import landingjpg from '../assets/img/homepage/Ground-Zero-Blur.jpg'
-import landingmp4 from '../assets/img/homepage/Ground-Zero-Blur.mp4'
+import landingjpg from '../assets/img/video/Oculus.jpg'
+import landingmp4 from '../assets/img/video/Oculus.mp4'
 
 function VerticalBlogPosts(props) {
   return (
@@ -36,7 +36,7 @@ function Statistics(props) {
         <div className="level-item has-text-centered">
           <div>
             <p className="heading">{item.title}</p>
-            <h1 className="has-text-white is-size-0">{item.statistic}</h1>
+            <h1 className="has-text-white is-size-0 has-text-weight-bold">{item.statistic}</h1>
             <Link to={item.linkUrl} className="button is-primary m-t-10">{item.linkText}</Link>
           </div>
         </div>
@@ -50,10 +50,13 @@ function Discount(props) {
   return (
     <section className="section is-tan p-t-50 p-b-50">
       <div className="columns is-centered is-vcentered">
-        <div className="column is-narrow">
-          <h1 className="title is-size-1 has-text-white m-b-0">{props.discount.percentage}</h1>
-          <h1 className="title is-size-1 has-text-white">OFF</h1>
-        </div>
+        {props.discount.percentage &&
+          <div className="column is-narrow">
+            <h1 className="title is-size-1 has-text-white m-b-0">{props.discount.percentage}</h1>
+            <h1 className="title is-size-1 has-text-white">OFF</h1>
+          </div>
+        }
+
         <div className="column is-narrow">
           <p className="title has-text-white">{props.discount.title}</p>
           <p>{props.discount.description}</p>
@@ -100,7 +103,7 @@ export const HomePageTemplate = ({
           link={content.notification.link}
         />
       }
-      <section id="homepage-hero" className="hero is-fullheight has-video-background has-blue-gradient-background">
+      <section id="homepage-hero" className="hero is-fullheight has-video-background is-primary">
         {blogPosts.slice(0,1).map(({ node: post }) => (
           <Link to={post.fields.slug} className="hero-news tile is-4">
             <article key={v4()} className="content">

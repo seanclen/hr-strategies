@@ -149,20 +149,21 @@ const Navbar = class extends React.Component {
                   Services
                 </div>
                 <div className="navbar-dropdown">
-                  <Link className="navbar-item" to="/services/employee-relations">
-                    Employee Relations
-                  </Link>
+
                   <Link className="navbar-item" to="/services/compensation-benefits">
                     Compensation &amp; Benefits
                   </Link>
                   <Link className="navbar-item" to="/services/employee-handbooks">
                     Employee Handbooks
                   </Link>
-                  <Link className="navbar-item" to="/services/job-descriptions">
-                    Job Descriptions
+                  <Link className="navbar-item" to="/services/employee-relations">
+                    Employee Relations
                   </Link>
                   <Link className="navbar-item" to="/services/investigations">
                     Investigations
+                  </Link>
+                  <Link className="navbar-item" to="/services/job-descriptions">
+                    Job Descriptions
                   </Link>
                   <Link className="navbar-item" to="/services/recruiting-staffing">
                     Recruiting & Staffing
@@ -178,14 +179,14 @@ const Navbar = class extends React.Component {
                   Compliance
                 </div>
                 <div className="navbar-dropdown">
-                  <Link className="navbar-item" to="/compliance/assessments-audits">
-                    HR Assessments / Audits
-                  </Link>
                   <Link className="navbar-item" to="/compliance/affirmative-action">
                     Affirmative Action Plans
                   </Link>
                   <Link className="navbar-item" to="/compliance/diversity-programs">
                     Diversity Programs
+                  </Link>
+                  <Link className="navbar-item" to="/compliance/assessments-audits">
+                    HR Assessments / Audits
                   </Link>
                   <Link className="navbar-item" to="/compliance/policy-development">
                     Policy Development
@@ -201,11 +202,11 @@ const Navbar = class extends React.Component {
                   Training
                 </div>
                 <div className="navbar-dropdown">
-                  <Link className="navbar-item" to="/training/mandated-training">
-                    Mandated Training
-                  </Link>
                   <Link className="navbar-item" to="/training/employee-training">
                     Employee Training
+                  </Link>
+                  <Link className="navbar-item" to="/training/mandated-training">
+                    Mandated Training
                   </Link>
                   <hr className="navbar-divider" />
                   <Link className="navbar-item has-text-info has-text-weight-normal" to="/training/online-training">
