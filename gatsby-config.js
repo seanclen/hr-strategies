@@ -1,7 +1,16 @@
+// const siteUrlSelector = (env) => {
+//     return env === 'production'
+//       ? 'https://hrstrategies.org'
+//       : env === 'staging'
+//         ? 'https://condescending-wozniak-93172f.netlify.com'
+//         : 'http://localhost:8000'
+// }
+
 module.exports = {
   siteMetadata: {
     title: 'HR Strategies',
     description: 'HR Strategies Description',
+    siteUrl: `http://localhost:8000`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -63,6 +72,13 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+    `gatsby-plugin-remove-trailing-slashes`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/site-map.xml`,
       },
     },
     // {

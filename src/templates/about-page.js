@@ -40,12 +40,17 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
                 <div className="card-content">
                   <h4 className="has-text-primary-light">{about.subtitle}</h4>
                   <p className="is-size-5">
-                    {about.body}
+                    <PageContent content={about.body} />
                   </p>
                 </div>
               </div>
             </div>
             <div className="tile is-parent is-vertical">
+              <Link to="/" className="tile card is-child is-primary">
+                <div className="card-content">
+                  <h5>Case Studies</h5>
+                </div>
+              </Link>
               <Link to="/" className="tile card is-child is-primary">
                 <div className="card-content">
                   <h5>Our Approach</h5>
@@ -56,11 +61,6 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
                   <h5>Testimonials</h5>
                 </div>
               </Link>
-              <Link to="/" className="tile card is-child is-primary">
-                <div className="card-content">
-                  <h5>Case Studies</h5>
-                </div>
-              </Link>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
       <section className="section is-medium">
         <div className="container">
           <h1 className="has-text-centered">Our Story</h1>
-          <p>{story.body}</p>
+          <PageContent content={story.body} />
         </div>
       </section>
       <section className="section is-light is-medium">

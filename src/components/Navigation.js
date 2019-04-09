@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import _ from 'lodash'
 import logoWhite from '../assets/img/hrs-long-white.svg'
 
 const Navbar = class extends React.Component {
@@ -125,7 +126,7 @@ const Navbar = class extends React.Component {
           </div>
           <div id="navigation-menu" className="navbar-menu">
             <div className="navbar-end">
-              <div tabindex="1" className="navbar-item has-dropdown" onKeyDown={this.onKeyPressed}>
+              <div tabIndex="1" className="navbar-item has-dropdown" onKeyDown={this.onKeyPressed}>
                 <div className="navbar-link is-arrowless">
                   Why HR Strategies
                 </div>
@@ -144,7 +145,7 @@ const Navbar = class extends React.Component {
                   </Link>
                 </div>
               </div>
-              <div tabindex="2" className="navbar-item has-dropdown">
+              <div tabIndex="2" className="navbar-item has-dropdown">
                 <div className="navbar-link is-arrowless">
                   Services
                 </div>
@@ -174,7 +175,7 @@ const Navbar = class extends React.Component {
                   </Link>
                 </div>
               </div>
-              <div tabindex="3" className="navbar-item has-dropdown">
+              <div tabIndex="3" className="navbar-item has-dropdown">
                 <div className="navbar-link is-arrowless">
                   Compliance
                 </div>
@@ -197,7 +198,7 @@ const Navbar = class extends React.Component {
                   </Link>
                 </div>
               </div>
-              <div tabindex="4" className="navbar-item has-dropdown">
+              <div tabIndex="4" className="navbar-item has-dropdown">
                 <div className="navbar-link is-arrowless">
                   Training
                 </div>
@@ -218,7 +219,7 @@ const Navbar = class extends React.Component {
                   </Link>
                 </div>
               </div>
-              <Link tabindex="5" className="navbar-item" to="/contact">
+              <Link tabIndex="5" className="navbar-item" to="/contact">
                 Contact
               </Link>
             </div>
@@ -230,3 +231,35 @@ const Navbar = class extends React.Component {
 }
 
 export default Navbar
+
+// Strictly hierarchical behavior, will not point to parent or child outside of family
+export const Breadcrumbs = ({ location }) => {
+  let path = location.pathname
+  let crumbs = []
+
+  const splitUrl = location.pathname.split('/')
+  splitUrl.forEach((split, index) => {
+    if (index === 0 && split === '') {
+      crumbs = [...crumbs, { pathname: '/', label: 'Home' }]
+    } else if (index !== 0 && split !=='') {
+      crumbs = [...crumbs, { pathname: path.slice(0, path.lastIndexOf(split) + split.length), label: _.startCase(split.replace(/-/g, ' '))}]
+    }
+  })
+
+  return (
+    <nav className="breadcrumb" aria-label="breadcrumbs">
+      <ul>
+        {crumbs.map((crumb) => {
+          if (path === crumb.pathname) {
+            return (
+              <li className="is-active"><Link to={crumb.pathname} aria-current="page">{crumb.label}</Link></li>
+            )
+          }
+          return (
+            <li><Link to={crumb.pathname}>{crumb.label}</Link></li>
+          )
+        })}
+      </ul>
+    </nav>
+  )
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navigation'
 import Footer from '../components/Footer'
 import '../assets/sass/all.sass'
 import Cookies from 'universal-cookie'

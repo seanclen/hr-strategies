@@ -53,7 +53,7 @@ const Footer = () => (
         <div className="level">
           <div className="level-left">
             <div className="level-item">
-              <p>&copy; 2019 HR Strategies, LLC.</p>
+              <p>&copy; {new Date().getFullYear()} HR Strategies, LLC.</p>
               <a href="/" className="p-l-25">Terms of Service</a>
               <Link to="/privacy" className="p-l-25">Privacy Policy</Link>
             </div>

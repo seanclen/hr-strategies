@@ -1,24 +1,26 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../../components/Layout'
+import { graphql, Link } from 'gatsby'
 import Content, { HTMLContent } from '../../components/Content'
+import Layout from '../../components/Layout'
+import { Breadcrumbs } from '../../components/Navigation'
 
-export const AffirmativeActionPageTemplate = ({ hero, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+export const AffirmativeActionPageTemplate = ({ hero, content, contentComponent, location }) => {
+  const PageContent = contentComponent || Content;
 
   return (
     <section className="section is-light">
       <div className="container">
         <h1 className="has-text-centered">{hero.heading}</h1>
         <h3 className="has-text-centered">{hero.subheading}</h3>
+        <Breadcrumbs location={location} />
         <PageContent className="content" content={content} />
       </div>
     </section>
   )
 }
 
-const AffirmativeActionPage = ({ data }) => {
-  const { markdownRemark: query } = data
+const AffirmativeActionPage = ({ data, location }) => {
+  const { markdownRemark: query } = data;
 
   return (
     <Layout>
@@ -26,6 +28,7 @@ const AffirmativeActionPage = ({ data }) => {
         contentComponent={HTMLContent}
         hero={query.frontmatter.hero}
         content={query.html}
+        location={location}
       />
     </Layout>
   )
