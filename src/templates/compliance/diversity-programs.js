@@ -2,8 +2,9 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import Content, { HTMLContent } from '../../components/Content'
+import { Breadcrumbs } from '../../components/Navigation'
 
-export const DiversityProgramsPageTemplate = ({ hero, content, contentComponent }) => {
+export const DiversityProgramsPageTemplate = ({ hero, content, contentComponent, location }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -11,13 +12,14 @@ export const DiversityProgramsPageTemplate = ({ hero, content, contentComponent 
       <div className="container">
         <h1 className="has-text-centered">{hero.heading}</h1>
         <h3 className="has-text-centered">{hero.subheading}</h3>
+        <Breadcrumbs location={location} />
         <PageContent className="content" content={content} />
       </div>
     </section>
   )
 }
 
-const DiversityProgramsPage = ({ data }) => {
+const DiversityProgramsPage = ({ data, location }) => {
   const { markdownRemark: query } = data
 
   return (
@@ -26,6 +28,7 @@ const DiversityProgramsPage = ({ data }) => {
         contentComponent={HTMLContent}
         hero={query.frontmatter.hero}
         content={query.html}
+        location={location}
       />
     </Layout>
   )
