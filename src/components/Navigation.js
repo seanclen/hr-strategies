@@ -241,8 +241,11 @@ export const Breadcrumbs = ({ location }) => {
   splitUrl.forEach((split, index) => {
     if (index === 0 && split === '') {
       crumbs = [...crumbs, { pathname: '/', label: 'Home' }]
-    } else if (index !== 0 && split !=='') {
-      crumbs = [...crumbs, { pathname: path.slice(0, path.lastIndexOf(split) + split.length), label: _.startCase(split.replace(/-/g, ' '))}]
+    } else if (index !== 0 && split !== '') {
+      crumbs = [...crumbs, {
+        pathname: path.slice(0, path.lastIndexOf('/'.concat(split)) + split.length + 1),
+        label: _.startCase(split.replace(/-/g, ' '))
+      }]
     }
   })
 
