@@ -114,6 +114,10 @@ footer
 
 .section
   overflow: hidden
+  &.has-shadow
+    +box-shadow(rgba(10,10,10,.05) 0 1.5rem 1.5rem -1.25rem)
+    position: relative
+    z-index: 1
 
 section.is-white, .presentation-mode .custom-slide.is-white
   background-color: #fff

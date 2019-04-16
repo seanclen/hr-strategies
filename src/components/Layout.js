@@ -6,7 +6,6 @@ import Footer from '../components/Footer'
 import '../assets/sass/all.sass'
 import Cookies from 'universal-cookie'
 import { CookiesNotification } from './Notification'
-import useSiteMetadata from './SiteMetadata'
 
 const Head = ({ data }) => (
   <Helmet>

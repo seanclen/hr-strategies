@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, navigate } from 'gatsby'
+import { navigate } from 'gatsby'
 import Cookies from 'universal-cookie'
 
 const Notification = ({
@@ -53,7 +53,7 @@ Notification.propTypes = {
 
 export default Notification
 
-export const CookiesNotification = ({}) => {
+export const CookiesNotification = () => {
   const cookies = new Cookies();
   const handleClose = (e, href) => {
     e.preventDefault();
