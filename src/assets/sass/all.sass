@@ -23,6 +23,7 @@ $control-radius: 0px
 @import "./affiliations.sass"
 @import "./carousel.sass"
 @import "./contact.sass"
+@import "./headers.sass"
 @import "./navbar.sass"
 @import "./testimonials.sass"
 @import "./utils.sass"
@@ -30,6 +31,7 @@ $control-radius: 0px
 // Global
 body
   font-family: $family-sans-serif
+
 
 // Inline
 
@@ -91,7 +93,7 @@ strong a
 // Footer
 
 footer
-  color: $white-ter
+  color: $grey-lighter
   padding: 0 !important
   .footer-body
     background-color: $grey-light
@@ -100,15 +102,20 @@ footer
       border: none
       &:hover
         border: none
+    a
+      color: $white-ter
+      &:hover
+        color: #fff
+
   .footer-bottom
-    color: $white-ter
+    color: $grey-lighter
     padding: 1rem 1.5rem
     strong
       color: $white-ter
-  a
-    color: $hrs-blue-light
-    &:hover
-      color: $blue
+    a
+      color: $hrs-blue-light
+      &:hover
+        color: $blue
 
 // Layout
 
@@ -119,21 +126,32 @@ footer
     position: relative
     z-index: 1
 
-section.is-white, .presentation-mode .custom-slide.is-white
+.section.is-white, .presentation-mode .custom-slide.is-white
   background-color: #fff
 
-section.is-light, .presentation-mode .custom-slide.is-light
+.section.is-light, .presentation-mode .custom-slide.is-light
   background-color: $white-bis
 
-section.is-dark, .presentation-mode .custom-slide.is-dark
+.section.is-dark, .presentation-mode .custom-slide.is-dark
   background-color: $grey-dark
-  color: #fff
+  color: $white-ter
+  a
+    color: $hrs-blue-light
+  h1, h2, h3, h4, h5, h6,
+    color: $white-bis
+  strong
+    color: #fff
 
-section.is-primary, .presentation-mode .custom-slide.is-primary
-  color: #fff
+.section.is-primary, .presentation-mode .custom-slide.is-primary
+  color: $white-bis
   background-color: $hrs-blue
+  h1, h2, h3, h4, h5, h6,
+    color: $white-bis
+  .content
+    h1, h2, h3, h4, h5, h6,
+      color: $white-bis
 
-section.is-tan
+.section.is-tan
   background-color: $hrs-tan
   strong a
     border-color: #fff
@@ -145,6 +163,8 @@ section.is-tan
   +transition(0.25s)
 
 .card
+  h1, h2, h3, h4, h5, h6
+    color: $grey-darker !important
   &.tile
     +box-shadow(rgba(10,10,10,.05) 0 1.5rem 1.5rem -1.25rem)
     +transition(0.25s)
@@ -185,6 +205,7 @@ a.card.tile:hover
 // LANDING
 #main
   background-color: #fff
+
 
 #homepage-hero
   h1

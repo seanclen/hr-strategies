@@ -7,6 +7,10 @@ import '../assets/sass/all.sass'
 import Cookies from 'universal-cookie'
 import { CookiesNotification } from './Notification'
 
+if (typeof window !== "undefined") {
+  require("smooth-scroll")('a[href*="#"]')
+}
+
 const Head = ({ data }) => (
   <Helmet>
     <html lang="en" />
