@@ -14,7 +14,7 @@ export const AffirmativeActionPageTemplate = ({ hero, content, contentComponent,
       <section className="section header-compliance is-medium">
         <div className="container">
           <h1 className="has-text-centered">{hero.heading}</h1>
-          <h3 className="has-text-centered">Government contractor? You may be required to prepare an AAP.</h3>
+          <h3 className="has-text-centered">{hero.heading}</h3>
         </div>
       </section>
 
@@ -202,7 +202,7 @@ export const AffirmativeActionPageTemplate = ({ hero, content, contentComponent,
       <section className="section is-medium">
         <div className="container">
           <h4 className="has-text-primary">In every OFCCP audit, the Compliance Officer will request to review the current year AAP and possibly the previous two year's AAP.</h4>
-          <p className="m-t-25 subtitle">It is extremely important to ensyre that all AAPs are properly updated each year and retained.</p>
+          <p className="m-t-25 subtitle">It is extremely important to ensure that all AAPs are properly updated each year and retained.</p>
           <div className="has-text-centered m-t-100">
             <Link to="/contact" className="button is-primary is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
           </div>
