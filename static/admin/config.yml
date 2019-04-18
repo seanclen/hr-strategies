@@ -128,7 +128,7 @@ collections:
           - {label: Warning, name: warning, widget: object, fields: [{label: Content, name: content, widget: markdown}, {label: Link, name: link, widget: object, fields: [{label: Text, name: text, widget: string}, {label: URL, name: url, widget: string}]}]}
           - {label: Law, name: law, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Content, name: content, widget: markdown}, {label: Quote, name: quote, widget: string}]}
           - {label: History, name: history, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Content, name: content, widget: markdown}, {label: Image, name: image, widget: image}, {label: Caption, name: caption, widget: string}]}
-          - {label: Ammendments, name: ammendments, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: URL, name: url, widget: string}]}
+          - {label: Amendments, name: amendments, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: URL, name: url, widget: string}]}
           - {label: Failure To Comply, name: failureToComply, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Content, name: content, widget: markdown}]}
           - {label: Footer, name: footer, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}]}
       - file: "src/pages/compliance/diversity-programs.md"
