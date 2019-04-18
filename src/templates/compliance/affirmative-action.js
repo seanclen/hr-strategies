@@ -8,13 +8,12 @@ import landingjpg from '../../assets/img/video/Diagonal.jpg'
 
 export const AffirmativeActionPageTemplate = ({ hero, content, contentComponent, location }) => {
   const PageContent = contentComponent || Content;
-  //{hero.subheading}
   return (
     <div>
       <section className="section header-compliance is-medium">
         <div className="container">
           <h1 className="has-text-centered">{hero.heading}</h1>
-          <h3 className="has-text-centered">{hero.heading}</h3>
+          <h3 className="has-text-centered">{hero.subheading}</h3>
         </div>
       </section>
 
