@@ -10,7 +10,7 @@
 // Override Bulma defaults
 
 $family-sans-serif: "Catamaran", sans-serif
-$body-color: $grey-darker
+$body-color: $grey-light
 $body-background-color: $grey-dark
 $body-size: 18px
 
@@ -142,8 +142,17 @@ footer
   strong
     color: #fff
 
+.section.is-dark-danger
+  background-color: $grey-dark
+  color: $white-ter
+
+  h1, h2, h3, h4, h5, h6,
+    color: $white-bis
+  strong
+    color: $red
+
 .section.is-primary, .presentation-mode .custom-slide.is-primary
-  color: $white-bis
+  color: $white-ter
   background-color: $hrs-blue
   h1, h2, h3, h4, h5, h6,
     color: $white-bis

@@ -1,13 +1,11 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import Content, { HTMLContent } from '../../components/Content'
+import { MarkdownContent } from '../../components/Content'
 import Layout from '../../components/Layout'
 import { Breadcrumbs } from '../../components/Navigation'
+import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
 
-import landingjpg from '../../assets/img/video/Diagonal.jpg'
-
-export const AffirmativeActionPageTemplate = ({ hero, content, contentComponent, location }) => {
-  const PageContent = contentComponent || Content;
+export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, amendments, failureToComply, footer, location }) => {
   return (
     <div>
       <section className="section header-compliance is-medium">
@@ -59,31 +57,15 @@ export const AffirmativeActionPageTemplate = ({ hero, content, contentComponent,
         </div>
       </section>
 
-      <section className="section has-background-info">
+      <section className="section is-dark-danger">
         <div className="container">
           <div className="columns is-vcentered">
-            <div className="column is-2 has-text-centered">
-              <h1 className="has-text-white"><i className="fas fa-exclamation" style={{fontSize: '10rem'}} /></h1>
+            <div className="column is-3 has-text-centered">
+              <h1 className="has-text-danger"><i className="fas fa-exclamation-triangle" style={{fontSize: '10rem'}} /></h1>
             </div>
             <div className="column">
-              <h4><strong>Failure to Comply</strong> considered a violation of the government contract!</h4>
-              <p>The Department of Labor’s Office of Federal Contract Compliance Program (OFCCP) has the authority to audit your company.</p>
-              <Link to="/compliance/affirmative-action#failure-to-comply" className="button is-white m-t-25">What does an audit look like?</Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section is-dark is-medium">
-        <div className="container">
-          <h1 className="has-text-centered m-b-25">Stay Compliant with the Law.</h1>
-          <div className="columns is-vcentered">
-            <div className="column">
-              <h4>It's The Law:</h4>
-              <p>Under <strong>federal law</strong>, government contractors and subcontractors with 50 or more employees who have entered into <strong>at least one contract</strong> of $50,000 or more with the federal government must prepare and maintain a written affirmative action program, which must be developed within 120 days from the commencement of the contract and <strong>must be updated annually</strong>.</p>
-            </div>
-            <div className="column">
-              <h4 className="is-italic has-text-grey-light">"...must be developed within 120 days and updated annually."</h4>
+              <MarkdownContent className="content" content={warning.content} />
+              <Link to={warning.link.url} className="button is-danger m-t-10">{warning.link.text}</Link> <Link to="/contact" className="button is-success is-outlined m-t-10 m-l-10">Is my company compliant?<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
             </div>
           </div>
         </div>
@@ -91,90 +73,80 @@ export const AffirmativeActionPageTemplate = ({ hero, content, contentComponent,
 
       <section className="section has-shadow is-medium">
         <div className="container">
-          <div className="columns">
-            <div className="column is-5">
-              <figure className="image">
-                <img src="https://assets.entrepreneur.com/content/3x2/2000/20170525170822-GettyImages-537155143.jpeg" />
-              </figure>
-              <small>John F. Kennedy</small>
+          <h1 className="has-text-centered m-b-25">{law.heading}</h1>
+          <div className="columns is-vcentered">
+            <div className="column">
+              <MarkdownContent className="content" content={law.content} />
             </div>
             <div className="column">
-              <h3>Created in 1961, changes as recent as 2014</h3>
+              <h4 className="is-italic has-text-grey-light">{law.quote}</h4>
+            </div>
+          </div>
+        </div>
+
+        <div className="container m-t-200">
+          <div className="columns">
+            <div className="column is-5">
+              <PreviewCompatibleImage imageInfo={history.image} />
+              <small>{history.caption}</small>
+            </div>
+            <div className="column">
+              <h3>{history.heading}</h3>
               <hr />
-              <p>First signed by President John F. Kennedy, the first iteration of AAP required that government contractors "take affirmative action to ensure that applicants are employed, and employees are treated during employment, without regard to their race, creed, color, or national origin"</p>
-              <br />
-              <p>Over the years <Link to="/compliance/affirmative-action#ammendments">ammendments have been passed</Link>. Discrimination based on sex is prohibited and recently new regulations were passed in 2014 that require identification and an evaluation of the company’s <em>good faith efforts</em> to recruit protected veterans and disabled individuals.  This obligation will necessitate the contractor to list all of the recruiting efforts the company made during the calendar year, time period to recruit veterans and disabled individuals — along with an evaluation of the effectiveness of each effort.</p>
+              <MarkdownContent className="content" content={history.content} />
             </div>
           </div>
         </div>
       </section>
 
 
-      <section id="ammendments" className="section is-primary has-blue-gradient-primary-stripe-background">
+      <section id="amendments" className="section is-primary has-blue-gradient-primary-stripe-background">
         <div className="container">
-          <div className="columns">
-            <div className="column is-8">
-              <div className="tile card">
-                <div className="card-content">
-                  <h4>Executive Order 11246</h4>
-                  <p className="m-b-25">Prohibits discrimination on the basis of race, color, religion, sex, or national origin.</p>
-                  <strong><a href="https://en.wikipedia.org/wiki/Executive_Order_11246">Learn more</a></strong>
+          {amendments.map((item, index) => (
+            <div className="columns">
+              {(index % 2 === 1) &&
+                <div className="column is-4"></div>
+              }
+              <div className="column is-8">
+                <div className="tile card">
+                  <div className="card-content">
+                    <h4>{item.title}</h4>
+                    <p className="m-b-25">{item.description}</p>
+                    <strong><a href={item.url}>Learn more</a></strong>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="columns">
-            <div className="column is-4"></div>
-            <div className="column is-8">
-              <div className="tile card">
-                <div className="card-content">
-                  <h4>Rehabilitation Act of 1973</h4>
-                  <p className="m-b-25">Prohibits discrimination on the basis of disability.</p>
-                  <strong><a href="https://en.wikipedia.org/wiki/Rehabilitation_Act_of_1973">Learn more</a></strong>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="columns">
-            <div className="column is-8">
-              <div className="tile card">
-                <div className="card-content">
-                  <h4>Vietnam Era Veterans Readjustment Assistance Act of 1974 (VEVRAA)</h4>
-                  <p className="m-b-25">Prohibits discrimination against certain classes of veterans.</p>
-                  <strong><a href="https://en.wikipedia.org/wiki/Vietnam_Era_Veterans%27_Readjustment_Assistance_Act">Learn more</a></strong>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
       <section id="failure-to-comply" className="section is-primary is-medium">
         <div className="container">
-          <h1>Failure to Comply</h1>
+          <h1>{failureToComply.heading}</h1>
           <div class="content">
-            <p>Failure to comply with the non-discrimination or affirmative action provisions in a contract is considered a violation of government contract. The Department of Labor’s Office of Federal Contract Compliance Program (OFCCP) is the agency with authority to enforce these laws by auditing a company’s AAPs and employment practices.</p>
+            <MarkdownContent className="content" content={failureToComply.content} />
           </div>
           <h4 className="m-t-25">Your company may be susceptible to:</h4>
           <div className="tile is-ancestor m-t-25">
             <div className="tile is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="subtitle">AAP audit</p>
+                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> AAP audit</p>
                 </div>
               </div>
             </div>
             <div className="tile is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="subtitle">Employment practices audit</p>
+                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Employment practices audit</p>
                 </div>
               </div>
             </div>
             <div className="tile is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="subtitle">Compliance evaluations</p>
+                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Compliance evaluations</p>
                 </div>
               </div>
             </div>
@@ -183,14 +155,14 @@ export const AffirmativeActionPageTemplate = ({ hero, content, contentComponent,
             <div className="tile is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="subtitle">Off-site review of records</p>
+                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Off-site review of records</p>
                 </div>
               </div>
             </div>
             <div className="tile is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="subtitle">On-site review of records and interviews</p>
+                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> On-site review of records and interviews</p>
                 </div>
               </div>
             </div>
@@ -200,8 +172,8 @@ export const AffirmativeActionPageTemplate = ({ hero, content, contentComponent,
 
       <section className="section is-medium">
         <div className="container">
-          <h4 className="has-text-primary">In every OFCCP audit, the Compliance Officer will request to review the current year AAP and possibly the previous two year's AAP.</h4>
-          <p className="m-t-25 subtitle">It is extremely important to ensure that all AAPs are properly updated each year and retained.</p>
+          <h4 className="has-text-primary">{footer.heading}</h4>
+          <p className="m-t-25 subtitle">{footer.subheading}</p>
           <div className="has-text-centered m-t-100">
             <Link to="/contact" className="button is-primary is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
           </div>
@@ -218,9 +190,13 @@ const AffirmativeActionPage = ({ data, location }) => {
   return (
     <Layout>
       <AffirmativeActionPageTemplate
-        contentComponent={HTMLContent}
         hero={query.frontmatter.hero}
-        content={query.html}
+        warning={query.frontmatter.warning}
+        law={query.frontmatter.law}
+        history={query.frontmatter.history}
+        amendments={query.frontmatter.amendments}
+        failureToComply={query.frontmatter.failureToComply}
+        footer={query.frontmatter.footer}
         location={location}
       />
     </Layout>
@@ -235,6 +211,43 @@ export const AffirmativeActionPageQuery = graphql`
       html
       frontmatter {
         hero {
+          heading
+          subheading
+        }
+        warning {
+          content
+          link {
+            text
+            url
+          }
+        }
+        law {
+          heading
+          content
+          quote
+        }
+        history {
+          heading
+          content
+          image {
+            childImageSharp {
+              fluid(quality: 64) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          caption
+        }
+        amendments {
+          title
+          description
+          url
+        }
+        failureToComply {
+          heading
+          content
+        }
+        footer {
           heading
           subheading
         }
