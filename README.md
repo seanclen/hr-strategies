@@ -23,5 +23,19 @@ $ npm run build
 $ npm run serve
 ```
 
-## Purgecss
+## Gotchas 🤯
+
+#### Purgecss
 This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma builds are usually ~170K but reduced 90% by purgecss.
+
+#### Atom Config
+For Babel transpiler to work, add the file ```.atom/config.cson``` and include:
+```
+"*":
+  core:
+    customFileTypes:
+      "source.js.jsx": [
+        "js"
+      ]
+```
+For more, visit the [language-babel](https://github.com/gandm/language-babel) repo.
