@@ -1,21 +1,25 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
-import Content, { HTMLContent } from '../../components/Content'
 import { Breadcrumbs } from '../../components/Navigation'
 
-export const PolicyDevelopmentPageTemplate = ({ hero, content, contentComponent, location }) => {
+export const PolicyDevelopmentPageTemplate = ({ hero, location }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section is-light">
-      <div className="container">
-        <h1 className="has-text-centered">{hero.heading}</h1>
-        <h3 className="has-text-centered">{hero.subheading}</h3>
-        <Breadcrumbs location={location} />
-        <PageContent className="content" content={content} />
-      </div>
-    </section>
+    <div>
+      <section className="section header-compliance">
+        <div className="container">
+          <h1 className="has-text-centered">{hero.heading}</h1>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <Breadcrumbs location={location} />
+        </div>
+      </section>
+    </div>
   )
 }
 
@@ -25,9 +29,7 @@ const PolicyDevelopmentPage = ({ data, location }) => {
   return (
     <Layout>
       <PolicyDevelopmentPageTemplate
-        contentComponent={HTMLContent}
         hero={query.frontmatter.hero}
-        content={query.html}
         location={location}
       />
     </Layout>
