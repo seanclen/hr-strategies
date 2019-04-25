@@ -91,7 +91,6 @@ export const AssessmentsAuditsPageQuery = graphql`
       frontmatter {
         hero {
           heading
-          subheading
         }
       }
     }
