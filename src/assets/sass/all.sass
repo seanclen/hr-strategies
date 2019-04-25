@@ -29,6 +29,29 @@ $control-radius: 0px
 @import "./utils.sass"
 
 // Global
+blockquote
+  font-family: 'Crimson-Text', serif
+  font-style: italic
+  left: 3rem
+  margin-bottom: 20px
+  position: relative
+  text-align: left
+  width: 80%
+  z-index: 0
+  &::before
+    color: #00000012
+    content: '\201C'
+    font-family: 'Catamaran'
+    font-style: normal
+    font-size: 8rem
+    left: -3rem
+    position: absolute
+    top: -3rem
+    z-index: -1
+  .cite
+    font-family: $family-sans-serif
+    font-style: normal
+
 body
   font-family: $family-sans-serif
 
@@ -177,6 +200,8 @@ footer
   &.tile
     +box-shadow(rgba(10,10,10,.05) 0 1.5rem 1.5rem -1.25rem)
     +transition(0.25s)
+    &.has-shadow-primary
+      +box-shadow($hrs-blue 0 1.5rem 1.5rem -1.25rem)
     &.no-shadow
       +box-shadow(transparent 0 0 0 0)
 
@@ -210,6 +235,10 @@ a.card.tile:hover
 
 .has-flex-grow-0
   flex-grow: 0 !important
+
+.panel
+  &.has-shadow-primary
+    +box-shadow($hrs-blue 0 1.5rem 1.5rem -1.25rem)
 
 // LANDING
 #main

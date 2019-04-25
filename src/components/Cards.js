@@ -87,3 +87,21 @@ NotificationCard.propTypes = {
   title: PropTypes.string,
   link: PropTypes.string,
 }
+
+export const CardPanel = ({
+  title,
+  icon,
+  items
+}) => (
+  <div className="card tile is-child is-primary has-shadow-primary">
+    <p className="has-text-centered title p-t-25">{title}</p>
+    {items.map((item) => (
+      <div className="card is-primary">
+        <div className="card-content">
+          <i className={icon} aria-hidden="true"></i>
+          {item}
+        </div>
+      </div>
+    ))}
+  </div>
+)
