@@ -4,8 +4,6 @@ import Layout from '../../components/Layout'
 import { Breadcrumbs } from '../../components/Navigation'
 
 export const PolicyDevelopmentPageTemplate = ({ hero, location }) => {
-  const PageContent = contentComponent || Content
-
   return (
     <div>
       <section className="section header-compliance">
