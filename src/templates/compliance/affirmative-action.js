@@ -48,7 +48,7 @@ export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, ame
           </div>
           <div className="tile card">
             <div className="card-content">
-              <h3 className="has-text-centered">If so, your business is <strong>legally required</strong> to prepare and maintain an AAP.</h3>
+              <h3 className="has-text-centered">If so, your business is <strong>legally required</strong> to annually prepare an AAP.</h3>
               <div className="has-text-centered m-t-25">
                 <Link to="/contact" className="button is-primary is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
               </div>
@@ -132,37 +132,21 @@ export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, ame
             <div className="tile is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> AAP audit</p>
+                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Compliance Review (AAP Audit)</p>
                 </div>
               </div>
             </div>
             <div className="tile is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Employment practices audit</p>
+                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Disbarment from Government Projects</p>
                 </div>
               </div>
             </div>
             <div className="tile is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Compliance evaluations</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="tile is-ancestor">
-            <div className="tile is-parent">
-              <div className="tile is-child card">
-                <div className="card-content">
-                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Off-site review of records</p>
-                </div>
-              </div>
-            </div>
-            <div className="tile is-parent">
-              <div className="tile is-child card">
-                <div className="card-content">
-                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> On-site review of records and interviews</p>
+                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Employment Practices Audit</p>
                 </div>
               </div>
             </div>
