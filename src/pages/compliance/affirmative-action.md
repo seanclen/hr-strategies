@@ -67,7 +67,7 @@ failureToComply:
     provisions in a contract is considered a violation of government contract.
     The Department of Labor’s Office of Federal Contract Compliance Program
     (OFCCP) is the agency with authority to enforce these laws by auditing a
-    company’s AAPs and employment practices.
+    company’s AAP's and employment practices.
   heading: Failure to Comply
 footer:
   heading: >-
