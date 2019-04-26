@@ -10,8 +10,8 @@ warning:
 
     The Department of Labor’s Office of Federal Contract Compliance Program
     (OFCCP) has the authority to audit your company or disbar them from
-    government contracts for up to 7 years. Not sure where your company stands?
-    Let us help.
+    government contracts for up to seven years. Not sure where your company
+    stands? Let us help.
   link:
     text: What does an audit look like?
     url: '/compliance/affirmative-action#failure-to-comply'
@@ -65,10 +65,10 @@ amendments:
 failureToComply:
   content: >-
     Failure to comply with the non-discrimination or affirmative action
-    provisions in a contract is considered a violation of government contract.
-    The Department of Labor’s Office of Federal Contract Compliance Program
-    (OFCCP) is the agency with authority to enforce these laws by auditing a
-    company’s AAP's and employment practices.
+    provisions is considered a violation. The Department of Labor’s Office of
+    Federal Contract Compliance Program (OFCCP) is the agency with authority to
+    enforce these laws by auditing a company’s AAP's and employment practices
+    which could result in potential disbarment for seven years.
   heading: Your company may be susceptible to a compliance review
 footer:
   heading: >-
