@@ -1,21 +1,37 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
-import Content, { HTMLContent } from '../../components/Content'
 import { Breadcrumbs } from '../../components/Navigation'
 
-export const InvestigationsPageTemplate = ({ hero, content, contentComponent, location }) => {
-  const PageContent = contentComponent || Content
-
+export const InvestigationsPageTemplate = ({ hero, location }) => {
   return (
-    <section className="section is-light">
-      <div className="container">
-        <h1 className="has-text-centered">{hero.heading}</h1>
-        <h3 className="has-text-centered">{hero.subheading}</h3>
-        <Breadcrumbs location={location} />
-        <PageContent className="content" content={content} />
-      </div>
-    </section>
+    <div>
+      <section className="section header-compliance">
+        <div className="container">
+          <h1 className="has-text-centered">{hero.heading}</h1>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <Breadcrumbs location={location} />
+        </div>
+      </section>
+
+      <section className="section is-light is-medium">
+        <div className="container">
+          <h1 className="has-text-centered has-text-primary">Discrimination Investigations</h1>
+          <h3 className="has-text-centered">Investigations based on discrimination of a protected characteristics.  Investigations based on internal allegation, DDOL or EEOC.</h3>
+        </div>
+      </section>
+
+      <section className="section is-medium">
+        <div className="container">
+          <h1 className="has-text-centered">Harassment Investigations</h1>
+          <h3 className="has-text-centered">Investigations based on an allegation of any form of harassment.  Investigations based on internal allegation, DDOL or EEOC.</h3>
+        </div>
+      </section>
+    </div>
   )
 }
 
@@ -25,9 +41,7 @@ const InvestigationsPage = ({ data, location }) => {
   return (
     <Layout>
       <InvestigationsPageTemplate
-        contentComponent={HTMLContent}
         hero={query.frontmatter.hero}
-        content={query.html}
         location={location}
       />
     </Layout>

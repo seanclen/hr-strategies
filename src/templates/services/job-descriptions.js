@@ -1,21 +1,31 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
-import Content, { HTMLContent } from '../../components/Content'
 import { Breadcrumbs } from '../../components/Navigation'
 
-export const JobDescriptionsPageTemplate = ({ hero, content, contentComponent, location }) => {
-  const PageContent = contentComponent || Content
-
+export const JobDescriptionsPageTemplate = ({ hero, location }) => {
   return (
-    <section className="section is-light">
-      <div className="container">
-        <h1 className="has-text-centered">{hero.heading}</h1>
-        <h3 className="has-text-centered">{hero.subheading}</h3>
-        <Breadcrumbs location={location} />
-        <PageContent className="content" content={content} />
-      </div>
-    </section>
+    <div>
+      <section className="section header-compliance">
+        <div className="container">
+          <h1 className="has-text-centered">{hero.heading}</h1>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <Breadcrumbs location={location} />
+        </div>
+      </section>
+
+      <section className="section is-primary is-medium">
+        <div className="container has-text-centered">
+          <h1>What is it that you do exactly?</h1>
+          <h3>The development of job descriptions to comply with FLSA and ensure all appropriate requirements are included based on the essential functions, physical demands, industry standards, safety, etc. </h3>
+          <Link to="/contact" className="button is-light is-outlined is-large m-t-25">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+        </div>
+      </section>
+    </div>
   )
 }
 
@@ -25,9 +35,7 @@ const JobDescriptionsPage = ({ data, location }) => {
   return (
     <Layout>
       <JobDescriptionsPageTemplate
-        contentComponent={HTMLContent}
         hero={query.frontmatter.hero}
-        content={query.html}
         location={location}
       />
     </Layout>
