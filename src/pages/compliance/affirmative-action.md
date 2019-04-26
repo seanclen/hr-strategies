@@ -69,7 +69,7 @@ failureToComply:
     The Department of Labor’s Office of Federal Contract Compliance Program
     (OFCCP) is the agency with authority to enforce these laws by auditing a
     company’s AAP's and employment practices.
-  heading: Failure to Comply
+  heading: Your company may be susceptible to a compliance review
 footer:
   heading: >-
     In every OFCCP audit, the Compliance Officer will request to review the
