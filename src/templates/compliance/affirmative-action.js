@@ -124,32 +124,35 @@ export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, ame
       <section id="failure-to-comply" className="section is-primary is-medium">
         <div className="container">
           <h1>{failureToComply.heading}</h1>
-          <div class="content">
-            <MarkdownContent className="content" content={failureToComply.content} />
-          </div>
-          <h4 className="m-t-25">Your company may be susceptible to:</h4>
+          <h5>The compliance review may progress in three phases:</h5>
           <div className="tile is-ancestor m-t-25">
             <div className="tile is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Compliance Review (AAP Audit)</p>
+                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> A Desk Audit</p>
                 </div>
               </div>
             </div>
             <div className="tile is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Disbarment from Government Projects</p>
+                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> On-site Review</p>
                 </div>
               </div>
             </div>
             <div className="tile is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Employment Practices Audit</p>
+                  <p className="subtitle"><i class="has-text-primary-light fas fa-check-circle"></i> Off-site Analysis</p>
                 </div>
               </div>
             </div>
+          </div>
+
+          <p>OFCCP describes the phases of a compliance review in its regulations at 41 CFR CHAPTER 60.</p>
+
+          <div class="content m-t-50">
+            <MarkdownContent className="content" content={failureToComply.content} />
           </div>
         </div>
       </section>
