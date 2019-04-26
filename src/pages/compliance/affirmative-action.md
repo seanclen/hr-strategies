@@ -64,6 +64,9 @@ amendments:
       https://en.wikipedia.org/wiki/Vietnam_Era_Veterans%27_Readjustment_Assistance_Act
 failureToComply:
   content: >-
+    ### Failure to Comply
+
+
     Failure to comply with the non-discrimination or affirmative action
     provisions is considered a violation. The Department of Labor’s Office of
     Federal Contract Compliance Program (OFCCP) is the agency with authority to
