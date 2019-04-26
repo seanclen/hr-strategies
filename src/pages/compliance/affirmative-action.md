@@ -9,8 +9,9 @@ warning:
 
 
     The Department of Labor’s Office of Federal Contract Compliance Program
-    (OFCCP) has the authority to audit your company. Not sure where your company
-    stands? Let us help.
+    (OFCCP) has the authority to audit your company or disbar them from
+    government contracts for up to 7 years. Not sure where your company stands?
+    Let us help.
   link:
     text: What does an audit look like?
     url: '/compliance/affirmative-action#failure-to-comply'
