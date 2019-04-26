@@ -73,9 +73,9 @@ failureToComply:
 footer:
   heading: >-
     In every OFCCP audit, the Compliance Officer will request to review the
-    current year AAP and possibly the previous two year's AAP.
+    current year AAP and the previous two year's AAP.
   subheading: >-
-    It is extremely important to ensure that all AAPs are properly updated each
+    It is extremely important to ensure that all AAP's are properly updated each
     year and retained.
 ---
 
