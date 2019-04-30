@@ -120,7 +120,7 @@ export const HomePageTemplate = ({
               <div className="column is-narrow">
                 <h1>Leading People.</h1>
                 <h1>Leading Business.</h1>
-                <hr className="brand" />
+                <hr className="thick has-background-info" />
                 <div className="is-size-3 is-size-6-touch has-text-white">
                   <p>{content.hero.tagline}</p>
                 </div>

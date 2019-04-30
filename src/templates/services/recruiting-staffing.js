@@ -23,7 +23,7 @@ export const RecruitingStaffingPageTemplate = ({ hero, location }) => {
           <h1 className="has-text-primary">Looking to expand?</h1>
           <h1 className="has-text-primary-light">Need to fill an opening?</h1>
           <h3>We've got you covered.</h3>
-          <Link to="/contact" className="button is-white is-large m-t-25">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <Link to="/contact" className="button is-info is-large m-t-25">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
         </div>
       </section>
 

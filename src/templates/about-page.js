@@ -36,10 +36,10 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
           <h1 className="has-text-centered">{about.title}</h1>
           <div className="tile is-ancestor m-t-25">
             <div className="tile is-parent is-8">
-              <div className="tile card is-child">
+              <div className="tile card is-child is-white">
                 <div className="card-content">
-                  <h4 className="has-text-primary-light">{about.subtitle}</h4>
-                  <p className="is-size-5">
+                  <h4>{about.subtitle}</h4>
+                  <p className="is-size-5 m-t-10">
                     <PageContent content={about.body} />
                   </p>
                 </div>
@@ -68,7 +68,53 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
       <section className="section is-medium">
         <div className="container">
           <h1 className="has-text-centered">Our Story</h1>
-          <PageContent content={story.body} />
+          <div className="timeline is-centered m-t-25">
+            <header className="timeline-header">
+              <span className="tag is-medium is-primary">2002</span>
+            </header>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary"></div>
+              <div className="timeline-content">
+                <p>Our founder had the vision to bring the same high level HR expertise to companies that either didn’t have a HR function or had limited HR knowledge as that of a Fortune 100 company.</p>
+              </div>
+            </div>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary is-icon">
+                <i className="fas fa-star"></i>
+              </div>
+              <div className="timeline-content">
+                <p className="heading">February 2002</p>
+                <p>HR Strategies, LLC is established to provide HR outsourcing to enhance an organizations’ efficiency, improve productivity and positively impact their bottom line with a staff of certified professionals.</p>
+              </div>
+            </div>
+            <header className="timeline-header">
+              <span className="tag is-primary">2008</span>
+            </header>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary is-icon">
+                <i className="fa fa-globe-americas"></i>
+              </div>
+              <div className="timeline-content">
+                <p className="heading">August 2008</p>
+                <p>Founder is the only person in Delaware to achieve her Global Professional in Human Resources (GPHR), Senior Professional in Human Resources (SPHR) and SHRM-SCP certifications.</p>
+              </div>
+            </div>
+            <header className="timeline-header">
+              <span className="tag is-primary">2017</span>
+            </header>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary is-icon">
+                <i className="fas fa-bookmark"></i>
+              </div>
+              <div className="timeline-content">
+                <p className="heading">March 2017</p>
+                <p>HR Strategies, LLC has distinguished itself by being the only all SHRM Certified and Women Business Enterprise (WBE) HR firm in the region.</p>
+              </div>
+            </div>
+            <header className="timeline-header">
+              <span className="has-text-primary">More to Come!</span>
+            </header>
+          </div>
         </div>
       </section>
       <section className="section is-light is-medium">

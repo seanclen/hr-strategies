@@ -15,9 +15,11 @@ const Footer = () => (
               <div className="column">
                 <h5 className="m-b-10">Contact</h5>
                 <p>
-                  137 Back Creek Dr.<br />
-                  Middletown, DE 19709<br />
-                  (302) 376-8595 <br />
+                  <a href="https://goo.gl/maps/MU85kR3DDZv1K8dR9">
+                    137 Back Creek Dr.<br />
+                    Middletown, DE 19709<br />
+                  </a>
+                  <a href="tel:+13023768595">(302) 376-8595<br /></a>
                   <a href="mailto:contact@hrstrategies.org">contact@hrstragegies.org</a>
                 </p>
               </div>
