@@ -7,6 +7,7 @@ import Notification from '../components/Notification'
 import Affiliations from '../components/Affiliations'
 import Testimonials from '../components/Testimonials'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import '../assets/sass/homepage.sass'
 import { v4 } from 'uuid'
 import Cookies from 'universal-cookie'
 
@@ -48,7 +49,7 @@ function Statistics(props) {
 function Discount(props) {
   if (!props.discount) { return(<span></span>) }
   return (
-    <section className="section is-tan p-t-50 p-b-50">
+    <section className="section is-info p-t-50 p-b-50">
       <div className="columns is-centered is-vcentered">
         {props.discount.percentage &&
           <div className="column is-narrow">
@@ -119,12 +120,12 @@ export const HomePageTemplate = ({
               <div className="column is-narrow">
                 <h1>Leading People.</h1>
                 <h1>Leading Business.</h1>
-                <hr />
+                <hr className="brand" />
                 <div className="is-size-3 is-size-6-touch has-text-white">
                   <p>{content.hero.tagline}</p>
                 </div>
                 <div className="has-text-centered m-t-25">
-                  <Link to="/contact" className="button is-primary is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+                  <Link to="/contact" className="button is-info is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
                 </div>
               </div>
             </div>

@@ -156,8 +156,8 @@ const Navbar = class extends React.Component {
                   <Link className="navbar-item" to="/compliance/diversity-programs">
                     Diversity Programs
                   </Link>
-                  <Link className="navbar-item" to="/compliance/assessments-audits">
-                    HR Assessments / Audits
+                  <Link className="navbar-item" to="/compliance/assessment">
+                    HR Assessment
                   </Link>
                   <Link className="navbar-item" to="/compliance/policy-development">
                     Policy Development

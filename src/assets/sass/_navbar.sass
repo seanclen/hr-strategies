@@ -89,11 +89,14 @@ $navbar-divider-background-color: $grey-light
     &.is-active
       display: block
       right: 0px
-    .navbar-item.has-dropdown.is-active
-      .navbar-dropdown
-        background-color: $grey-light !important
-        height: auto
-      .navbar-link
-        background-color: $grey-light !important
-        border-bottom: 1px solid $grey-dark
-        color: #fff !important
+    .navbar-item
+      padding-right: 0px !important
+
+      &.has-dropdown.is-active
+        .navbar-dropdown
+          background-color: $grey-light !important
+          height: auto
+        .navbar-link
+          background-color: $grey-light !important
+          border-bottom: 1px solid $grey-dark
+          color: #fff !important

@@ -59,13 +59,6 @@ export const EmployeeRelationsPageTemplate = ({ hero, location }) => {
           <h5>Managing for employee retention involves strategic actions to keep employees motivated and focused so they elect to remain employed and fully productive for the benefit of the organization. A comprehensive employee retention program can play a vital role in both attracting and retaining key employees, as well as in reducing turnover and its related costs. All of these contribute to an organization's productivity and overall business performance. </h5>
         </div>
       </section>
-
-      <section className="section is-light is-medium">
-        <div className="container">
-          <h3 className="has-text-centered has-text-primary">Wellness Intervention</h3>
-          <h5 className="has-text-centered">When you have healthy employees, your company reaps the benefits. A correctly designed wellness program can increase productivity, boost moral and reduce stress. Wellness programs help employees make smart and healthy choices that can reduce health care costs, increase vitality and diminish absenteeism.</h5>
-        </div>
-      </section>
     </div>
   )
 }

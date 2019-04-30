@@ -23,7 +23,7 @@ export const PolicyDevelopmentPageTemplate = ({ hero, location }) => {
         <div className="container">
           <h4>2018 proved to be a busy year, new and amended employment-related laws took effect in 27 states, many applying to all employers.</h4>
           <h5 className="m-t-50 m-b-10 is-size-4">Not sure if your company's policies are still compliant?</h5>
-          <Link to="/contact" className="button is-light is-outlined is-large">We can help with that<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <Link to="/contact" className="button is-info is-large">We can help with that<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
         </div>
       </section>
 
@@ -51,42 +51,84 @@ export const PolicyDevelopmentPageTemplate = ({ hero, location }) => {
             <div className="tile is-4 is-vertical is-parent">
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="title"><i class="fab fa-accessible-icon"></i> Reasonable Accomodations</p>
-                  <p>Allowing people who have certain conditions public access to employee restrooms.</p>
-                </div>
-              </div>
-              <div className="tile is-child card">
-                <div className="card-content">
-                  <p className="title"><i class="fas fa-home"></i> Leaves of Absense</p>
-                  <p>ew Jersey was one of several states that passed a statewide paid-sick-leave law.</p>
-                </div>
-              </div>
-            </div>
-            <div className="tile is-4 is-vertical is-parent">
-              <div className="tile is-child card">
-                <div className="card-content">
-                  <p className="title"><i class="fas fa-coins"></i> Equal Pay</p>
-                  <p>States and localities are aggressively pushing to pass pay-equity laws to achieve fair pay across the board.</p>
-                </div>
-              </div>
-              <div className="tile is-child card">
-                <div className="card-content">
-                  <p className="title"><i class="fas fa-smoking-ban"></i> Smoke-Free Workplace</p>
-                  <p>More states are including e-cigarettes and other tobacco substitutes in their laws prohibiting smoking in the workplace.</p>
-                </div>
-              </div>
-            </div>
-            <div className="tile is-4 is-vertical is-parent">
-              <div className="tile is-child card">
-                <div className="card-content">
-                  <p className="title"><i class="fas fa-user-shield"></i> Anti-Sexual Harassment</p>
+                  <div className="columns is-vcentered">
+                    <div className="column is-narrow">
+                      <p className="title"><i class="fas fa-user-shield has-text-info"></i></p>
+                    </div>
+                    <div className="column">
+                      <p className="title">Anti-Sexual Harassment</p>
+                    </div>
+                  </div>
                   <p>Harassment laws have resulted in requirements for policy inclusions and exclusions, anti-sexual harassment training, and employee communication.</p>
                 </div>
               </div>
               <div className="tile is-child card">
                 <div className="card-content">
-                  <p className="title"><i class="fas fa-cog"></i>Whatever You Need</p>
-                  <p>Let us review your polices and practices. Protect your people and your company.</p>
+                  <div className="columns is-vcentered">
+                    <div className="column is-narrow">
+                      <p className="title"><i class="fas fa-skull-crossbones has-text-info"></i></p>
+                    </div>
+                    <div className="column">
+                      <p className="title">Drug & Alcohol Free Workplace</p>
+                    </div>
+                  </div>
+                  <p>New alcohol and drug testing policies are being developed but vary between states and municipalities.</p>
+                </div>
+              </div>
+            </div>
+            <div className="tile is-4 is-vertical is-parent">
+              <div className="tile is-child card">
+                <div className="card-content">
+                  <div className="columns is-vcentered">
+                    <div className="column is-narrow">
+                      <p className="title"><i class="fab fa-accessible-icon has-text-info"></i></p>
+                    </div>
+                    <div className="column">
+                      <p className="title">Reasonable Accomodations</p>
+                    </div>
+                  </div>
+                  <p>Allowing people who have certain conditions public access to employee restrooms.</p>
+                </div>
+              </div>
+              <div className="tile is-child card">
+                <div className="card-content">
+                  <div className="columns is-vcentered">
+                    <div className="column is-narrow">
+                      <p className="title"><i class="fas fa-home has-text-info"></i></p>
+                    </div>
+                    <div className="column">
+                      <p className="title">Leaves of Absense</p>
+                    </div>
+                  </div>
+                  <p>New Jersey was one of several states that passed a statewide paid-sick-leave law.</p>
+                </div>
+              </div>
+            </div>
+            <div className="tile is-4 is-vertical is-parent">
+              <div className="tile is-child card">
+                <div className="card-content">
+                  <div className="columns is-vcentered">
+                    <div className="column is-narrow">
+                      <p className="title"><i class="fas fa-coins has-text-info"></i></p>
+                    </div>
+                    <div className="column">
+                      <p className="title">Equal Pay</p>
+                    </div>
+                  </div>
+                  <p>States and localities are aggressively pushing to pass pay-equity laws to achieve fair pay across the board.</p>
+                </div>
+              </div>
+              <div className="tile is-child card">
+                <div className="card-content">
+                  <div className="columns is-vcentered">
+                    <div className="column is-narrow">
+                      <p className="title"><i class="fas fa-smoking-ban has-text-info"></i></p>
+                    </div>
+                    <div className="column">
+                      <p className="title">Smoke-Free Workplace</p>
+                    </div>
+                  </div>
+                  <p>More states are including e-cigarettes and other tobacco substitutes in their laws prohibiting smoking in the workplace.</p>
                 </div>
               </div>
             </div>
@@ -97,9 +139,9 @@ export const PolicyDevelopmentPageTemplate = ({ hero, location }) => {
       <section className="section is-medium">
         <div className="container">
           <h4 className="has-text-primary">We stay updated on all of the new legislation and policies so you don't have to.</h4>
-          <p className="m-t-25 subtitle">Do what you do best, we'll take it from here.</p>
+          <p className="m-t-25 subtitle">Focus on what you do best, we'll take it from here.</p>
           <div className="has-text-centered m-t-100">
-            <Link to="/contact" className="button is-primary is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+            <Link to="/contact" className="button is-primary is-large">Request a Policy<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
           </div>
         </div>
       </section>

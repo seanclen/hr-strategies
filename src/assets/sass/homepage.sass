@@ -1,0 +1,79 @@
+@import "./mixins.sass"
+@import "./colors.sass"
+
+#homepage-hero
+  h1
+    color: #fff
+    font-family: 'Crimson Text', serif
+    font-size: 8vw
+    line-height: 8vw
+    span.hrs-blue
+      color: $hrs-blue !important
+    span.hrs-blue-light
+      color: $hrs-blue-light !important
+
+  .hero-news
+    +box-shadow(transparent 0 0 0 0)
+    +transition(0.5s)
+    background-color: transparentize($hrs-blue, 0.9)
+    bottom: 20px
+    margin-left: 20px
+    padding: 1rem
+    padding-bottom: 0
+    position: absolute
+    right: 20px
+    z-index: 3
+    .excerpt
+      +transition(0.5s)
+      max-height: 0px
+      overflow: hidden
+      visibility: collapse
+
+    &:hover
+      +box-shadow(rgba(10,10,10,.3) 0 3rem 3rem -1.25rem)
+      background-color: $hrs-tan //$hrs-blue
+      padding-bottom: 1rem
+      -webkit-transform: translateY(-1rem)
+      transform: translateY(-1rem)
+      .excerpt
+        max-height: 500px
+        visibility: visible
+
+  @media screen and (max-height: 498px)
+    .hero-news
+      display: none !important
+
+#homepage-news
+  .title
+    font-family: 'Crimson Text', serif
+    font-size: 1.5rem
+    font-weight: 400
+  .card
+    .card-footer
+      bottom: 0
+      border-top: 0
+      position: absolute
+      width: 100%
+      .card-footer-item
+        justify-content: flex-end
+
+#homepage-notification
+  +transition(0.5s)
+  bottom: 20px
+  opacity: 1
+  pointer-events: none
+  position: fixed
+  width: 100%
+  z-index: 4
+
+  &.hide
+    bottom: -400px
+    opacity: 0
+
+  .notification.landing
+    +box-shadow(rgba(10,10,10,.3) 0 3rem 3rem -1.25rem)
+    background-color: #fff !important
+    font-family: "Catamaran", sans-serif
+    pointer-events: all
+    .title
+      color: $grey-dark

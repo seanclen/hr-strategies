@@ -8,7 +8,7 @@ import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
 export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, amendments, failureToComply, footer, location }) => {
   return (
     <div>
-      <section className="section header-compliance is-medium">
+      <section className="section header-compliance">
         <div className="container">
           <h1 className="has-text-centered">{hero.heading}</h1>
           <h3 className="has-text-centered">{hero.subheading}</h3>
@@ -57,15 +57,15 @@ export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, ame
         </div>
       </section>
 
-      <section className="section is-dark-danger">
+      <section className="section is-dark info">
         <div className="container">
           <div className="columns is-vcentered">
             <div className="column is-3 has-text-centered">
-              <h1 className="has-text-danger"><i className="fas fa-exclamation-triangle" style={{fontSize: '10rem'}} /></h1>
+              <h1 className="has-text-info"><i className="fas fa-exclamation-triangle" style={{fontSize: '10rem'}} /></h1>
             </div>
             <div className="column">
               <MarkdownContent className="content" content={warning.content} />
-              <Link to={warning.link.url} className="button is-danger m-t-10">{warning.link.text}</Link> <Link to="/contact" className="button is-success is-outlined m-t-10 m-l-10">Is my company compliant?<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+              <Link to={warning.link.url} className="button is-info m-t-10">{warning.link.text}</Link> <Link to="/contact" className="button is-info is-outlined m-t-10 m-l-10">Is my company compliant?<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@ export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, ame
                 <div className="column is-4"></div>
               }
               <div className="column is-8">
-                <div className="tile card">
+                <div className="tile card is-white">
                   <div className="card-content">
                     <h4>{item.title}</h4>
                     <p className="m-b-25">{item.description}</p>
@@ -162,7 +162,7 @@ export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, ame
           <h4 className="has-text-primary">{footer.heading}</h4>
           <p className="m-t-25 subtitle">{footer.subheading}</p>
           <div className="has-text-centered m-t-100">
-            <Link to="/contact" className="button is-primary is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+            <Link to="/contact" className="button is-info is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
           </div>
         </div>
       </section>

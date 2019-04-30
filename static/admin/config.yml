@@ -142,7 +142,7 @@ collections:
         label: "HR Assessments & Audits"
         name: "assessments-audits"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "assessments-audits"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "assessments"}
           - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/compliance/policy-development.md"

@@ -55,7 +55,7 @@ export const MandatedTrainingPageTemplate = ({ hero, location }) => {
               <div className="tile card">
                 <div className="card-content">
                   <h4>Drug use and its effect on personal health, safety and the workplace for Employees</h4>
-                  <p className="m-b-25">Is required biennially for all companies working on New Castle County Projects.</p>
+                  <p className="m-b-25">Required biennially for all companies working on New Castle County Projects.</p>
                 </div>
               </div>
             </div>
@@ -64,6 +64,11 @@ export const MandatedTrainingPageTemplate = ({ hero, location }) => {
       </section>
 
       <section className="section is-primary">
+        <div className="container has-text-centered">
+          <Link to="/contact" className="button is-light is-outlined is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+        </div>
+      </section>
+      <section className="section has-background-info">
         <div className="container has-text-centered">
           <Link to="/contact" className="button is-light is-outlined is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
         </div>

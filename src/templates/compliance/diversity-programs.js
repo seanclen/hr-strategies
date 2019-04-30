@@ -21,7 +21,7 @@ export const DiversityProgramsPageTemplate = ({ hero, location }) => {
 
   return (
     <div>
-      <section className="section header-compliance is-medium">
+      <section className="section header-compliance">
         <div className="container">
           <h1 className="has-text-centered">{hero.heading}</h1>
           <h3 className="has-text-centered">Less of a HR Program, More of a Business Strategy</h3>
@@ -83,11 +83,11 @@ export const DiversityProgramsPageTemplate = ({ hero, location }) => {
             <div className="card-content">
               <h4>Diversity is a key driver of innovation and is a critical component of successful business</h4>
               <p>According to <a href="">The <i>Forbes Insights</i> survey</a>, senior executives are recognizing that a diverse set of experiences, perspectives, and backgrounds is crucial to innovation and the development of new ideas. Multiple voices lead to new ideas, new services, and new products, and encourage out-of-the-box thinking.</p>
-              <h4 className="m-t-25">The Facts</h4>
+              <h4 className="m-t-50">The Facts</h4>
               <div className="content p-l-25">
-                <p><span className="is-size-4 has-text-primary">85%</span> believe a diverse and inclusive workforce is crucial to encouraging different perspectives and ideas that drive innovation. <a href="https://images.forbes.com/forbesinsights/StudyPDFs/Innovation_Through_Diversity.pdf">Read more</a></p>
-                <p><span className="is-size-4 has-text-primary">35%</span> of diverse companies outperform homogeneous ones. <a href="https://www.mckinsey.com/business-functions/organization/our-insights/why-diversity-matters">Read more</a></p>
-                <p><span className="is-size-4 has-text-primary">2.3x</span> higher cash flow enjoyed by inclusive companies. <a href="http://joshbersin.com/2015/12/why-diversity-and-inclusion-will-be-a-top-priority-for-2016/">Read more</a></p>
+                <p><span className="is-size-4 has-text-primary has-text-weight-bold">85%</span> believe a diverse and inclusive workforce is crucial to encouraging different perspectives and ideas that drive innovation &mdash; <a href="https://images.forbes.com/forbesinsights/StudyPDFs/Innovation_Through_Diversity.pdf">read more</a></p>
+                <p><span className="is-size-4 has-text-primary has-text-weight-bold">35%</span> of diverse companies outperform homogeneous ones &mdash; <a href="https://www.mckinsey.com/business-functions/organization/our-insights/why-diversity-matters">read more</a></p>
+                <p><span className="is-size-4 has-text-primary has-text-weight-bold">2.3x</span> higher cash flow enjoyed by inclusive companies &mdash; <a href="http://joshbersin.com/2015/12/why-diversity-and-inclusion-will-be-a-top-priority-for-2016/">read more</a></p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ export const DiversityProgramsPageTemplate = ({ hero, location }) => {
 
       <section className="section is-primary has-text-centered">
         <div className="level">
-          <p className="level-item"><span className="subtitle has-text-white m-r-25">Have Questions?</span> <Link to="/contact" className="button is-light is-outlined is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link></p>
+          <p className="level-item"><span className="subtitle has-text-white m-r-25">Have Questions?</span> <Link to="/contact" className="button is-info is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link></p>
         </div>
       </section>
 

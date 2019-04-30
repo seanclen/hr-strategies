@@ -27,18 +27,16 @@ export const RecruitingStaffingPageTemplate = ({ hero, location }) => {
         </div>
       </section>
 
-      <section className="section has-background-info">
-        <div className="container">
+      <section className="section is-primary">
+        <div className="container has-text-centered">
           <h1 className="has-text-white">Experience over <span className="has-text-weight-bold">65%</span> savings.</h1>
         </div>
       </section>
 
       <section className="section is-medium">
         <div className="container">
-          <h3>Save money by doing less.</h3>
-          <h5>In the past our clients have experienced an average 56.78% savings in their recruiting costs which have positively impacted their bottom line.</h5>
-          <br />
-          <p>If your organization has job openings and needs assistance in filling those open positions, contact HR Strategies for support.  We can focus on your recruiting needs so that you can focus on your business needs.  Our recruiting processes have proven that we are able to save our clients’ money.  </p>
+          <h2>Save money by doing less.</h2>
+          <h5>In the past our clients have experienced an average <strong>56.78%</strong> savings in their recruiting costs which have positively impacted their bottom line. We can focus on your recruiting needs so that you can focus on your business needs.</h5>
         </div>
       </section>
     </div>
