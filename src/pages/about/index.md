@@ -57,7 +57,7 @@ team:
         annually to keep apprised of compliance requirements, benchmarking and
         best practice trends so that he can develop solutions for our client’s
         needs.
-      name: Dave Clendening
+      name: Dave
       title: Vice President of HR Operations
     - certifications: SHRM-SCP
       description: >-
@@ -69,7 +69,7 @@ team:
         the University of Delaware and has successfully achieved SHRM-CP. He
         brings seven plus years of recruiting, multiple years of teambuilding
         and problem solving to our organization.
-      name: Chris Clendening
+      name: Chris
       title: HR Business Partner
 ---
 
