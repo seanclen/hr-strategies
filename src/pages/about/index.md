@@ -2,17 +2,20 @@
 templateKey: about-page
 mission:
   statement: >-
-    Build lasting relationships with people and develop strategies that support,
-    protect, and evolve any business model.
+    Build lasting relationships with organizations and develop strategies that
+    support, protect, and evolve any business model.
   title: 'Our Mission:'
 about:
   body: >-
-    We believe that running a business should be focused on providing people a
-    product or service. Chances are, you have employees to manage that require
-    repetitive administrative tasks, distracting you from your company’s
-    mission. We take pride in providing cost-effective consulting services to
-    companies with or without an HR department to enable them to successfully
-    grow their businesses.
+    We are a full service agency that provides human resources expertise and
+    related services when needed. We provide support throughout the employment
+    cycle, hiring through retiring. We strive to provide efficient and cost
+    effective employment practices and compliance recommendations to guide you
+    throughout the employment relationship. The benefit of enlisting the support
+    of HR Strategies is their up-to-date technical knowledge, expertise and
+    reliability. Human Resources needs, are evaluated and assessed; ideas and
+    solutions are offered for each client to meet their individual needs today
+    and in the future.
   subtitle: Your People are Our Business
   title: About HR Strategies
 story:
