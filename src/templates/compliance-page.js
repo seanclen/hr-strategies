@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { Breadcrumbs } from '../components/Navigation'
+import { ContactLink, Breadcrumbs } from '../components/Navigation'
 
 export const CompliancePageTemplate = ({ hero, location }) => {
   return (
@@ -22,7 +22,7 @@ export const CompliancePageTemplate = ({ hero, location }) => {
       <section className="section is-light is-medium">
         <div className="container">
           <h4>HR Strategies, LLC will ensure your organization is in compliance with Federal, State, and Local employment and labor laws which are determined by the company size, location and industry.</h4>
-          <Link to="/contact" className="button is-primary is-large m-t-25">Talk to Us<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <ContactLink location={location} className="button is-primary is-large m-t-25">Talk to Us<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
           <h3 className="has-text-centered m-t-50">How We Can Help</h3>
           <Link to="/compliance/affirmative-action" className="m-t-100 tile card">
             <div className="card-content">
@@ -65,7 +65,7 @@ export const CompliancePageTemplate = ({ hero, location }) => {
 
       <section className="section is-primary">
         <div className="container has-text-centered">
-          <Link to="/contact" className="button is-light is-large is-outlined">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <ContactLink location={location} className="button is-light is-large is-outlined">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
         </div>
       </section>
     </div>

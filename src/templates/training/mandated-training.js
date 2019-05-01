@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
-import { Breadcrumbs } from '../../components/Navigation'
+import { ContactLink, Breadcrumbs } from '../../components/Navigation'
 
 export const MandatedTrainingPageTemplate = ({ hero, location }) => {
   return (
@@ -22,7 +22,7 @@ export const MandatedTrainingPageTemplate = ({ hero, location }) => {
         <div className="container m-t-100">
           <h4>To help maintain a safe and productive workplace, employers should adequately train their employees on their obligations under the law and to the company.</h4>
           <h5 className="m-t-50 m-b-10 is-size-4">Not sure what your company's requirements are?</h5>
-          <Link to="/contact" className="button is-info is-large">We can help with that<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <ContactLink location={location} className="button is-info is-large">We can help with that<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
           <h3 className="has-text-centered m-t-100">Here's what is required in Delaware:</h3>
         </div>
       </section>
@@ -65,7 +65,7 @@ export const MandatedTrainingPageTemplate = ({ hero, location }) => {
 
       <section className="section is-primary">
         <div className="container has-text-centered">
-          <Link to="/contact" className="button is-light is-outlined is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <ContactLink location={location} className="button is-light is-outlined is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
         </div>
       </section>
     </div>

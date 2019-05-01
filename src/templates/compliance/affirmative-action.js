@@ -18,7 +18,6 @@ export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, ame
       <section className="section">
         <div className="container">
           <Breadcrumbs location={location} />
-          <ContactLink location={location} className="button is-primary">Test</ContactLink>
         </div>
       </section>
 
@@ -51,7 +50,7 @@ export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, ame
             <div className="card-content">
               <h3 className="has-text-centered">If so, your business is <strong>legally required</strong> to annually prepare an AAP.</h3>
               <div className="has-text-centered m-t-25">
-                <Link to="/contact" className="button is-primary is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+                <ContactLink location={location} className="button is-primary is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
               </div>
             </div>
           </div>
@@ -163,7 +162,7 @@ export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, ame
           <h4 className="has-text-primary">{footer.heading}</h4>
           <p className="m-t-25 subtitle">{footer.subheading}</p>
           <div className="has-text-centered m-t-100">
-            <Link to="/contact" className="button is-info is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+            <ContactLink location={location} className="button is-info is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import Content, { HTMLContent } from '../../components/Content'
-import { Breadcrumbs } from '../../components/Navigation'
+import { ContactLink, Breadcrumbs } from '../../components/Navigation'
 
 export const EmployeeHandbooksPageTemplate = ({ hero, location }) => {
   return (
@@ -30,7 +30,7 @@ export const EmployeeHandbooksPageTemplate = ({ hero, location }) => {
         <div className="container">
           <h3>Handbook Revisions</h3>
           <h5>The modification and enhancement of an organization’s handbook to meet the changing needs of the business or legislative requirements.</h5>
-          <Link to="/contact" className="button is-primary is-large m-t-25">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <ContactLink location={location} className="button is-primary is-large m-t-25">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
         </div>
       </section>
     </div>

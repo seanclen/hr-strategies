@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
-import { Breadcrumbs } from '../../components/Navigation'
+import { ContactLink, Breadcrumbs } from '../../components/Navigation'
 
 export const PolicyDevelopmentPageTemplate = ({ hero, location }) => {
   return (
@@ -23,7 +23,7 @@ export const PolicyDevelopmentPageTemplate = ({ hero, location }) => {
         <div className="container">
           <h4>2018 proved to be a busy year, new and amended employment-related laws took effect in 27 states, many applying to all employers.</h4>
           <h5 className="m-t-50 m-b-10 is-size-4">Not sure if your company's policies are still compliant?</h5>
-          <Link to="/contact" className="button is-info is-large">We can help with that<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <ContactLink location={location} className="button is-info is-large">We can help with that<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
         </div>
       </section>
 
@@ -141,7 +141,7 @@ export const PolicyDevelopmentPageTemplate = ({ hero, location }) => {
           <h4 className="has-text-primary">We stay updated on all of the new legislation and policies so you don't have to.</h4>
           <p className="m-t-25 subtitle">Focus on what you do best, we'll take it from here.</p>
           <div className="has-text-centered m-t-100">
-            <Link to="/contact" className="button is-primary is-large">Request a Policy<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+            <ContactLink location={location} className="button is-primary is-large">Request a Policy<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
           </div>
         </div>
       </section>

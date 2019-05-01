@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import Content, { HTMLContent } from '../../components/Content'
-import { Breadcrumbs } from '../../components/Navigation'
+import { ContactLink, Breadcrumbs } from '../../components/Navigation'
 
 export const AssessmentPageTemplate = ({ hero, location }) => {
   return (
@@ -24,7 +24,7 @@ export const AssessmentPageTemplate = ({ hero, location }) => {
         <div className="container">
           <h1 className="has-text-right">Nothing in the business world is static</h1>
           <h3 className="m-t-100">In todays fast-paced business landscape, it can be difficult to maintain a competitive edge that separates you from your competitors.</h3>
-          <p className="has-text-centered m-t-100"><Link to="/contact" className="button is-info is-large">We can help you find out how<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link></p>
+          <p className="has-text-centered m-t-100"><ContactLink location={location} className="button is-info is-large">We can help you find out how<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink></p>
         </div>
       </section>
 
@@ -108,7 +108,7 @@ export const AssessmentPageTemplate = ({ hero, location }) => {
           <p className="is-size-5">Whether you are looking to stay compliant with ever-changing laws and regulations, seeking to retain top talent at your company, or just want to ensure that your business is running as efficiently and effectively as possible, we can help you gain a clear picture of where you currently stand and offer advice for your next steps.</p>
         </div>
         <div className="level m-t-100">
-          <p className="level-item"><span className="subtitle m-r-25">Are you satisfying all laws &amp; regulations?</span> <Link to="/contact" className="button is-info is-large">Get a Report<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link></p>
+          <p className="level-item"><span className="subtitle m-r-25">Are you satisfying all laws &amp; regulations?</span> <ContactLink location={location} className="button is-info is-large">Get a Report<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink></p>
         </div>
       </section>
 

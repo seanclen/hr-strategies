@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
-import { Breadcrumbs } from '../../components/Navigation'
+import { ContactLink, Breadcrumbs } from '../../components/Navigation'
 
 export const JobDescriptionsPageTemplate = ({ hero, location }) => {
   return (
@@ -22,7 +22,7 @@ export const JobDescriptionsPageTemplate = ({ hero, location }) => {
         <div className="container has-text-centered">
           <h1>What is it that you do exactly?</h1>
           <h3>The development of job descriptions to comply with FLSA and ensure all appropriate requirements are included based on the essential functions, physical demands, industry standards, safety, etc. </h3>
-          <Link to="/contact" className="button is-light is-outlined is-large m-t-25">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <ContactLink location={location} className="button is-light is-outlined is-large m-t-25">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
         </div>
       </section>
     </div>

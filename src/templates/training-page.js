@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { Breadcrumbs } from '../components/Navigation'
+import { ContactLink, Breadcrumbs } from '../components/Navigation'
 
 export const TrainingPageTemplate = ({ hero, location }) => {
   return (
@@ -23,7 +23,7 @@ export const TrainingPageTemplate = ({ hero, location }) => {
         <div className="container">
           <h4>Get the exact results you want with customized training to meet your organization’s culture, philosophy and schedule.</h4>
           <p>HR Strategies will develop and deliver training for your employees that will support your current and future business needs.</p>
-          <Link to="/contact" className="button is-primary is-large m-t-25">Talk to Us<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <ContactLink location={location} className="button is-primary is-large m-t-25">Talk to Us<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
           <h3 className="has-text-centered m-t-50">How We Can Help</h3>
           <Link to="/training/mandated-training" className="m-t-100 tile card">
             <div className="card-content">
@@ -50,7 +50,7 @@ export const TrainingPageTemplate = ({ hero, location }) => {
         <div className="container has-text-centered">
           <h4 className="has-text-primary">Ready to take your employee and manager training to the next level?</h4>
           <div className="m-t-100">
-            <Link to="/contact" className="button is-primary is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+            <ContactLink location={location} className="button is-primary is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
           </div>
         </div>
       </section>

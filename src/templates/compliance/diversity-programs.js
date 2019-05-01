@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import { CardPanel } from '../../components/Cards'
 import { MarkdownContent } from '../../components/Content'
-import { Breadcrumbs } from '../../components/Navigation'
+import { ContactLink, Breadcrumbs } from '../../components/Navigation'
 
 export const DiversityProgramsPageTemplate = ({ hero, location }) => {
   const panelBusinessStrategies = [
@@ -96,7 +96,7 @@ export const DiversityProgramsPageTemplate = ({ hero, location }) => {
 
       <section className="section is-primary has-text-centered">
         <div className="level">
-          <p className="level-item"><span className="subtitle has-text-white m-r-25">Have Questions?</span> <Link to="/contact" className="button is-info is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link></p>
+          <p className="level-item"><span className="subtitle has-text-white m-r-25">Have Questions?</span> <ContactLink location={location} className="button is-info is-large">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink></p>
         </div>
       </section>
 

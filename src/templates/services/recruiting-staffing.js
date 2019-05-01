@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
-import { Breadcrumbs } from '../../components/Navigation'
+import { ContactLink, Breadcrumbs } from '../../components/Navigation'
 
 export const RecruitingStaffingPageTemplate = ({ hero, location }) => {
   return (
@@ -23,7 +23,7 @@ export const RecruitingStaffingPageTemplate = ({ hero, location }) => {
           <h1 className="has-text-primary">Looking to expand?</h1>
           <h1 className="has-text-primary-light">Need to fill an opening?</h1>
           <h3>We've got you covered.</h3>
-          <Link to="/contact" className="button is-info is-large m-t-25">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <ContactLink location={location} className="button is-info is-large m-t-25">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
         </div>
       </section>
 

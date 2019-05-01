@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
-import { Breadcrumbs } from '../../components/Navigation'
+import { ContactLink, Breadcrumbs } from '../../components/Navigation'
 
 export const AdditionalTrainingPageTemplate = ({ hero, location }) => {
   return (
@@ -78,7 +78,7 @@ export const AdditionalTrainingPageTemplate = ({ hero, location }) => {
         <div className="container">
           <h3>Don't see what you are looking for?</h3>
           <h5>Additional customized training programs can be developed upon request. We take pride in tailoring our programs to exactly what your company needs.</h5>
-          <Link to="/contact" className="button is-primary is-large m-t-25">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></Link>
+          <ContactLink location={location} className="button is-primary is-large m-t-25">Request a Consultation<span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></ContactLink>
         </div>
       </section>
     </div>
