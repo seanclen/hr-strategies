@@ -11,7 +11,7 @@ tags:
   - training
   - documentation
 ---
-![chcecklist](/img/2089607.jpg)
+![checklist](/img/2089607.jpg)
 
 <small><a href="https://www.freepik.com/free-photos-vectors/background">Vector created by freepik</a></small>
 
@@ -22,9 +22,9 @@ For 2019, the deadline to submit EEO-1 data on job category, race, sex and ethni
 <!-- end -->
 
 * Determine if a company is required to complete the EEO-1 Report.
-  1. All private employers with 100 or more employees. 
+  1. All private employers with 100 or more employees.
   2. All federal contractors and first-tier subcontractors with 50 or more employees.
-  3. Contracts of at least $50,000 are obligated to complete and file the report each year. 
+  3. Contracts of at least $50,000 are obligated to complete and file the report each year.
 * Determine which form must be completed
   1. Single-establishment companies: Standard 100 Form
   2. Multi-establishment companies: File a report covering the headquarters office.  File a separate report for each branch with 50 or more employees. A consolidated report also will need to be completed with all employees who work at branches with fewer than 50 employees.

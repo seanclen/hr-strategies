@@ -10,7 +10,7 @@ export const NewsletterCard = ({
   slug,
 }) => {
   return (
-    <Link to={slug} className="tile is-child card is-white">
+    <Link to={slug} className="tile is-child card is-white newsletter">
       <article key={v4()}>
         <div className="card-content">
           <small>Newsletter &bull; {date}</small>
