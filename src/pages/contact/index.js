@@ -29,7 +29,15 @@ export default class Index extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigate(form.getAttribute("action"),{test: 'okay'}))
+      .then(() => navigate(
+        form.getAttribute("action"),
+        {
+          state: {
+            name: document.getElementById("name").value,
+            contactFrom: this.props.location.state.contactFrom
+          }
+        }
+      ))
       .catch(error => alert(error));
   };
 

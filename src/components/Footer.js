@@ -41,7 +41,7 @@ const Footer = () => (
                 <input className="input is-medium" type="email" placeholder="Email" />
               </div>
               <div className="control">
-                <button className="button is-primary is-medium">
+                <button className="button is-primary no-grow is-medium">
                   Join
                 </button>
               </div>

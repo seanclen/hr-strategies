@@ -3,6 +3,14 @@ import { Link } from 'gatsby'
 import _ from 'lodash'
 import logoWhite from '../assets/img/hrs-long-white.svg'
 
+export const ContactLink = ({ children, className, location }) => {
+  const path = location.pathname.slice(location.pathname.lastIndexOf('/') + 1, location.pathname.length)
+  const name = _.startCase(path.replace(/-/g, ' '))
+  return (
+    <Link to="/contact" className={className} state={{ contactFrom: {name: name, pathname: location.pathname}}}>{children}</Link>
+  )
+}
+
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props);

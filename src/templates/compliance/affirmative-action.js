@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { MarkdownContent } from '../../components/Content'
 import Layout from '../../components/Layout'
-import { Breadcrumbs } from '../../components/Navigation'
+import { Breadcrumbs, ContactLink } from '../../components/Navigation'
 import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
 
 export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, amendments, failureToComply, footer, location }) => {
@@ -18,6 +18,7 @@ export const AffirmativeActionPageTemplate = ({ hero, warning, law, history, ame
       <section className="section">
         <div className="container">
           <Breadcrumbs location={location} />
+          <ContactLink location={location} className="button is-primary">Test</ContactLink>
         </div>
       </section>
 
