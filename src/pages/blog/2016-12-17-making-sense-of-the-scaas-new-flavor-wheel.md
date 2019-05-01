@@ -10,8 +10,6 @@ tags:
   - anti-discrimination
   - compliance
 ---
-![flavor wheel](/img/flavor_wheel.jpg)
-
 Two of HR Strategies’ clients, within one week, have received a _Notice of Charge of Discrimination_.  One is from a current employee while the other is from a former employee.  We can assure you that neither of these allegations are founded and each organization will have to invest a significant amount of resources defending these charges.  
 
 ## What does this mean?
