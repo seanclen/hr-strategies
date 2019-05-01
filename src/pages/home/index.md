@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 notification:
-  display: true
+  display: false
   link: ./blog/2016-12-17-making-sense-of-the-scaas-new-flavor-wheel/
   message: >-
     The Coffee Taster’s Flavor Wheel, the official resource used by coffee
