@@ -121,7 +121,7 @@ export const HomePageTemplate = ({
                 <h1>Leading People.</h1>
                 <h1>Leading Business.</h1>
                 <hr className="thick has-background-info" />
-                <div className="is-size-3 is-size-7-touch has-text-white">
+                <div className="is-size-3 is-size-7-mobile is-size-5-tablet has-text-white">
                   <p>{content.hero.tagline}</p>
                 </div>
                 <div className="has-text-centered m-t-25">
