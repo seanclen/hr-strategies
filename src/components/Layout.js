@@ -21,8 +21,8 @@ const Head = ({ data }) => (
     <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
 
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5d68a6" />
-    <meta name="theme-color" content="fff" />
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#4e6da8" />
+    <meta name="theme-color" content="4e6da8" />
 
     <meta property="og:type" content="business.business" />
     <meta property="og:title" content={data.site.siteMetadata.title} />

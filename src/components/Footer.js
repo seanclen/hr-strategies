@@ -6,7 +6,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer-body">
       <div className="container">
-        <div className="columns">
+        <div className="columns has-text-centered-mobile">
           <div className="column">
             <div className="columns">
               <div className="column is-narrow">

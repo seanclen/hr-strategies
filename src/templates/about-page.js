@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import { v4 } from 'uuid'
 
+import triciaHeadshot from '../assets/img/TriciaClendening_headshot.png'
 import landingjpg from '../assets/img/video/Diagonal.jpg'
 import landingmp4 from '../assets/img/video/Diagonal.mp4'
 
@@ -124,26 +125,33 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
             <div className="tile is-parent">
               <article className="tile card is-child has-background-white">
                 <div className="card-content">
-                  <p>
-                    <span className="title">{team.founder.name}</span> <span className="is-size-5 has-text-grey-lighter">{team.founder.certifications}</span>
-                  </p>
-                  <p className="subtitle">{team.founder.title}</p>
-                  <div className="content">
-                    <p>{team.founder.description}</p>
-                  </div>
-                  <nav className="level is-mobile">
-                    <div className="level-left">
-                      <a href={team.founder.facebook} className="level-item">
-                        <span className="icon is-small"><i className="fab fa-facebook-f"></i></span>
-                      </a>
-                      <a href={team.founder.twitter} className="level-item">
-                        <span className="icon is-small"><i className="fab fa-twitter"></i></span>
-                      </a>
-                      <a href={team.founder.linkedin} className="level-item">
-                        <span className="icon is-small"><i className="fab fa-linkedin-in"></i></span>
-                      </a>
+                  <div className="columns is-vcentered">
+                    <div className="column is-narrow">
+                      <img src={triciaHeadshot} alt="Tricia Clendening Headshot" />
                     </div>
-                  </nav>
+                    <div className="column">
+                      <p>
+                        <span className="title">{team.founder.name}</span> <span className="is-size-5 has-text-grey-lighter">{team.founder.certifications}</span>
+                      </p>
+                      <p className="subtitle">{team.founder.title}</p>
+                      <div className="level is-mobile">
+                        <div className="level-left">
+                          <a href={team.founder.facebook} className="level-item">
+                            <span className="icon is-small"><i className="fab fa-facebook-f"></i></span>
+                          </a>
+                          <a href={team.founder.twitter} className="level-item">
+                            <span className="icon is-small"><i className="fab fa-twitter"></i></span>
+                          </a>
+                          <a href={team.founder.linkedin} className="level-item">
+                            <span className="icon is-small"><i className="fab fa-linkedin-in"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="content">
+                        <p>{team.founder.description}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </article>
             </div>

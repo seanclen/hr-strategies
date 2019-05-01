@@ -8,8 +8,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'HR Strategies',
-    description: 'HR Strategies Description',
+    title: 'HR Strategies, LLC',
+    description: 'Build lasting relationships with organizations and develop strategies that support, protect, and evolve any business model.',
     siteUrl: `http://localhost:8000`,
   },
   plugins: [

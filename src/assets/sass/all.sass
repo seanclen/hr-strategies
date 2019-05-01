@@ -4,10 +4,10 @@
 @import "~@fortawesome/fontawesome-free/css/all.css"
 @import "~react-responsive-carousel/lib/styles/carousel.min.css"
 
-
+// Override Bulma defaults
+@import "./initial-variables"
 @import "./mixins.sass"
 @import "./colors.sass"
-// Override Bulma defaults
 
 $family-sans-serif: "Catamaran", sans-serif
 $body-color: $grey-light
@@ -19,6 +19,7 @@ $input-hover-border-color: transparent
 $footer-background-color: $grey-dark
 $notification-radius: 0px
 $control-radius: 0px
+
 
 @import "./affiliations.sass"
 @import "./carousel.sass"
@@ -231,7 +232,6 @@ footer
     padding: 0 2rem 1rem 0
 
 
-
 @import "~bulma/sass/utilities/_all"
 @import "~bulma/sass/base/generic.sass"
 @import "~bulma/sass/base/helpers.sass"
@@ -243,3 +243,7 @@ footer
 // Bulma extensions
 @import "~bulma-extensions/bulma-divider/dist/css/bulma-divider"
 @import "~bulma-extensions/bulma-timeline/dist/css/bulma-timeline"
+
+html
+  +mobile
+    font-size: 12px

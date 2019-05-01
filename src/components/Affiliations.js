@@ -47,8 +47,8 @@ export default class Affiliations extends React.Component {
           {this.props.items.map((item, index) => (
             <div key={v4()} className="custom-slide is-dark">
               <div className="width-100">
-                <h2 className="is-size-3 is-uppercase has-text-white">{item.heading}</h2>
-                <p className="is-size-5 is-uppercase has-text-white">{item.subheading}</p>
+                <h2 className="is-size-3 is-size-7-mobile is-uppercase has-text-white">{item.heading}</h2>
+                <p className="is-size-5 is-size-7-mobile is-uppercase has-text-white">{item.subheading}</p>
               </div>
             </div>
           ))}

@@ -121,7 +121,7 @@ export const HomePageTemplate = ({
                 <h1>Leading People.</h1>
                 <h1>Leading Business.</h1>
                 <hr className="thick has-background-info" />
-                <div className="is-size-3 is-size-6-touch has-text-white">
+                <div className="is-size-3 is-size-7-touch has-text-white">
                   <p>{content.hero.tagline}</p>
                 </div>
                 <div className="has-text-centered m-t-25">
@@ -169,7 +169,7 @@ export const HomePageTemplate = ({
 
       <section className="section is-dark p-t-100 p-b-100">
         <div className="container has-text-centered">
-          <h2 className="has-text-white m-b-0">{content.statistics.heading}</h2>
+          <h2 className="has-text-white is-size-3-mobile m-b-0">{content.statistics.heading}</h2>
           <h5 className="has-text-white">{content.statistics.subheading}</h5>
           <Statistics statistics={content.statistics} />
         </div>

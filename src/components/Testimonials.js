@@ -17,13 +17,13 @@ const Testimonials = ({items}) => (
       autoPlay infiniteLoop>
       {items.map((item, index) => (
         <div key={v4()} className="width-100 p-b-25 p-t-25">
-          <div className="columns is-mobile is-vcentered is-centered">
+          <div className="columns is-vcentered is-centered">
             <div className="column is-half has-text-left">
               <h6 className="quote">{item.quote}</h6>
               <p>{item.author} &mdash; <a href="/">read story</a></p>
             </div>
-            <div className="column is-narrow">
-              <figure className="image is-128x128">
+            <div className="column is-hidden-mobile is-narrow">
+              <figure className="image">
                 <PreviewCompatibleImage imgStyle={imageStyle} imageInfo={item} />
               </figure>
             </div>
