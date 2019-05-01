@@ -1,32 +1,35 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
-date: 2016-12-17T15:04:10.000Z
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+title: Notice of Charge of Discrimination
+date: 2019-04-09T14:04:00.000Z
+description: >-
+  The State of Delaware Department of Labor’s Division of Industrial Affairs is
+  seeing an increase of claims. 
 tags:
-  - flavor
-  - tasting
+  - discrimination
+  - anti-discrimination
+  - compliance
 ---
-
 ![flavor wheel](/img/flavor_wheel.jpg)
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+Two of HR Strategies’ clients, within one week, have received a _Notice of Charge of Discrimination_.  One is from a current employee while the other is from a former employee.  We can assure you that neither of these allegations are founded and each organization will have to invest a significant amount of resources defending these charges.  
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+## What does this mean?
 
-## What the updates mean to you
+When an organization receives a _Notice of Charge of Discrimination_ it will arrive certified mail – return receipt requested so that the Office of Anti-Discrimination will know that the company has received the charge(s).  The clock starts ticking immediately and the organization has only twenty days to file an answer or to choose mediation.
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+## Should the organization choose mediation?
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
+If an organization chooses mediation, they do not need to file an answer and will complete the _Invitation To Engage in Mediation_ and return it to the agency within twenty days.  The Delaware Department of Labor (DDOL) Mediation Program is a voluntary program offered by the DDOL.  The mediators are trained and experienced in the use of interest based facilitative mediation to resolve employment related disputes.  The information shared during the mediation will be kept confidential and none of the information will be shared with DDOL regardless of the outcome.  Utilizing mediation, cases are resolved early in the process and may eliminate or reduce expenses associated with responding to an investigation and litigation expenses can be avoided.
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
+If an organization decides not to use mediation, the case is referred for further investigation, you and the Charging Party will be asked to provide information. Your investigator will evaluate the information submitted to determine whether unlawful discrimination has taken place. You may be asked to:
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
+* Submit a **statement of position**. This is your opportunity to tell your side of the story and you should take advantage of it.
+* Respond to a **Request for Information (RFI)**. The RFI may ask you to submit copies of personnel policies, Charging Party's personnel files, the personnel files of other individuals and other relevant information.
+* Permit an **on-site visit**. While you may view such a visit as being disruptive to your operations, our experience has been that such visits greatly expedite the fact-finding process and may help achieve quicker resolutions. In some cases, an on-site visit may be an alternative to an RFI if requested documents are made available for viewing or photocopying.
+* Provide contact information for or have employees available for **witness interviews**. You may be present during interviews with management personnel, but an investigator is allowed to conduct interviews of non-management level employees without your presence or permission.
+* Attend a **fact-finding conference**. Such conferences often help to expedite the fact-finding process and may help achieve quicker resolutions.
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+## Don't let this happen to your company.
+
+The best defense an organization can have is making sure they have policies in place and that they are consistently followed.  Documentation of employment decisions is critical and should include any investigations that were conducted, who, what when and why were the employment decisions made.  The documentation should also provide proof that these decisions have been implemented similarly throughout the organization and that a this was not a discriminatory practice.
