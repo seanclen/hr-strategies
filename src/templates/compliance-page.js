@@ -42,12 +42,12 @@ export const CompliancePageTemplate = ({ hero, location }) => {
               </div>
             </div>
           </Link>
-          <Link to="/compliance/assessments-audits" className="m-t-50 tile card">
+          <Link to="/compliance/assessment" className="m-t-50 tile card">
             <div className="card-content">
               <div className="content">
                 <h1>HR Assessments</h1>
                 <p>An HR assessment will be conducted to ensure your organization is compliant with current mandated federal, state, and local labor and employment laws.  The HR Assessment will provide your organization with Recommendations for Immediate Action, Recommendations for Reducing Exposure to Litigation, and suggestions for future HR enhancements.</p>
-                <strong><Link to="/compliance/assessments-audits">Learn more</Link></strong>
+                <strong><Link to="/compliance/assessment">Learn more</Link></strong>
               </div>
             </div>
           </Link>
