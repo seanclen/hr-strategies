@@ -11,9 +11,9 @@ tags:
   - training
   - documentation
 ---
-![flavor wheel](/img/flavor_wheel.jpg)
+![chcecklist](/img/2089607.jpg)
 
-This is the first Newsletter post for the brand new website! Filler text to follow. Enjoy!
+<small><a href="https://www.freepik.com/free-photos-vectors/background">Vector created by freepik</a></small>
 
 # EEO Reporting Checklist
 
