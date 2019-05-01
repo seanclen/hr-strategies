@@ -4,7 +4,12 @@ title: May Newsletter
 date: 2019-05-01T14:04:00.000Z
 description: 'Volume 16, Issue 5'
 tags:
-  - first
+  - EEO
+  - report
+  - compliance
+  - amendments
+  - training
+  - documentation
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
