@@ -71,12 +71,12 @@ export const DiversityProgramsPageTemplate = ({ hero, location }) => {
           <div className="columns">
             <div className="column is-6"></div>
             <div className="column is-size-1 has-text-primary">
-              <h1><i class="fas fa-equals"></i> GROWTH
+              <span className="is-size-1 has-text-weight-bold"><i class="fas fa-equals"></i> GROWTH
                 <span class="fa-stack fa-1x">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fas fa-thumbs-up fa-stack-1x fa-inverse"></i>
                 </span>
-              </h1>
+              </span>
             </div>
           </div>
           <div className="tile card has-shadow-primary m-t-50">
@@ -107,7 +107,7 @@ export const DiversityProgramsPageTemplate = ({ hero, location }) => {
           <hr />
           <div className="columns is-vcentered p-t-25">
             <div className="column">
-              <h4 className="is-italic has-text-grey-lighter">"... everyone has personal traits that can offer potential contributions to the workplace."</h4>
+              <h4 className="is-italic has-text-grey-light">"... everyone has personal traits that can offer potential contributions to the workplace."</h4>
             </div>
             <div className="column">
               <p>While these high level definitions briefly describe a person's characteristics, everyone has personal traits that can offer potential contributions to the workplace. This can be broken down into two main categories: </p>

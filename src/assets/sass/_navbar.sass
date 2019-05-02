@@ -2,18 +2,18 @@ $navbar-height: 4rem
 $navbar-burger-color: #fff
 $navbar-background-color: transparent
 $navbar-item-color: #fff
-$navbar-item-hover-color: $grey-dark
+$navbar-item-hover-color: $grey-darker
 $navbar-item-hover-background-color: #fff
-$navbar-item-active-color: $grey-dark
+$navbar-item-active-color: $grey-darker
 $navbar-item-active-background-color: #fff
-$navbar-dropdown-background-color: $grey-dark
-$navbar-dropdown-border-top: 4px solid $grey-light
+$navbar-dropdown-background-color: $grey-darker
+$navbar-dropdown-border-top: 4px solid $grey-dark
 $navbar-dropdown-radius: 0px
 $navbar-dropdown-boxed-radius: 0px
 $navbar-dropdown-boxed-shadow: 0px 0px 0px transparent
-$navbar-dropdown-item-hover-color: $grey-dark
+$navbar-dropdown-item-hover-color: $grey-darker
 $navbar-dropdown-item-hover-background-color: #fff
-$navbar-divider-background-color: $grey-light
+$navbar-divider-background-color: $grey-dark
 
 // Animation Mixins
 =timing-function
@@ -21,6 +21,8 @@ $navbar-divider-background-color: $grey-light
 
 .navbar
   width: 100%
+  small
+    color: $grey-light !important
   .navbar-menu
     background-color: transparent
     .navbar-item

@@ -116,7 +116,7 @@ const Navbar = class extends React.Component {
   }
 
   render() {
-    const navClass = this.props.isClear ? 'navbar is-absolute-top' : 'navbar is-dark has-background-grey-dark'
+    const navClass = this.props.isClear ? 'navbar is-absolute-top' : 'navbar is-dark has-background-grey-darker'
 
     return (
       <nav className={navClass} role="navigation" aria-label="main-navigation">
