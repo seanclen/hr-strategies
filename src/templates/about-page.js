@@ -89,6 +89,24 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
               </div>
             </div>
             <header className="timeline-header">
+              <span className="tag is-primary">2005</span>
+            </header>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary"></div>
+              <div className="timeline-content">
+                <p className="heading">June 2005</p>
+                <p>Our founder earned her Senior Professional in Human Resources (SPHR) certification.</p>
+              </div>
+            </div>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary"></div>
+              <div className="timeline-content">
+                <p className="heading">August 2005</p>
+                <p>ABC Delaware Diversity Committe Chair</p>
+                <small><i>10 years</i></small>
+              </div>
+            </div>
+            <header className="timeline-header">
               <span className="tag is-primary">2008</span>
             </header>
             <div className="timeline-item is-primary">
@@ -97,7 +115,38 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
               </div>
               <div className="timeline-content">
                 <p className="heading">August 2008</p>
-                <p>Founder is the only person in Delaware to achieve her Global Professional in Human Resources (GPHR), Senior Professional in Human Resources (SPHR) and SHRM-SCP certifications.</p>
+                <p>Founder earned her Global Professional in Human Resources (GPHR).</p>
+                <small><i className="fas fa-gem m-l-10 m-r-10"></i>At the time, there were only 402 people worldwide with both GPHR and SPHR certifications.</small>
+              </div>
+            </div>
+            <header className="timeline-header">
+              <span className="tag is-primary">2012</span>
+            </header>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary"></div>
+              <div className="timeline-content">
+                <p className="heading">August 2012</p>
+                <p>Delaware SHRM President</p>
+                <small><i>2 years</i></small>
+              </div>
+            </div>
+            <header className="timeline-header">
+              <span className="tag is-primary">2014</span>
+            </header>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary"></div>
+              <div className="timeline-content">
+                <p className="heading">June 2014</p>
+                <p>Founder is the first person in Delaware to earn her SHRM-SCP certification.</p>
+                <small><i className="fas fa-gem m-l-10 m-r-10"></i>She is the only person in Delaware to achieve the GPHR, SPHR, and SHRM-SCP certifications.</small>
+              </div>
+            </div>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary"></div>
+              <div className="timeline-content">
+                <p className="heading">September 2014</p>
+                <p>SHRM Delaware State Council, Inc. State Director</p>
+                <small><i>4 years</i></small>
               </div>
             </div>
             <header className="timeline-header">

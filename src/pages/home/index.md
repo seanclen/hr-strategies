@@ -47,12 +47,12 @@ statistics:
     We will take care of your people issues so you can focus on your business
     initiatives.
 discount:
-  description: 'New clients receive discount if scheduled before December 15, 2018.'
+  description: 'Prospective clients can contact HR Strategies, LLC to receive a free mini-audit for their organization.'
   display: true
   linkText: Explore Our Services
   linkUrl: /
-  percentage: 15%
-  title: New Client Discount
+  percentage: ''
+  title: Free Mini-Audit
 testimonials:
   - author: 'Jonathan Doehammer, CEO at Doehammer Ironworks'
     image: /img/flavor_wheel.jpg
@@ -67,4 +67,3 @@ testimonials:
       It’s been a fantastic journey—growing together, scaling, and figuring out
       how to provide the best customer experience
 ---
-

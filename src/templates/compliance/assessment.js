@@ -64,8 +64,8 @@ export const AssessmentPageTemplate = ({ hero, location }) => {
                     <div class="columns">
                       <div className="column is-narrow"><h1 className="m-t--10"><i className="fas fa-balance-scale has-text-primary m-r-10"></i></h1></div>
                       <div className="column">
-                        <h5>Your company is may run into noncompliance issues in the future.</h5>
-                        <p>Protect your business from potential legal issues by implimenting policies before a problem arises.</p>
+                        <h5>Your company may run into noncompliance issues in the future.</h5>
+                        <p>Protect your business from potential legal issues by implementing policies before a problem arises.</p>
                         <div className="p-l-25 p-t-10">
                           <p><i className="fas fa-chevron-circle-right has-text-primary m-r-10"></i> Combine Drug and Alcohol Use, Drug Testing policies, and Security Inspections to a Drug-free Workplace Policy</p>
                           <p><i className="fas fa-chevron-circle-right has-text-primary m-r-10"></i> Replace Computer, Internet and Email Usage with an Electronic Communications Policy</p>

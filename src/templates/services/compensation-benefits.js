@@ -30,7 +30,8 @@ export const CompensationBenefitsPageTemplate = ({ hero, location }) => {
       <section className="section">
         <div className="container">
           <h3>Benefit Program Evaluations</h3>
-          <h5>Additional customized training programs can be developed upon request. We take pride in tailoring our programs to exactly what your company needs.</h5>
+          <h5>Allow us or our Strategic Business Partners to evaluate your current benefit offerings.</h5>
+          <p className="m-t-25">Ensure that you’re offering what your employees are looking for and see how your total benefits package compares to your competition. We take pride in tailoring our programs to exactly what your company needs.</p>
         </div>
       </section>
 

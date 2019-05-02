@@ -87,7 +87,7 @@ export const PolicyDevelopmentPageTemplate = ({ hero, location }) => {
                       <p className="title">Reasonable Accomodations</p>
                     </div>
                   </div>
-                  <p>Allowing people who have certain conditions public access to employee restrooms.</p>
+                  <p>Provide reasonable accommodations to employees and applicants for employment to ensure that individuals with disabilities enjoy equal access to all employment opportunities.</p>
                 </div>
               </div>
               <div className="tile is-child card">

@@ -143,13 +143,13 @@ const Navbar = class extends React.Component {
                     About Us
                   </Link>
                   <Link className="navbar-item" to="/about">
-                    Case Studies
-                  </Link>
-                  <Link className="navbar-item" to="/about">
                     Our Approach
                   </Link>
                   <Link className="navbar-item" to="/about">
-                    Testimonials &amp; Awards
+                    Partners &amp; Awards
+                  </Link>
+                  <Link className="navbar-item" to="/about">
+                    Testimonials &amp; Case Studies
                   </Link>
                 </div>
               </div>
@@ -247,14 +247,20 @@ export const Breadcrumbs = ({ location }) => {
   let path = location.pathname
   let crumbs = []
 
+  const specialNames = {
+    'testimonials-case-studies' : 'Testimonials & Case Studies',
+    'assessment' : 'HR Assessment',
+  }
+
   const splitUrl = location.pathname.split('/')
   splitUrl.forEach((split, index) => {
     if (index === 0 && split === '') {
       crumbs = [...crumbs, { pathname: '/', label: 'Home' }]
     } else if (index !== 0 && split !== '') {
+      let name = specialNames[split] || _.startCase(split.replace(/-/g, ' '))
       crumbs = [...crumbs, {
         pathname: path.slice(0, path.lastIndexOf('/'.concat(split)) + split.length + 1),
-        label: _.startCase(split.replace(/-/g, ' '))
+        label: name
       }]
     }
   })

@@ -38,11 +38,11 @@ team:
       with her clients to diagnose issues, offer potential solutions, and
       support chosen recommendations. During times of change, transition and
       growth, Tricia maintains a results-oriented focus.
-    facebook: facebook.com
-    linkedin: linkedin.com
+    facebook: http://www.facebook.com
+    linkedin: http://www.linkedin.com
     name: Tricia Clendening
     title: 'President, Founder'
-    twitter: twitter.com
+    twitter: http://www.twitter.com
   other:
     - certifications: SHRM-SCP
       description: >-
@@ -72,4 +72,3 @@ team:
       name: Chris
       title: HR Business Partner
 ---
-
