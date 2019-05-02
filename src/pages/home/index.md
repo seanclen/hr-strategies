@@ -27,16 +27,16 @@ section1:
   heading: Legal compliance with employment and labor laws
   image: /img/dmitrij-paskevic-44124-unsplash.png
   linkText: Explore Our Services
-  linkUrl: /
+  linkUrl: /services
 statistics:
   heading: Your Strategic Business Partner
   statistics:
     - linkText: About Us
-      linkUrl: /
+      linkUrl: /about
       statistic: 70+
       title: YEARS EXPERIENCE
     - linkText: Recruiting
-      linkUrl: /
+      linkUrl: /services/recruiting-staffing
       statistic: 57%
       title: RECRUITING SAVINGS
     - linkText: Employee Handbooks
@@ -50,7 +50,7 @@ discount:
   description: 'Prospective clients can contact HR Strategies, LLC to receive a free mini-audit for their organization.'
   display: true
   linkText: Explore Our Services
-  linkUrl: /
+  linkUrl: /assessment
   percentage: ''
   title: Free Mini-Audit
 testimonials:
