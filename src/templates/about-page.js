@@ -47,7 +47,7 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
               </div>
             </div>
             <div className="tile is-parent is-vertical">
-              <Link to="/" className="tile card is-child is-primary">
+              <Link to="/about/our-approach" className="tile card is-child is-primary">
                 <div className="card-content">
                   <h5>Our Approach</h5>
                 </div>
