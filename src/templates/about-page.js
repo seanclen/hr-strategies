@@ -52,9 +52,9 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
                   <h5>Our Approach</h5>
                 </div>
               </Link>
-              <Link to="/" className="tile card is-child is-primary">
+              <Link to="/about/partners" className="tile card is-child is-primary">
                 <div className="card-content">
-                  <h5>Partners & Awards</h5>
+                  <h5>Our Partners</h5>
                 </div>
               </Link>
               <Link to="/about/testimonials-case-studies" className="tile card is-child is-primary">
