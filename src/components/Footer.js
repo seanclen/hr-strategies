@@ -56,7 +56,6 @@ const Footer = () => (
           <div className="level-left">
             <div className="level-item">
               <p>&copy; {new Date().getFullYear()} HR Strategies, LLC.</p>
-              <a href="/" className="p-l-25">Terms of Service</a>
               <Link to="/privacy" className="p-l-25">Privacy Policy</Link>
             </div>
           </div>
@@ -64,13 +63,10 @@ const Footer = () => (
             <div className="level-item">
               <div>
                 <span className="is-uppercase">Follow Us</span>
-                <a href="/" className="icon is-large">
+                <a href="https://www.facebook.com/HRSTRATEGIESLLC/" className="icon is-large">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="/" className="icon is-large">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="/" className="icon is-large">
+                <a href="https://www.linkedin.com/in/hr-strategies-llc-0b1307182" className="icon is-large">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
               </div>

@@ -54,16 +54,16 @@ discount:
   percentage: ''
   title: Free Mini-Audit
 testimonials:
-  - author: 'Jonathan Doehammer, CEO at Doehammer Ironworks'
-    image: /img/flavor_wheel.jpg
+  - author: 'Tom DiCristofarom President at Claymont Fire Company'
+    image: /img/image1.png
     quote: >-
-      The biggest benefit in working with HR Strategies is that, unlike the big
-      HR or PEO companies we’ve used in the past, we know the people we’re
-      working with. I know the team by name, and they know  us.
-  - author: 'Raphael Fontes, Vice President of Customer Operations'
-    image: /img/jumbotron.jpg
+      HR Strategies has been on board with us for over twenty years.  Tricia and staff handle all aspects of our HR needs, including, but not limited to, new employee orientation, exit interviews, health care benefits and harassment training just to name a few.  Being a volunteer organization without an office staff, bringing Tricia and her staff on board was the best business decision we made.
+  - author: 'Sarah Heitkemper, Vice President, and Min Oh, HR Business Partner at Boland'
+    image: /img/image2.png
     quote: >-
-      Zendesk has been a phenomenal partner and very responsive to our needs.
-      It’s been a fantastic journey—growing together, scaling, and figuring out
-      how to provide the best customer experience
+      HR Strategies has been a valued partner with Boland for the past five years. Tricia's professionalism, expertise and knowledge are second to none! We receive outstanding customer service, response time, and follow up. HR Strategies is a critical resource for us and we greatly appreciate their knowledge, insight, and guidance. We highly recommend their services to organizations who wish to work with a great HR business partner!
+  - author: 'Rebecca Suppe CEO/Treasurer at R. C. Fabricators, Inc.'
+    image: /img/image3.jpeg
+    quote: >-
+      As the need for standard business practices and policies evolve, so did the need for our company's handbook. In doing so we were faced with incorporating HR policies and procedures. Having known Tricia from networking and her professional career in HR Strategies we decided to reach out for advice on implementing HR into our handbook. Having experience working with Tricia about HR there would be no other option to work with anyone else.
 ---

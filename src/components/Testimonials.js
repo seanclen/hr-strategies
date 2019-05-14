@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Carousel } from 'react-responsive-carousel'
+import { Link } from 'gatsby'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import { v4 } from 'uuid'
 
-const imageStyle = { borderRadius: '10000px', height: '128px', width: '128px' }
+const imageStyle = { borderRadius: '0px' }
 
 const Testimonials = ({items}) => (
   <div className="testimonials">
@@ -20,7 +21,7 @@ const Testimonials = ({items}) => (
           <div className="columns is-vcentered is-centered">
             <div className="column is-half has-text-left">
               <h6 className="quote">{item.quote}</h6>
-              <p>{item.author} &mdash; <a href="/">read story</a></p>
+              <p>{item.author} &mdash; <Link href="/about/testimonials-case-studies">read more</Link></p>
             </div>
             <div className="column is-hidden-mobile is-narrow">
               <figure className="image">
