@@ -70,14 +70,13 @@ export const PartnersPageTemplate = ({ location }) => {
 
           <hr />
 
-          <div className="columns is-vcentered">
-            <div className="column is-3"></div>
-            <div className="column is-3">
+          <div className="columns has-text-centered is-vcentered">
+            <div className="column is-narrow">
               <a className="image" href="https://www.safetyworksinc.com">
                 <img src="/img/image10.jpg" />
               </a>
             </div>
-            <div className="column is-3">
+            <div className="column is-narrow">
               <a className="image" href="https://williamsagency.com">
                 <img src="/img/image8.png" />
               </a>

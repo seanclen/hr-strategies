@@ -48,8 +48,11 @@ collections:
           - {label: Statistics, name: statistics, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}, {label: Statistics, name: statistics, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Statistic, name: statistic, widget: string}, {label: Link Text, name: linkText, widget: string}, {label: Link Url, name: linkUrl, widget: string}]}]}
           - {label: Discount, name: discount, widget: object, fields: [{label: Display Discount, name: display, widget: boolean, default: true, hint: Turn the discount on or off.}, {label: Title, name: title, widget: string, required: false}, {label: Description, name: description, widget: string, required: false}, {label: Percentage, name: percentage, widget: string, required: false}, {label: Link Text, name: linkText, widget: string, required: false}, {label: Link Url, name: linkUrl, widget: string, required: false}]}
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Author, name: author, widget: string}, {label: Quote, name: quote, widget: text}, {label: Image, name: image, widget: image}]}
+  - name: "why-hr-strategies"
+    label: "Why HR Strategies"
+    files:
       - file: "src/pages/about/index.md"
-        label: "About"
+        label: "About Us"
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
@@ -57,6 +60,14 @@ collections:
           - {label: "About Section", name: "about", widget: "object", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Subtitle", name: "subtitle", widget: "string"}, {label: "Body", name: "body", widget: "markdown"}]}
           - {label: "Story Section", name: "story", widget: "object", fields: [{label: "Body", name: "body", widget: "markdown"}]}
           - {label: "Team Section", name: "team", widget: "object", fields: [{label: "Founder", name: "founder", widget: "object", fields: [{label: "Name", name: "name", widget: "string"}, {label: "Certifications", name: "certifications", widget: "string"}, {label: "Job Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "text"}, {label: "Facebook", name: "facebook", widget: "string"}, {label: "Twitter", name: "twitter", widget: "string"}, {label: "LinkedIn", name: "linkedin", widget: "string"}]}, {label: "Other", name: "other", widget: "list", fields: [{label: "Name", name: "name", widget: "string"}, {label: "Certifications", name: "certifications", widget: "string"}, {label: "Job Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "text"}]}]}
+      - file: "src/pages/about/partners.md"
+        label: "Partners"
+        name: "partners"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "partners"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
+          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Link Url, name: linkUrl, widget: string, required: false}, {label: Quote, name: quote, widget: text}, {label: Authors, name: authors, widget: list, fields: [{label: Author, name: author, widget: string}, {label: Title, name: title, widget: string}, {label: Company, name: company, widget: string}]}]}
+          - {label: "Other Partners", name: otherPartners, required: false, widget: list, fields:[{label: Image, name: image, widget: image}, {label: Link Url, name: linkUrl, widget: string, required: false}]}
   - name: "services"
     label: "Services"
     files:
