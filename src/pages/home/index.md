@@ -54,10 +54,10 @@ discount:
   percentage: ''
   title: Free Mini-Audit
 testimonials:
-  - author: 'Tom DiCristofarom President at Claymont Fire Company'
+  - author: 'Tom DiCristofaro President at Claymont Fire Company'
     image: /img/image1.png
     quote: >-
-      HR Strategies has been on board with us for over twenty years.  Tricia and staff handle all aspects of our HR needs, including, but not limited to, new employee orientation, exit interviews, health care benefits and harassment training just to name a few.  Being a volunteer organization without an office staff, bringing Tricia and her staff on board was the best business decision we made.
+      HR Strategies has been on board with us for over twenty years. Tricia and staff handle all aspects of our HR needs, including, but not limited to, new employee orientation, exit interviews, health care benefits and harassment training just to name a few.  Being a volunteer organization without an office staff, bringing Tricia and her staff on board was the best business decision we made.
   - author: 'Sarah Heitkemper, Vice President, and Min Oh, HR Business Partner at Boland'
     image: /img/image2.png
     quote: >-

@@ -71,7 +71,7 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
           <h1 className="has-text-centered">Our Story</h1>
           <div className="timeline is-centered m-t-25">
             <header className="timeline-header">
-              <span className="tag is-medium is-primary">2002</span>
+              <span className="tag is-medium is-primary">2001</span>
             </header>
             <div className="timeline-item is-primary">
               <div className="timeline-marker is-primary"></div>
@@ -84,7 +84,7 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
                 <i className="fas fa-star"></i>
               </div>
               <div className="timeline-content">
-                <p className="heading">February 2002</p>
+                <p className="heading">September 2002</p>
                 <p>HR Strategies, LLC is established to provide HR outsourcing to enhance an organizations’ efficiency, improve productivity and positively impact their bottom line with a staff of certified professionals.</p>
               </div>
             </div>
@@ -114,20 +114,57 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
                 <i className="fa fa-globe-americas"></i>
               </div>
               <div className="timeline-content">
-                <p className="heading">August 2008</p>
+                <p className="heading">December 2008</p>
                 <p>Founder earned her Global Professional in Human Resources (GPHR).</p>
                 <small><i className="fas fa-gem m-l-10 m-r-10"></i>At the time, there were only 402 people worldwide with both GPHR and SPHR certifications.</small>
+              </div>
+            </div>
+            <header className="timeline-header">
+              <span className="tag is-primary">2010</span>
+            </header>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary"></div>
+              <div className="timeline-content">
+                <p className="heading">February 2010</p>
+                <p>HR Strategies certified as Women Business Enterprise (WBE) and Small Business Focus (SBF).</p>
+              </div>
+            </div>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary is-icon">
+                <i className="fas fa-trophy"></i>
+              </div>
+              <div className="timeline-content">
+                <p className="heading">November 2010</p>
+                <p>Associated Builders & Contractors, Delaware Chapter - Associate/Supplier Member of the Year</p>
               </div>
             </div>
             <header className="timeline-header">
               <span className="tag is-primary">2012</span>
             </header>
             <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary is-icon">
+                <i className="fas fa-trophy"></i>
+              </div>
+              <div className="timeline-content">
+                <p className="heading">May 2012</p>
+                <p>Delaware Vallery HR Consultant of the Year</p>
+              </div>
+            </div>
+            <div className="timeline-item is-primary">
               <div className="timeline-marker is-primary"></div>
               <div className="timeline-content">
                 <p className="heading">August 2012</p>
                 <p>Delaware SHRM President</p>
-                <small><i>2 years</i></small>
+                <small><i>3 years</i></small>
+              </div>
+            </div>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary is-icon">
+                <i className="fas fa-trophy"></i>
+              </div>
+              <div className="timeline-content">
+                <p className="heading">November 2012</p>
+                <p>Ron Shane Lifetime Human Resources Award</p>
               </div>
             </div>
             <header className="timeline-header">
@@ -136,7 +173,7 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
             <div className="timeline-item is-primary">
               <div className="timeline-marker is-primary"></div>
               <div className="timeline-content">
-                <p className="heading">June 2014</p>
+                <p className="heading">November 2014</p>
                 <p>Founder is the first person in Delaware to earn her SHRM-SCP certification.</p>
                 <small><i className="fas fa-gem m-l-10 m-r-10"></i>She is the only person in Delaware to achieve the GPHR, SPHR, and SHRM-SCP certifications.</small>
               </div>
@@ -150,15 +187,27 @@ export const AboutPageTemplate = ({ mission, about, story, team, contentComponen
               </div>
             </div>
             <header className="timeline-header">
-              <span className="tag is-primary">2017</span>
+              <span className="tag is-primary">2018</span>
             </header>
             <div className="timeline-item is-primary">
               <div className="timeline-marker is-primary is-icon">
                 <i className="fas fa-bookmark"></i>
               </div>
               <div className="timeline-content">
-                <p className="heading">March 2017</p>
-                <p>HR Strategies, LLC has distinguished itself by being the only all SHRM Certified and Women Business Enterprise (WBE) HR firm in the region.</p>
+                <p className="heading">February 2018</p>
+                <p>HR Strategies, LLC has distinguished itself by being the only all SHRM Certified HR firm in the region.</p>
+              </div>
+            </div>
+            <header className="timeline-header">
+              <span className="tag is-primary">2019</span>
+            </header>
+            <div className="timeline-item is-primary">
+              <div className="timeline-marker is-primary is-icon">
+                <i className="fas fa-trophy"></i>
+              </div>
+              <div className="timeline-content">
+                <p className="heading">April 2019</p>
+                <p>Recognized by the State of Delaware for making a diversity difference in Delaware for 5 consecutive years.</p>
               </div>
             </div>
             <header className="timeline-header">

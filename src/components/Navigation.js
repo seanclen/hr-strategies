@@ -188,10 +188,6 @@ const Navbar = class extends React.Component {
                     Additional Training
                   </Link>
                   <hr className="navbar-divider" />
-                  <Link className="navbar-item has-text-info has-text-weight-normal" to="/training/online-training">
-                    Online Training
-                  </Link>
-                  <hr className="navbar-divider" />
                   <Link className="navbar-item" to="/training">
                     <small>More About Training <span className="m-l-10 icon"><i className="fas fa-chevron-right"></i></span></small>
                   </Link>
