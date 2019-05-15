@@ -2,25 +2,25 @@ import React from "react";
 import { navigate } from "gatsby-link";
 import Layout from '../../components/Layout'
 
-function encode(data) {
+export function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+    .join("&")
 }
 
 export default class Index extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = { isValidated: false };
+    super(props)
+    this.state = { isValidated: false }
   }
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
+    this.setState({ [e.target.name]: e.target.value })
+  }
 
   handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
+    e.preventDefault()
+    const form = e.target
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -39,7 +39,7 @@ export default class Index extends React.Component {
         }
       ))
       .catch(error => alert(error));
-  };
+  }
 
   render() {
     return (

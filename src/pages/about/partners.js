@@ -48,7 +48,7 @@ export const PartnersPageTemplate = ({ location }) => {
               HR Strategies is a valuable asset to ABC Delaware and its members.  The company provides our members and staff with comprehensive human resource management classes as well leadership and staff improvement programs.  Tricia’s advice and counsel regarding diversity & inclusion issues have helped our organization grow and be more in tune with today’s changing workforce. The company’s understanding of all things HR-related provides a great resource for ABC Delaware.
             </blockquote>
             <p className="subtitle">
-              Ed Cappadano<br />
+              Ed Cappodano<br />
             <small>President &mdash; ABC of Delaware</small></p>
           </div>
 

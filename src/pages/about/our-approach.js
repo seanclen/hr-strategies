@@ -45,25 +45,28 @@ export const OurApproachPageTemplate = ({ location }) => {
 
       <section className="section">
         <div className="container">
-          <p>We take into consideration your industry, culture, philosophy, business model and your current or pressing needs to collaboratively develop a recommended path forward to achieve your goals.</p>
-          <h4 className="has-text-centered m-t-50">How We Do It</h4>
+          <h5>We take into consideration your industry, culture, philosophy, business model and your current or pressing needs to collaboratively develop a recommended path forward. Whether your company has 10 employees or 500, our comprehensive evaluation process allows us to discover, analyze and create an HR plan to help you achieve your business goals.</h5>
+          <h4 className="has-text-centered m-t-100">How We Do It</h4>
           <div className="steps m-t-50">
             <div className="step-item is-active">
               <div className="step-marker">1</div>
               <div className="step-details">
-                <p className="step-title">Discover</p>
+                <p className="step-title">Discovery</p>
+                <p>Our staff will personally meet with you to discuss your company's wants and needs.</p>
               </div>
             </div>
-            <div className="step-item">
+            <div className="step-item is-active">
               <div className="step-marker">2</div>
               <div className="step-details">
-                <p className="step-title">Collaborate</p>
+                <p className="step-title">Analysis</p>
+                <p>Evaluation of current practices versus best practices to determine gap analysis.</p>
               </div>
             </div>
-            <div className="step-item">
+            <div className="step-item is-active">
               <div className="step-marker">3</div>
               <div className="step-details">
-                <p className="step-title">Future-Proof</p>
+                <p className="step-title">Create</p>
+                <p>In collaboration with our clients we develop an action plan with recommendations to achieve HR excellence.</p>
               </div>
             </div>
           </div>
