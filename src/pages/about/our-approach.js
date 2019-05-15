@@ -17,7 +17,7 @@ export const OurApproachPageTemplate = ({ location }) => {
               <div className="column is-10 has-text-centered">
                 <h4 class="has-text-white">Our Approach</h4>
                 <h1 class="has-text-white has-text-weight-bold">We provide one-stop-shopping for HR, not a one-way-approach for supporting businesses.</h1>
-                <Link to="/about/our-approach/#content" className="button is-info is-large m-t-10">How We Do It <span className="m-l-10 icon"><i className="fas fa-arrow-down"></i></span></Link>
+                <Link to="/about/our-approach#content" className="button is-info is-large m-t-10">How We Do It <span className="m-l-10 icon"><i className="fas fa-arrow-down"></i></span></Link>
               </div>
             </div>
           </div>

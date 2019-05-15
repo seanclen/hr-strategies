@@ -193,7 +193,7 @@ const Navbar = class extends React.Component {
                   </Link>
                 </div>
               </div>
-              <Link tabIndex="4" className="navbar-item" to="/contact">
+              <Link tabIndex="4" className="navbar-item" to="/hr-startup">
                 HR Startup
               </Link>
               <div tabIndex="5" className="navbar-item has-dropdown">
