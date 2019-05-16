@@ -38,7 +38,7 @@ const HRStartupPage = ({ data, location }) => {
 
       <section id="content" className="section is-light is-medium">
         <div className="container">
-          <h3 className="has-text-centered">Here are the Essentials:</h3>
+          <h3 className="has-text-centered">Here are the included Essentials:</h3>
           <div className="tile is-ancestor m-t-50">
             <div className="tile is-4 is-vertical is-parent">
               <div className="tile is-child card">
@@ -48,7 +48,7 @@ const HRStartupPage = ({ data, location }) => {
                       <p className="title"><i class="fas fa-book has-text-info"></i></p>
                     </div>
                     <div className="column">
-                      <p className="title">Employee-Handbook</p>
+                      <p className="title">Employee Handbook</p>
                     </div>
                   </div>
                   <p>Develop a company handbook to ensure compliance with all Federal, State, and local employment and labor laws.</p>
@@ -64,7 +64,7 @@ const HRStartupPage = ({ data, location }) => {
                       <p className="title">HR Practices</p>
                     </div>
                   </div>
-                  <p>Develop process to ensure personnel files meet regulatory compliance.</p>
+                  <p>Develop process based on industry best practices.</p>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@ const HRStartupPage = ({ data, location }) => {
                       <p className="title">Orientation / Onboarding</p>
                     </div>
                   </div>
-                  <p>Develop new hire packets and HR forms to ensure compliance of laws and company policies.</p>
+                  <p>Assimilation of employees with a company and its culture, from the offer to one year of employment.</p>
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ const HRStartupPage = ({ data, location }) => {
                       <p className="title">Compensation and Benefits</p>
                     </div>
                   </div>
-                  <p>Review salary survey and make recommendations as warranted.</p>
+                  <p>Review current benefit programs and make recommendations for cost savings and improvements.</p>
                 </div>
               </div>
               <div className="tile is-child card">
@@ -133,18 +133,10 @@ const HRStartupPage = ({ data, location }) => {
 
       <section className="section is-white">
         <div className="container">
+          <h3 className="has-text-centered">Startup or Established Business, we can help.</h3>
+          <h5 className="has-text-centered">Whether you are a new company or an existing company, we will develop the HR infrastructure to support your current and future business needs.</h5>
           <div className="content">
-            <h2>More About HR Best Practices</h2>
-            <h4>It is our goal provide companies with optimal business performance, regardless of which organization or industry they are applied to.</h4>
-            <p>Whether you are looking to stay compliant with ever-changing laws and regulations, seeking to retain top talent at your company, or just want to ensure that your business is running as efficiently and effectively as possible, we can help you gain a clear picture of where you currently stand and offer advice for your next steps.</p>
-            <ul>
-              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Develop documentation process for personnel changes</p>
-              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Develop HR forms to support and implement all new processes and handbook</p>
-              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Develop Exit Survey or Separation Interview Guide</p>
-              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Establish recordkeeping system for HR processes</p>
-              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Develop termination process to reduce company liability</p>
-              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Develop and provide coaching to administration on recruiting, management practices, documentation, etc.</p>
-            </ul>
+            <p>Content</p>
           </div>
         </div>
       </section>

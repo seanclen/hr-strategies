@@ -92,11 +92,23 @@ export const TestimonialsCaseStudiesPageTemplate = ({ location }) => {
           <div className="content">
             <h1>Tricia and her team have taken the time to learn our business and culture.</h1>
             <blockquote>
-              HR Strategies serves as a strategic extension of our organizations human resources department in terms of compensation, training, recruiting and government reporting.  Tricia and her team have taken the time to learn our business and culture which has allowed them to successfully recruit and place candidates in record time at a fraction of the cost traditional recruiting agencies charge.  Additionally, the personalized dynamic training delivered by HR Strategies makes our employees feel comfortable and connected to the topic.   We continue to be impressed by their knowledge, dedication and professionalism and highly recommend their services.
+              HR Strategies serves as a strategic extension of our organizations human resources department in terms of compensation, training, recruiting and government reporting.  Tricia and her team have taken the time to learn our business and culture which has allowed them to successfully recruit and place candidates in record time at a fraction of the cost traditional recruiting agencies charge.  Additionally, the personalized dynamic training delivered by HR Strategies makes our employees feel comfortable and connected to the topic.  We continue to be impressed by their knowledge, dedication and professionalism and highly recommend their services.
             </blockquote>
             <p className="subtitle">
               Amanda Novak, PHR, SHRM-CP<br />
             <small>Human Resources Director &mdash; The Tri-M Group, LLC</small></p>
+          </div>
+
+          <hr />
+
+          <div className="content">
+            <h1>Tricia is knowledgeable, professional and responsive.</h1>
+            <blockquote>
+              Tricia Clendening and HR Strategies have been a great resource for Advanced Materials Technology.  Tricia is knowledgeable, professional and responsive.  As we have grown she has helped us update our HR policies to fit the needs of the company.  Whether you need help updating your employee handbook, training of federally mandated topics or help managing a delicate HR situation, I would strongly recommend HR Strategies.
+            </blockquote>
+            <p className="subtitle">
+              Timothy Langlois<br />
+            <small>Founder and CEO &mdash; Advanced Materials Technology</small></p>
           </div>
         </div>
       </section>
