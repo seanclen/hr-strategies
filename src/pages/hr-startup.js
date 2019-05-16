@@ -134,15 +134,17 @@ const HRStartupPage = ({ data, location }) => {
       <section className="section is-white">
         <div className="container">
           <div className="content">
-            <h2>More About HR Practices</h2>
-
-          </div>
-        </div>
-
-        <div className="container m-t-100">
-          <div className="content">
-            <h2>More About Performance Management</h2>
-
+            <h2>More About HR Best Practices</h2>
+            <h4>It is our goal provide companies with optimal business performance, regardless of which organization or industry they are applied to.</h4>
+            <p>Whether you are looking to stay compliant with ever-changing laws and regulations, seeking to retain top talent at your company, or just want to ensure that your business is running as efficiently and effectively as possible, we can help you gain a clear picture of where you currently stand and offer advice for your next steps.</p>
+            <ul>
+              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Develop documentation process for personnel changes</p>
+              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Develop HR forms to support and implement all new processes and handbook</p>
+              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Develop Exit Survey or Separation Interview Guide</p>
+              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Establish recordkeeping system for HR processes</p>
+              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Develop termination process to reduce company liability</p>
+              <p><i class="fas fa-check has-text-grey-light m-r-10"></i> Develop and provide coaching to administration on recruiting, management practices, documentation, etc.</p>
+            </ul>
           </div>
         </div>
       </section>
