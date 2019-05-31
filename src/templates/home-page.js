@@ -339,7 +339,7 @@ export const homePageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400, format: HTML)
+          excerpt(pruneLength: 200, format: HTML)
           id
           fields {
             slug

@@ -30,8 +30,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Search Summary", name: "description", widget: "text"}
+      - {label: "Homepage Excerpt", name: "homepageExcerpt", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Homepage Preview", name: "homepagePreview", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "pages"
