@@ -29,8 +29,9 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "newsletter-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Search Summary", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Homepage Preview", name: "homepagePreview", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "pages"
@@ -68,6 +69,12 @@ collections:
           - {label: Hero, name: hero, widget: object, fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Subheading", name: "subheading", widget: "string"}]}
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Link Url, name: linkUrl, widget: string, required: false}, {label: Quote, name: quote, widget: text}, {label: Authors, name: authors, widget: list, fields: [{label: Author, name: author, widget: string}, {label: Title, name: title, widget: string}, {label: Company, name: company, widget: string}]}]}
           - {label: "Other Partners", name: otherPartners, required: false, widget: list, fields:[{label: Image, name: image, widget: image}, {label: Link Url, name: linkUrl, widget: string, required: false}]}
+      - file: "src/pages/about/our-approach.md"
+        label: "Our Approach"
+        name: "our-approach"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "our-approach"}
+          - {label: "Hero", name: "hero", widget: object, fields: [{label: Header, name: header, widget: string}, {label: Subtitle, name: subtitle, widget: string, required: false}]}
   - name: "services"
     label: "Services"
     files:
