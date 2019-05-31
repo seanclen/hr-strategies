@@ -3,6 +3,25 @@ templateKey: newsletter-post
 title: May Newsletter
 date: 2019-05-01T14:04:00.000Z
 description: 'Volume 16, Issue 5'
+homepagePreview: >-
+  ![checklist](/img/2089607.jpg)
+
+
+  <small><a href="https://www.freepik.com/free-photos-vectors/background">Vector
+  created by freepik</a></small>
+
+
+  # Amendments to the New Alcohol and Drug Testing Policy
+
+
+  New Castle County has approved amendments to ease restrictions and better
+  define the requirements of the new alcohol and drug testing policy for public
+  works projects that became effective on April 1, 2019.  The amendments were
+  approved and has become law.  Tricia Clendening of HR Strategies, LLC made the
+  recommendations for the amendments and believes the amendments help the County
+  achieve their goal of a drug-free and alcohol-free workplace while reducing
+  the burden on contractors and subcontractors working on New Castle County
+  projects.
 tags:
   - EEO
   - report
@@ -18,8 +37,6 @@ tags:
 # EEO Reporting Checklist
 
 For 2019, the deadline to submit EEO-1 data on job category, race, sex and ethnicity of employees has been extended to May 31, 2019. Additional data that includes hours worked and pay information from employees' W-2 forms by race, ethnicity and sex will be required by September 30, 2019. Please visit the EEO-1 website for updates.
-
-<!-- end -->
 
 * Determine if a company is required to complete the EEO-1 Report.
   1. All private employers with 100 or more employees.
