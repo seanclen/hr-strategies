@@ -8,7 +8,7 @@ description: |-
   Employment Internships,
   New and improved HR Strategies website
 homepageExcerpt: >-
-  # **Low unemployment rates are affecting recruitment and retention**
+  # **Unemployment rates are affecting recruitment and retention**
 
 
   The national unemployment rate is 3.6 percent and provides job-hunters with
