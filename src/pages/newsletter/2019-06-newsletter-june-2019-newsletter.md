@@ -3,9 +3,9 @@ templateKey: newsletter-post
 title: JUNE 2019 NEWSLETTER
 date: 2019-06-01T10:17:31.492Z
 description: |-
-  How unemployment rates are affecting recruitment and retention,
-  Proper employee classification under FSLA,
-  Employment Internships,
+  How unemployment rates are affecting recruitment and retention -
+  Proper employee classification under FSLA -
+  Employment Internships -
   New and improved HR Strategies website
 homepageExcerpt: >-
   # **Unemployment rates are affecting recruitment and retention**
