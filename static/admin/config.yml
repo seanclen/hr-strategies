@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: master
 
+site_url: https://hrstrategies.org
+display_url: https://hrstrategies.org
+logo_url: https://hrstrategies.org/img/logo-short.png
+
 publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
@@ -24,7 +28,8 @@ collections:
     label: "Newsletter"
     folder: "src/pages/newsletter"
     create: true
-    slug: "{{year}}-{{month}}-newsletter-{{slug}}"
+    slug: "{{year}}/{{month}}"
+    preview_path: "newsletter/{{year}}/{{month}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "newsletter-post"}
       - {label: "Title", name: "title", widget: "string"}
