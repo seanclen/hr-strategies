@@ -15,7 +15,7 @@ const Notification = ({
     document.getElementById('homepage-notification').classList.toggle('hide');
     cookies.set('hrs_previously_viewed_notification', title, { path: '/' });
     if (href) {
-      navigate(href)
+      href.endsWith('.pdf') ? window.location.href = href : navigate(href);
     }
   }
   return(

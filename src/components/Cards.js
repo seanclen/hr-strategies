@@ -1,8 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import { v4 } from 'uuid'
 import matter from 'gray-matter'
+
+const handleLink = (e, href) => {
+  e.preventDefault();
+  if (href) {
+    href.endsWith('.pdf') ? window.location.href = href : navigate(href);
+  }
+}
 
 export const NewsletterCard = ({
   date,
@@ -74,7 +81,7 @@ export const NotificationCard = ({
           <h3>{title}</h3>
           <p>{message}</p>
           {link &&
-            <strong><a href={link} className="is-uppercase">Learn more</a></strong>
+            <strong><a href={link} onClick={(e) => {handleLink(e, link);}} className="is-uppercase">Learn more</a></strong>
           }
         </div>
       </div>
