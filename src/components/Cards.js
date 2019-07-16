@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, navigate } from 'gatsby'
 import { v4 } from 'uuid'
-import matter from 'gray-matter'
 
 const handleLink = (e, href) => {
   e.preventDefault();
@@ -74,7 +73,7 @@ export const NotificationCard = ({
   link
 }) => (
 
-  <Link to={link} className="tile is-child card is-primary">
+  <a href={link} onClick={(e) => {handleLink(e, link);}} className="tile is-child card is-primary">
     <article key={v4()}>
       <div className="card-content">
         <div className="content">
@@ -86,7 +85,7 @@ export const NotificationCard = ({
         </div>
       </div>
     </article>
-  </Link>
+  </a>
 
 )
 
