@@ -70,19 +70,19 @@ export default class Index extends React.Component {
                   </div>
                   <div className="field">
                     <label className="label" htmlFor={"name"} >Your name</label>
-                    <div className="control">
+                    <div className="control is-large">
                       <input className="input is-large" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
                     </div>
                   </div>
                   <div className="field">
                     <label className="label" htmlFor={"email"}>Email</label>
-                      <div className="control">
-                        <input className="input is-large" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
-                      </div>
+                    <div className="control is-large">
+                      <input className="input is-large" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
+                    </div>
                   </div>
                   <div className="field">
                     <label className="label" htmlFor={"message"}>Message</label>
-                    <div className="control">
+                    <div className="control is-large">
                       <textarea className="textarea is-large" name={"message"} onChange={this.handleChange} id={"message"} required={true} />
                     </div>
                   </div>
