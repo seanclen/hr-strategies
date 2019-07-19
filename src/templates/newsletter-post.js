@@ -1,48 +1,69 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
+import { kebabCase, startCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import Content, { HTMLContent, MarkdownContent } from '../components/Content'
 
 export const NewsletterPostTemplate = ({
   content,
   contentComponent,
   description,
+  helmet,
+  pdfFile,
   tags,
   title,
-  helmet,
 }) => {
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <div>
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+      <section className="section is-white">
+        <div className="container content">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+                {title}
+              </h1>
+              <h2>Overview</h2>
+              <MarkdownContent content={description} />
+              {pdfFile ? (
+                <a href={pdfFile} className="button is-info is-large m-t-25">Download PDF</a>
+              ) : null}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section className="section is-light">
+        <div className="container content">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="box">
+                <HTMLContent content={content} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="content container">
+          {tags && tags.length ? (
+            <div style={{ marginTop: `4rem` }}>
+              <h3>Find more related articles:</h3>
+              <ul className="taglist">
+                {tags.map(tag => (
+                  <li key={tag + `tag`}>
+                    <Link to={`/tags/${kebabCase(tag)}/`}>{startCase(tag)}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+        </div>
+      </section>
+    </div>
   )
 }
 
@@ -71,6 +92,7 @@ const NewsletterPost = ({ data }) => {
             <meta name="description" content={`${post.frontmatter.description}`} />
           </Helmet>
         }
+        pdfFile={post.frontmatter.pdfFile}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
