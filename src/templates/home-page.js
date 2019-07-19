@@ -250,7 +250,7 @@ export const HomePageTemplate = ({
                 <NewsletterCard
                   date={data.frontmatter.date}
                   title={data.frontmatter.title}
-                  excerpt={data.excerpt}
+                  excerpt={data.frontmatter.homepageExcerpt}
                   slug={data.fields.slug} />
               ))}
             </div>
@@ -339,7 +339,6 @@ export const homePageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 200, format: HTML)
           id
           fields {
             slug
@@ -348,6 +347,7 @@ export const homePageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM YYYY")
+            homepageExcerpt
           }
         }
       }

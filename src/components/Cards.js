@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, navigate } from 'gatsby'
+import { MarkdownContent } from './Content'
 import { v4 } from 'uuid'
 
 const handleLink = (e, href) => {
@@ -22,7 +23,7 @@ export const NewsletterCard = ({
         <div className="card-content">
           <small>Newsletter &bull; {date}</small>
           <p className="title">{title}</p>
-          <div className="content" dangerouslySetInnerHTML={{__html: excerpt}}></div>
+          <MarkdownContent content={excerpt} className="m-b-25" />
           <strong>
             <Link className="is-uppercase" to={slug}>
               Read More
