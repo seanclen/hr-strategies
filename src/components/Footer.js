@@ -56,7 +56,7 @@ export default class Footer extends React.Component {
                         Middletown, DE 19709<br />
                       </a>
                       <a href="tel:+13023768595">(302) 376-8595<br /></a>
-                      <a href="mailto:contact@hrstrategies.org">contact@hrstragegies.org</a>
+                      <a href="mailto:contact@hrstrategies.org">contact@hrstrategies.org</a>
                     </p>
                   </div>
                   <div className="column">
