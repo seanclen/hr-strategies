@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase, startCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent, MarkdownContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { kebabCase, startCase } from "lodash";
+import Helmet from "react-helmet";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
+import Content, { HTMLContent, MarkdownContent } from "../components/Content";
 
 export const NewsletterPostTemplate = ({
   content,
@@ -13,13 +13,13 @@ export const NewsletterPostTemplate = ({
   helmet,
   pdfFile,
   tags,
-  title,
+  title
 }) => {
-  const PostContent = contentComponent || Content
-
+  const PostContent = contentComponent || Content;
+  const pdfHref = pdfFile.replace("/static", "");
   return (
     <div>
-      {helmet || ''}
+      {helmet || ""}
       <section className="section is-white">
         <div className="container content">
           <div className="columns">
@@ -29,8 +29,10 @@ export const NewsletterPostTemplate = ({
               </h1>
               <h2>Overview</h2>
               <MarkdownContent content={description} />
-              {pdfFile ? (
-                <a href={pdfFile} className="button is-info is-large m-t-25">Download PDF</a>
+              {pdfHref ? (
+                <a href={pdfHref} className="button is-info is-large m-t-25">
+                  Download PDF
+                </a>
               ) : null}
             </div>
           </div>
@@ -55,7 +57,9 @@ export const NewsletterPostTemplate = ({
               <ul className="taglist">
                 {tags.map(tag => (
                   <li key={tag + `tag`}>
-                    <Link to={`/tags/${kebabCase(tag)}/`}>{startCase(tag)}</Link>
+                    <Link to={`/tags/${kebabCase(tag)}/`}>
+                      {startCase(tag)}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -64,19 +68,19 @@ export const NewsletterPostTemplate = ({
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
 NewsletterPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object,
-}
+  helmet: PropTypes.object
+};
 
 const NewsletterPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -85,11 +89,12 @@ const NewsletterPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet
-            titleTemplate="%s | Blog"
-          >
+          <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
-            <meta name="description" content={`${post.frontmatter.description}`} />
+            <meta
+              name="description"
+              content={`${post.frontmatter.description}`}
+            />
           </Helmet>
         }
         pdfFile={post.frontmatter.pdfFile}
@@ -97,16 +102,16 @@ const NewsletterPost = ({ data }) => {
         title={post.frontmatter.title}
       />
     </Layout>
-  )
-}
+  );
+};
 
 NewsletterPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
+    markdownRemark: PropTypes.object
+  })
+};
 
-export default NewsletterPost
+export default NewsletterPost;
 
 export const pageQuery = graphql`
   query NewsletterPostByID($id: String!) {
@@ -122,4 +127,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
