@@ -7,7 +7,14 @@ import { encode } from '../pages/contact'
 export default class Footer extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+    this.state = {
+      isValidated: false,
+      isModalActive: false,
+    }
+  }
+
+  closeModal = () => {
+    this.setState({ isModalActive: false })
   }
 
   handleChange = e => {
@@ -25,21 +32,34 @@ export default class Footer extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigate(
-        form.getAttribute("action"),
-        {
-          state: {
-            name: document.getElementById("name").value,
-            contactFrom: this.props.location.state.contactFrom
-          }
-        }
-      ))
+      .then(() => {
+        this.setState({ isModalActive: !this.state.isModalActive })
+    })
       .catch(error => alert(error));
   }
 
   render() {
+    const isActive = this.state.isModalActive ? "is-active" : ""
     return (
       <footer className="footer">
+        <div className={"modal " + isActive}>
+          <div className="modal-background"></div>
+          <div className="modal-content">
+            <div className="card">
+              <div className="card-content">
+                <p className="title">
+                  Thank You!
+                </p>
+                <p>
+                  HR Strategies endeavors to send you only the best content, with actionable steps you can take to grow your business online and off.<br /><br />
+                  If you have any questions or comments about the content you’re receiving please email back and we will respond to your inquiry promptly.
+                </p>
+                <button className="button is-primary is-medium m-t-25" aria-label="close" onClick={this.closeModal}>Got it!</button>
+              </div>
+            </div>
+          </div>
+          <button className="modal-close is-large" aria-label="close" onClick={this.closeModal}></button>
+        </div>
         <div className="footer-body">
           <div className="container">
             <div className="columns has-text-centered-mobile">
@@ -72,16 +92,30 @@ export default class Footer extends React.Component {
               </div>
               <div className="column">
                 <h5 className="m-b-10">Join Our Newsletter</h5>
-                <div className="field has-addons">
-                  <div className="control is-expanded">
-                    <input className="input is-medium" type="email" placeholder="Email" />
+                <form
+                  name="newsletter"
+                  method="post"
+                  action="/contact/thanks/"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  onSubmit={this.handleSubmit}
+                >
+                  <input type="hidden" name="form-name" value="newsletter" />
+                  <div hidden>
+                    <label>
+                      Don’t fill this out:{" "}
+                      <input name="bot-field" onChange={this.handleChange} />
+                    </label>
                   </div>
-                  <div className="control">
-                    <button className="button is-primary no-grow is-medium">
-                      Join
-                    </button>
+                  <div className="field has-addons">
+                    <div className="control is-expanded">
+                      <input className="input is-medium" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} placeholder="Email" />
+                    </div>
+                    <div className="control">
+                      <button className="button is-primary no-grow is-medium" type="submit">Join</button>
+                    </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ module.exports = {
   siteMetadata: {
     title: 'HR Strategies, LLC',
     description: 'Build lasting relationships with organizations and develop strategies that support, protect, and evolve any business model.',
-    siteUrl: `http://localhost:8000`,
+    siteUrl: `http://hrstrategies.org/`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
