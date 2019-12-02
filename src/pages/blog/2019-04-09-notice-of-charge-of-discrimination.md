@@ -1,6 +1,8 @@
 ---
 templateKey: blog-post
-title: Have you received a "Notice of Charge of Discrimination"?
+title: >-
+  Have you received a "Notice of Charge of Discrimination"? The Delaware
+  Department of Labor is seeing an increase of claims.
 date: 2019-04-09T14:04:00.000Z
 description: >-
   The State of Delaware Department of Labor’s Division of Industrial Affairs is
