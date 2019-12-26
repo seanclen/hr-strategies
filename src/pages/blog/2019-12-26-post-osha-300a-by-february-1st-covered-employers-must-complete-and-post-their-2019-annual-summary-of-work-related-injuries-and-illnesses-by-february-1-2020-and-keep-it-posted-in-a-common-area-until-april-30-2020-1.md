@@ -7,8 +7,7 @@ title: >-
 date: 2019-12-26T16:32:23.873Z
 description: >-
   Covered employers must complete and post their 2019 annual summary of
-  work-related injuries and illnesses by February 1, 2020, and keep it posted in
-  a common area until April 30, 2020
+  work-related injuries and illnesses by February 1, 2020.
 tags:
   - Occupational Safety and Health Administration (OSHA)
   - OSHA 300
