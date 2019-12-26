@@ -8,6 +8,7 @@
     "bulma-extensions": "^6.2.7",
     "formik": "^1.5.7",
     "gatsby": "^2.17.15",
+    "gatsby-cli": "^2.8.22",
     "gatsby-image": "^2.2.33",
     "gatsby-plugin-netlify": "^2.1.25",
     "gatsby-plugin-netlify-cms": "^4.1.28",

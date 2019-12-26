@@ -16,7 +16,7 @@ export const NewsletterPostTemplate = ({
   title
 }) => {
   const PostContent = contentComponent || Content;
-  const pdfHref = pdfFile.replace("/static", "");
+  const pdfHref = pdfFile ? pdfFile.replace("/static", "") : null
   return (
     <div>
       {helmet || ""}
