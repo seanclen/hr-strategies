@@ -33,7 +33,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "newsletter-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "Y-MM"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "Y-MM", timeFormat: false}
       - {label: "Search Summary", name: "description", widget: "text"}
       - {label: "Homepage Excerpt", name: "homepageExcerpt", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
