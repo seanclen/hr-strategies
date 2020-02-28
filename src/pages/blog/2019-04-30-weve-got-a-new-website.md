@@ -12,4 +12,4 @@ description: >-
 tags:
   - Talent Acquisition
 ---
-Contact HR Strategies staff at 302.376.8595 or info@hrstrategies.org if you would like support
+Contact HR Strategies staff at 302.376.8595 or [info@hrstrategies.org](info@hrstrategies.org) if you would like support
