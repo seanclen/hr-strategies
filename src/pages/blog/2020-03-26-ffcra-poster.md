@@ -1,18 +1,18 @@
 ---
 templateKey: blog-post
 title: >-
-  The Department of Labor’s Wage and Hour Division just released the required
-  notification poster for the Families First Coronavirus Response Act (FFCRA)
-date: 2020-03-26T18:49:06.066Z
+  Families First Coronavirus Response Act Notice Must Be Posted or Distributed
+  by April 1
+date: 2020-03-27T18:49:06.066Z
 description: >
-  The Department of Labor’s Wage and Hour Division just released the required
-  notification poster for the Families First Coronavirus Response Act (FFCRA)
-  that will soon need to be posted in many workplaces – and distributed to
-  remote workers – across the country. 
+  The Families First Coronavirus Response Act (FFCRA) was recently passed to
+  provide paid sick leave and expanded family and medical leave to certain
+  eligible workers for specified reasons related to COVID-19. The FFCRA goes
+  into effect April 1. This means that those employers with less than 500
+  employees must comply with the notice provisions of the FFCRA by April 1.
 tags:
   - Families First Coronavirus Response Act (FFCRA)
 ---
-The Families First Coronavirus Response Act (FFCRA or Act) requires certain employers to provide their
- employees with paid sick leave and expanded family and medical leave for specified reasons related to COVID-19. These provisions will apply from April 1, 2020 through December 31, 2020. Each covered employer must post this notice of the FFCRA requirements in a conspicuous place on its premises. An employer may satisfy this requirement by emailing or direct mailing this notice to employees, or posting this notice on an employee information internal or external website. These provisions will apply from April 1, 2020 through December 31, 2020.
+Each covered employer must post in a conspicuous place on its premises a notice of the FFCRA requirements. An employer can satisfy this requirement by emailing or direct mailing the Notice to employees, or posting the Notice on an employee information internal or external website. Employers are not required to post the Notice in multiple languages, but the DOL is working to translate the Notice into other languages. The Notice needs to be displayed in a conspicuous place where employees can see it. If employees are able to see it at the main office, it is not necessary to display the Notice at an employer’s different worksite locations. Where an employer has employees reporting directly to work in several different buildings, the employer must post the Notice (in addition to all other required federal and state notices) in each building, even if the buildings are located in the same general vicinity (e.g., in an industrial park or on a campus). Employers must also convey this Notice to newly hired applicants, either by email, direct mail, or by posting the Notice on the premises or on an employee information internal or external website.
 
 A link to the poster can be found @ <https://www.dol.gov/sites/dolgov/files/WHD/posters/FFCRA_Poster_WH1422_Non-Federal.pdf>
