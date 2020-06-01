@@ -3,7 +3,7 @@ templateKey: blog-post
 title: New COBRA Model Notices
 date: 2020-06-01T12:26:19.404Z
 description: The Department of Labor issued two new model COBRA notices – the
-  initial (also called general) notice and the election notice
+  initial notice and the election notice.
 tags:
   - COBRA Model Notices
   - Department of Labor (DOL)
