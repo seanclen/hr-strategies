@@ -2,9 +2,7 @@
 templateKey: blog-post
 title: New Filing Deadline for 2019 and 2020 EEO-1 Component 1 Data Collection
 date: 2021-07-01T19:39:29.231Z
-description: The deadline to submit and certify 2019 and the 2020 EEO-1
-  Component 1 data has been changed. The new filing deadline is now Monday,
-  August 23, 2021.
+description: New Filing Deadline for 2019 and 2020 EEO-1 Component 1 Data Collection
 tags:
   - EEO-1 Component Data
 ---
