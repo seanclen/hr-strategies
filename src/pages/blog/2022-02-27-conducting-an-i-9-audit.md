@@ -4,9 +4,7 @@ title: Conducting an I-9 Audit
 date: 2022-02-27T18:41:24.769Z
 description: When companies establish and maintain effective Form I-9 compliance
   policies, employers can prevent potential liability and exorbitant fines as
-  well as mitigate many potential violations. Employers should implement
-  effective I-9 procedures that result in accurate, consistent and uniform
-  preparation, maintenance and, ultimately, disposal of the forms.
+  well as mitigate many potential violations.
 tags:
   - I-9 Audit
   - I-9 procedures
