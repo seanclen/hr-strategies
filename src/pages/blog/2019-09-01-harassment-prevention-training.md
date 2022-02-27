@@ -2,9 +2,9 @@
 templateKey: blog-post
 title: Harassment Prevention Training
 date: 2019-09-01T12:17:29.694Z
-description: >-
-  Delaware employers with 50 or more workers must complete interactive
-  harassment prevention training prior to December 31, 2019.
+description: Delaware employers with 50 or more workers must complete
+  interactive harassment prevention training prior to December 31, 2019 and
+  every two years following.
 tags:
   - Harassment Prevention Training
 ---
