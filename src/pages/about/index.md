@@ -59,46 +59,26 @@ team:
       certifications: SHRM-SCP
       title: Chief Mediator and HR Business Partner
       description: >-
-        Joanne P. Lee, SHRM-SCP is the former Vice President of Human Resources
-        for N.K.S. Distributors, Inc.
+        Joanne leads the Mediation and Investigation division of the business.
+        She brings over 35 years in HR
 
-        recently relocated to Smyrna, Delaware. Joanne is a graduate of Neumann University in Aston, PA with
+        Management roles working with profit and non-profit organizations in 25 states. Her business partners
 
-        a B.A. Degree in Business Management. She is a Senior Certified Human Resources Management
+        have found that she consistently acts as a catalyst between staff by defining issues, eliminating
 
-        Professional through the Society of HR Management and received a professional designation in HR
+        obstacles, moderating and guiding the processes to find resolution. Joanne is a facilitator for the SHRM
 
-        Management through UCLA.
+        Certification Preparation course and has served on the Business Advisory Boards for Wilmington
 
-        Joanne Has extensive experience in the HR field working in Delaware, California, and Delaware. She has
+        University, Delaware Technical College, and the Center for Leadership Advisory Board for Neumann
 
-        provided HR support to various clients in 25 states throughout the U.S. Ms. Lee frequently contributes
+        University. Joanne has received professional designation in HR Management through UCLA; been
 
-        to media requests for statements and magazine articles relating to HR.
+        recognized in her profession with the Ron Shane Lifetime Achievement in HR Award; as a member of the
 
-        Joanne stays active as a member of the National SHRM Association and the Delaware SHRM Chapter.
+        SHRM Labor Relations Special Expertise and the SHRM Ethics and Corporate Social Responsibility Special
 
-        She has been a member of the SHRM Labor Relations Special Expertise and the SHRM Ethics and
-
-        Corporate Social Responsibility Special Expertise Panels.
-
-        The SHRM Delaware State Council awarded the 2017 Ron Shane Lifetime Achievement in HR Award to
-
-        Joanne. This award goes to the individual who best represents the Human Resources Professional in
-
-        his/her daily life.
-
-        Joanne is a facilitator for the SHRM Certification Preparation course. She has also served on the
-
-        Business Advisory Boards for Wilmington University, Delaware Technical College, and the Center for
-
-        Leadership Advisory Board for Neumann University.
-
-        In 2019, Lee served as a Delaware National Guard Honorary Commander.
-
-        Ms. Lee has spent her entire career in HR Management. She has participated in the evolution of the HR
-
-        function in organizations. Her passion, dedication and commitment to “People” continues.
+        Expertise Panels. Joanne’s passion, dedication and commitment to “People” continues in this new role.
     - certifications: SHRM-CP
       description: Chris is a team player credited with supporting organizations and
         honoring commitments that have been consistently successful. He is a
