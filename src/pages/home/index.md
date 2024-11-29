@@ -4,7 +4,7 @@ notification:
   display: false
   link: ./doc/Delaware%20Sexual%20Harassment%20Notice.pdf
   message: Employers must distribute this information to new employees and
-    existing employees by July 1, 2019.
+    existing employees.
   title: Delaware Sexual Harassment Notice
 hero:
   tagline: Human Resources support for businesses of any size.
