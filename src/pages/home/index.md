@@ -1,8 +1,8 @@
 ---
 templateKey: home-page
 notification:
-  display: false
-  link: ./doc/Delaware%20Sexual%20Harassment%20Notice.pdf
+  display: true
+  link: ./img/notice-of-the-start-of-contributions-1.pdf
   message: Employers must distribute this information to new employees and
     existing employees.
   title: Delaware Sexual Harassment Notice
