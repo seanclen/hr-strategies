@@ -3,9 +3,15 @@ templateKey: home-page
 notification:
   display: true
   link: ./img/notice-of-the-start-of-contributions-1.pdf
-  message: Employers must distribute this information to new employees and
-    existing employees.
-  title: Delaware Sexual Harassment Notice
+  message: Delaware Paid Leave is the name of Delaware’s Paid Family Medical Leave
+    (“PFML”) insurance program that was created through the Healthy Delaware
+    Families Act (the “Act”), which was signed in to law in May of 2022. The Act
+    is a new state law based on the 30+ year old federal Family Medical Leave
+    Act (FMLA), which allows employees of larger companies take unpaid but
+    job-protected leave when they experience certain significant events in their
+    lives. Delaware’s new program will pay income-replacement benefits to those
+    employees that face the same types of life events that FMLA covers.
+  title: Delaware Paid Leave
 hero:
   tagline: Human Resources support for businesses of any size.
 affiliations:
