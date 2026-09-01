@@ -22,7 +22,7 @@
     "gatsby-remark-images": "^3.3.8",
     "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-source-filesystem": "^2.3.8",
-    "gatsby-transformer-remark": "^2.8.13",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.3",
     "gray-matter": "^4.0.2",
     "lodash": "^4.17.15",
